@@ -1,0 +1,41 @@
+2024-11-03 11:13:28 Progress: Running:  C:\Users\Haley\AppData\Local\Programs\Python\Python311\Scripts\psfnormalize -v 3 ./Spritulo.ufo3
+2024-11-03 11:13:28 Progress: Reading UFO: ./Spritulo.ufo3
+2024-11-03 11:13:28 Warning:  Glyph names in glif and contents.plist did not match for Wacute; corrected
+2024-11-03 11:13:28 Warning:  Glyph names in glif and contents.plist did not match for Wdieresis; corrected
+2024-11-03 11:13:28 Warning:  Glyph names in glif and contents.plist did not match for Wgrave; corrected
+2024-11-03 11:13:28 Warning:  Glyph names in glif and contents.plist did not match for uni035C; corrected
+2024-11-03 11:13:28 Warning:  Glyph names in glif and contents.plist did not match for uni0361; corrected
+2024-11-03 11:13:28 Warning:  Glyph names in glif and contents.plist did not match for wacute; corrected
+2024-11-03 11:13:28 Warning:  Glyph names in glif and contents.plist did not match for wgrave; corrected
+2024-11-03 11:13:28 Progress: Checking fontinfo.plist metadata
+2024-11-03 11:13:28 Warning:  Required fields missing from fontinfo.plist: ['openTypeNameManufacturer']
+2024-11-03 11:13:28 Warning:  Checking will continue with values of 'Dummy' or 999 for missing fields
+2024-11-03 11:13:28 Warning:  openTypeNameDescription is missing from fontinfo.plist
+2024-11-03 11:13:28 Warning:  openTypeNameDesigner is missing from fontinfo.plist
+2024-11-03 11:13:28 Warning:  openTypeNameDesignerURL is missing from fontinfo.plist
+2024-11-03 11:13:28 Warning:  openTypeNameLicense is missing from fontinfo.plist
+2024-11-03 11:13:28 Warning:  openTypeNameLicenseURL is missing from fontinfo.plist
+2024-11-03 11:13:28 Warning:  openTypeNameManufacturerURL is missing from fontinfo.plist
+2024-11-03 11:13:28 Warning:  openTypeOS2UnicodeRanges is missing from fontinfo.plist
+2024-11-03 11:13:28 Warning:  openTypeOS2FamilyClass would be removed from fontinfo  Old value: [10, 8]
+2024-11-03 11:13:28 Warning:  postscriptForceBold would be removed from fontinfo  Old value: False
+2024-11-03 11:13:28 Warning:  postscriptBlueFuzz would be removed from fontinfo  Old value: 1
+2024-11-03 11:13:28 Warning:  postscriptBlueScale would be removed from fontinfo  Old value: 0.0208333
+2024-11-03 11:13:28 Warning:  postscriptBlueShift would be removed from fontinfo  Old value: 0
+2024-11-03 11:13:28 Warning:  postscriptWeightName would be removed from fontinfo  Old value: Regular
+2024-11-03 11:13:28 Warning:  guidelines would be removed from fontinfo  Old value: []
+2024-11-03 11:13:28 Warning:  openTypeOS2TypoLineGap would be updated  Old value: 100, new value: 0
+2024-11-03 11:13:28 Warning:  openTypeOS2Selection would be added  New value: [7]
+2024-11-03 11:13:28 Warning:  openTypeNameUniqueID would be added  New value: Dummy: Spritulo Regu...
+2024-11-03 11:13:28 Warning:  openTypeHheaAscender would be updated  Old value: 1200, new value: 800
+2024-11-03 11:13:28 Warning:  openTypeHheaDescender would be updated  Old value: -320, new value: -200
+2024-11-03 11:13:28 Warning:  italicAngle would be removed since it is 0  Old value: 0.0
+2024-11-03 11:13:28 Error:    lib.plist missing so not checked by check & fix routines
+2024-11-03 11:13:28 Progress: Check & fix results:- Errors: 1, Changes to make: 13, Other warnings: 9
+2024-11-03 11:13:28 Progress: See log file for details
+2024-11-03 11:13:28 Progress: **** Since some required fields were missing, checkfix=fix would fail
+2024-11-03 11:13:28 Progress: Processing font for output
+2024-11-03 11:13:28 Progress: Output UFO already exists - reading for comparison
+2024-11-03 11:13:28 Progress: Writing font to .\Spritulo.ufo3
+2024-11-03 11:13:30 Error:    Command completed with 1 errors and 29 warnings
+2024-11-03 11:13:30 Progress: See log file for warning messages or rerun with '-p scrlevel=w'
