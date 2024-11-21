@@ -151,7 +151,7 @@
       <point x="202.002" y="278.59" type="curve" smooth="yes"/>
       <point x="215.016" y="287.871"/>
       <point x="229.206" y="297.072"/>
-      <point x="244.315" y="301.154" type="curve" smooth="yes"/>
+      <point x="244.315" y="301.154" type="curve"/>
       <point x="244.825" y="325.576"/>
       <point x="248.376" y="345.976"/>
     </contour>

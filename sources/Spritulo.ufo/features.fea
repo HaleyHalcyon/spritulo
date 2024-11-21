@@ -1,12 +1,213 @@
 languagesystem DFLT dflt;
 languagesystem cyrl dflt;
+languagesystem cyrl BGR ;
 languagesystem grek dflt;
 languagesystem latn dflt;
+languagesystem latn NLD ;
+languagesystem latn ROM ;
+languagesystem latn MOL ;
 languagesystem shaw dflt;
 
 
-# GPOS 
+# GSUB 
 
+lookup langeIJ {
+  lookupflag 0;
+    sub \I \J  by \uni0132;
+    sub \i \j  by \uni0133;
+    sub \uni0132 \acutecomb  by \uniE0B5;
+    sub \Iacute \J  by \uniE0B5;
+    sub \uni0133 \acutecomb  by \uniE0B6;
+    sub \iacute \j  by \uniE0B6;
+} langeIJ;
+
+lookup ligaStandardPriority {
+  lookupflag 0;
+    sub \uni02E8 \uni02E9 \uni02E6  by \uniE0C1;
+} ligaStandardPriority;
+
+lookup ligaStandard {
+  lookupflag 0;
+    sub \f \j  by \uniE000;
+    sub \u10469 \u1046F  by \uniE01F;
+    sub \u10466 \u10459  by \uniE020;
+    sub \u1047E \u1046F  by \uniE021;
+    sub \f \t  by \uniE07F;
+    sub \uni02E9 \uni02E5  by \uniE0B7;
+    sub \uni02E5 \uni02E9  by \uniE0B8;
+    sub \uni02E8 \uni02E5  by \uniE0B9;
+    sub \uni02E6 \uni02E9  by \uniE0BA;
+    sub \uni02E7 \uni02E5  by \uniE0BB;
+    sub \uni02E7 \uni02E9  by \uniE0BC;
+    sub \uni02E6 \uni02E5  by \uniE0BD;
+    sub \uni02E7 \uni02E9  by \uniE0BE;
+    sub \uni02E9 \uni02E7  by \uniE0BF;
+    sub \uni02E5 \uni02E7  by \uniE0C0;
+    sub \f \i  by \uniFB01;
+} ligaStandard;
+
+lookup dligStandardPriority {
+  lookupflag 0;
+    sub \f \f \i  by \uniFB03;
+    sub \f \f \l  by \uniFB04;
+} dligStandardPriority;
+
+lookup dligStandard {
+  lookupflag 0;
+    sub \f \f  by \uniFB00;
+    sub \f \l  by \uniFB02;
+} dligStandard;
+
+feature liga {
+
+ script DFLT;
+     language dflt ;
+      lookup ligaStandardPriority;
+      lookup ligaStandard;
+
+ script cyrl;
+     language dflt ;
+      lookup ligaStandardPriority;
+      lookup ligaStandard;
+
+ script grek;
+     language dflt ;
+      lookup ligaStandardPriority;
+      lookup ligaStandard;
+
+ script latn;
+     language dflt ;
+      lookup ligaStandardPriority;
+      lookup ligaStandard;
+     language NLD  ;
+      lookup langeIJ;
+
+ script shaw;
+     language dflt ;
+      lookup ligaStandardPriority;
+      lookup ligaStandard;
+} liga;
+
+feature dlig {
+
+ script DFLT;
+     language dflt ;
+      lookup dligStandardPriority;
+      lookup dligStandard;
+
+ script cyrl;
+     language dflt ;
+      lookup dligStandardPriority;
+      lookup dligStandard;
+
+ script grek;
+     language dflt ;
+      lookup dligStandardPriority;
+      lookup dligStandard;
+
+ script latn;
+     language dflt ;
+      lookup dligStandardPriority;
+      lookup dligStandard;
+
+ script shaw;
+     language dflt ;
+      lookup dligStandardPriority;
+      lookup dligStandard;
+} dlig;
+
+# alternate a, cyrillic a, greek a
+lookup oneStoreyA {
+  lookupflag 0;
+    # Latin
+    sub \a by \uniE037;
+    sub \ordfeminine by \uniE038;
+    sub \agrave by \uniE039;
+    sub \aacute by \uniE03A;
+    sub \acircumflex by \uniE03B;
+    sub \atilde by \uniE03C;
+    sub \adieresis by \uniE03D;
+    sub \uni04D3 by \uniE03D;
+    sub \aring by \uniE03E;
+    sub \amacron by \uniE03F;
+    sub \abreve by \uniE040;
+    sub \uni04D1 by \uniE040;
+    sub \aogonek by \uniE041;
+    sub \uni01CE by \uniE042;
+    sub \uni01DF by \uniE043;
+    sub \uni01E1 by \uniE044;
+    sub \uni01FB by \uniE045;
+    sub \uni0227 by \uniE046;
+    # Monontonic Greek
+    sub \uni03AC by \uniE047;
+    sub \uni03B1 by \uniE048;
+    # Cyrillic
+    sub \uni0430 by \uniE048;
+    # Vietnamese
+    sub \uni1EA1 by \uniE049;
+    sub \uni1EA3 by \uniE04A;
+    sub \uni1EA5 by \uniE04B;
+    sub \uni1EA7 by \uniE04C;
+    sub \uni1EA9 by \uniE04D;
+    sub \uni1EAB by \uniE04E;
+    sub \uni1EAD by \uniE04F;
+    sub \uni1EAF by \uniE050;
+    sub \uni1EB1 by \uniE051;
+    sub \uni1EB3 by \uniE052;
+    sub \uni1EB5 by \uniE053;
+    sub \uni1EB7 by \uniE054;
+    # Polytonic Greek
+    sub \uni1F00 by \uniE055;
+    sub \uni1F01 by \uniE056;
+    sub \uni1F02 by \uniE057;
+    sub \uni1F03 by \uniE058;
+    sub \uni1F04 by \uniE059;
+    sub \uni1F05 by \uniE05A;
+    sub \uni1F06 by \uniE05B;
+    sub \uni1F07 by \uniE05C;
+    sub \uni1F70 by \uniE05D;
+    sub \uni1F71 by \uniE05E;
+    sub \uni1F80 by \uniE05F;
+    sub \uni1F81 by \uniE060;
+    sub \uni1F82 by \uniE061;
+    sub \uni1F83 by \uniE062;
+    sub \uni1F84 by \uniE063;
+    sub \uni1F85 by \uniE064;
+    sub \uni1F86 by \uniE065;
+    sub \uni1F87 by \uniE066;
+    sub \uni1FB0 by \uniE067;
+    sub \uni1FB1 by \uniE068;
+    sub \uni1FB2 by \uniE069;
+    sub \uni1FB3 by \uniE06A;
+    sub \uni1FB4 by \uniE06B;
+    sub \uni1FB6 by \uniE06C;
+    sub \uni1FB7 by \uniE06D;
+} oneStoreyA;
+
+feature cv01 {
+
+ script DFLT;
+     language dflt ;
+      lookup oneStoreyA;
+
+ script cyrl;
+     language dflt ;
+      lookup oneStoreyA;
+
+ script grek;
+     language dflt ;
+      lookup oneStoreyA;
+
+ script latn;
+     language dflt ;
+      lookup oneStoreyA;
+
+ script shaw;
+     language dflt ;
+      lookup oneStoreyA;
+} cv01;
+
+# GPOS 
 
 lookup mkmkMarktoMarklookup1 {
   lookupflag 0;
@@ -837,39 +1038,12 @@ lookup mkmkMarktoMarklookup1 {
 	<anchor 240 730> mark @top;
 } mkmkMarktoMarklookup1;
 
-lookup kernHorizontalKerninglookup0 {
-  lookupflag 0;
-} kernHorizontalKerninglookup0;
-
 feature mkmk {
 
  script DFLT;
      language dflt ;
       lookup mkmkMarktoMarklookup1;
-
- script cyrl;
-     language dflt ;
-      lookup mkmkMarktoMarklookup1;
-
- script grek;
-     language dflt ;
-      lookup mkmkMarktoMarklookup1;
-
- script latn;
-     language dflt ;
-      lookup mkmkMarktoMarklookup1;
-
- script shaw;
-     language dflt ;
-      lookup mkmkMarktoMarklookup1;
 } mkmk;
-
-feature kern {
-
- script DFLT;
-     language dflt ;
-      lookup kernHorizontalKerninglookup0;
-} kern;
 #Mark attachment classes (defined in GDEF, used in lookupflags)
 
 @GDEF_Simple = [\AE \uni01FC \Aacute \Abreve \Acircumflex \Adieresis \Agrave 
