@@ -207,6 +207,182 @@ feature cv01 {
       lookup oneStoreyA;
 } cv01;
 
+# single-storey g, cursive Cyrillic de/De, cursive Greek Delta
+
+lookup oneStoreyG {
+  lookupflag 0;
+    sub \g by \uniE06E;
+    sub \uni011D by \uniE06F; # g circumflex
+    sub \gbreve by \uniE070;
+    sub \gdotaccent by \uniE071;
+    sub \gcommaaccent by \uniE072;
+    sub \uni01E7 by \uniE073; # g caron
+    sub \uni01F5 by \uniE074; # g acute
+    sub \uni0434 by \uniE004; # cyrillic de
+    sub \uni0414 by \D; # cyrillic De
+    sub \uni0394 by \D; # greek De
+} oneStoreyG;
+
+feature cv02 {
+
+ script DFLT;
+     language dflt ;
+      lookup oneStoreyG;
+
+ script cyrl;
+     language dflt ;
+      lookup oneStoreyG;
+
+ script grek;
+     language dflt ;
+      lookup oneStoreyG;
+
+ script latn;
+     language dflt ;
+      lookup oneStoreyG;
+
+ script shaw;
+     language dflt ;
+      lookup oneStoreyG;
+} cv02;
+
+lookup singleStrokeOmega {
+  lookupflag 0;
+    sub \uni038F by \uniE022; # Omega tonos
+    sub \uni03A9 by \uniE023; # plain Omega
+    # these are for polytonic Greek
+    sub \uni1F68 by \uniE024; # psili
+    sub \uni1F69 by \uniE025; # dasia
+    sub \uni1F6A by \uniE026; # psili varia
+    sub \uni1F6B by \uniE027; # dasia varia
+    sub \uni1F6C by \uniE028; # psili oxia
+    sub \uni1F6D by \uniE029; # dasia oxia
+    sub \uni1F6E by \uniE02A; # psili perisp
+    sub \uni1F6F by \uniE02B; # dasia perisp
+    # these also have subscript-iota
+    sub \uni1FA8 by \uniE02C; # psili
+    sub \uni1FA9 by \uniE02D; # dasia
+    sub \uni1FAA by \uniE02E; # psili varia
+    sub \uni1FAB by \uniE02F; # dasia varia
+    sub \uni1FAC by \uniE030; # psili oxia
+    sub \uni1FAD by \uniE031; # dasia oxia
+    sub \uni1FAE by \uniE032; # psili perisp
+    sub \uni1FAF by \uniE033; # dasia perisp
+    # there are also these at the end
+    sub \uni1FFA by \uniE034; # varia
+    sub \uni1FFB by \uniE035; # oxia
+    sub \uni1FFC by \uniE036; # subscript-iota
+} singleStrokeOmega
+
+feature cv03 {
+
+ script DFLT;
+     language dflt ;
+      lookup singleStrokeOmega;
+
+ script cyrl;
+     language dflt ;
+      lookup singleStrokeOmega;
+
+ script grek;
+     language dflt ;
+      lookup singleStrokeOmega;
+
+ script latn;
+     language dflt ;
+      lookup singleStrokeOmega;
+
+ script shaw;
+     language dflt ;
+      lookup singleStrokeOmega;
+} cv03;
+
+lookup scriptBeta {
+  lookupflag 0;
+    sub \uni03B2 by \uni03D0;
+} scriptBeta
+
+feature cv04 {
+
+ script DFLT;
+     language dflt ;
+      lookup scriptBeta;
+
+ script cyrl;
+     language dflt ;
+      lookup scriptBeta;
+
+ script grek;
+     language dflt ;
+      lookup scriptBeta;
+
+ script latn;
+     language dflt ;
+      lookup scriptBeta;
+
+ script shaw;
+     language dflt ;
+      lookup scriptBeta;
+} cv04;
+
+lookup scriptGamma {
+  lookupflag 0;
+    sub \uni03B3 by \uniE080;
+} scriptGamma
+
+feature cv05 {
+
+ script DFLT;
+     language dflt ;
+      lookup scriptGamma;
+
+ script cyrl;
+     language dflt ;
+      lookup scriptGamma;
+
+ script grek;
+     language dflt ;
+      lookup scriptGamma;
+
+ script latn;
+     language dflt ;
+      lookup scriptGamma;
+
+ script shaw;
+     language dflt ;
+      lookup scriptGamma;
+} cv05;
+
+
+lookup scriptDelta {
+  lookupflag 0;
+    sub \uni03B4 by \uniE081;
+} scriptDelta
+
+feature cv06 {
+
+ script DFLT;
+     language dflt ;
+      lookup scriptDelta;
+
+ script cyrl;
+     language dflt ;
+      lookup scriptDelta;
+
+ script grek;
+     language dflt ;
+      lookup scriptDelta;
+
+ script latn;
+     language dflt ;
+      lookup scriptDelta;
+
+ script shaw;
+     language dflt ;
+      lookup scriptDelta;
+} cv06;
+
+
 # GPOS 
 
 lookup mkmkMarktoMarklookup1 {
