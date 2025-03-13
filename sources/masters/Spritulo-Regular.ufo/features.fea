@@ -1,0 +1,5924 @@
+#> classes
+#/> otclasses
+@loclCYR = [uni0424 uni0432 uni0433 uni0434 uni0436 uni0437 uni043A uni043F uni0442 uni0447 uni044E];
+@loclBGR = [uni0424.loclBGR uni0432.loclBGR uni0433.loclBGR uni0434.loclBGR uni0436.loclBGR uni0437.loclBGR uni043A.loclBGR uni043F.loclBGR uni0442.loclBGR uni0447.loclBGR uni044E.loclBGR];
+#/< otclasses
+#< classes
+
+languagesystem DFLT dflt;
+languagesystem cyrl dflt;
+languagesystem cyrl BGR ;
+languagesystem cyrl SRB ;
+languagesystem cyrl MKD ;
+languagesystem grek dflt;
+languagesystem latn dflt;
+languagesystem latn NLD ;
+languagesystem latn ROM ;
+languagesystem latn MOL ;
+languagesystem shaw dflt;
+
+
+# GSUB 
+
+lookup langeIJ {
+  lookupflag 0;
+    sub \I \J  by \uni0132;
+    sub \i \j  by \uni0133;
+    sub \uni0132 \acutecomb  by \uniE0B5;
+    sub \Iacute \J  by \uniE0B5;
+    sub \uni0133 \acutecomb  by \uniE0B6;
+    sub \iacute \j  by \uniE0B6;
+} langeIJ;
+
+lookup ligaStandardPriority {
+  lookupflag 0;
+    sub \uni02E8 \uni02E9 \uni02E6  by \uniE0C1;
+} ligaStandardPriority;
+
+lookup ligaStandard {
+  lookupflag 0;
+    sub \f \j  by \uniE000;
+    sub \u10469 \u1046F  by \uniE01F;
+    sub \u10466 \u10459  by \uniE020;
+    sub \u1047E \u1046F  by \uniE021;
+    sub \f \t  by \uniE07F;
+    sub \uni02E5 \uni02E9  by \uniE0B8;
+    sub \uni02E5 \uni02E7  by \uniE0C0;
+    sub \uni02E6 \uni02E9  by \uniE0BA;
+    sub \uni02E6 \uni02E5  by \uniE0BD;
+    sub \uni02E7 \uni02E5  by \uniE0BB;
+    sub \uni02E7 \uni02E9  by \uniE0BC;
+    sub \uni02E8 \uni02E5  by \uniE0B9;
+    sub \uni02E9 \uni02E7  by \uniE0BF;
+    sub \uni02E9 \uni02E5  by \uniE0B7;
+    sub \f \i  by \uniFB01;
+} ligaStandard;
+
+lookup dligStandardPriority {
+  lookupflag 0;
+    sub \f \f \i  by \uniFB03;
+    sub \f \f \l  by \uniFB04;
+} dligStandardPriority;
+
+lookup dligStandard {
+  lookupflag 0;
+    sub \f \f  by \uniFB00;
+    sub \f \l  by \uniFB02;
+} dligStandard;
+
+lookup oneStoreyA {
+  lookupflag 0;
+    # Latin
+    sub \a by \uniE037;
+    sub \ordfeminine by \uniE038;
+    sub \agrave by \uniE039;
+    sub \aacute by \uniE03A;
+    sub \acircumflex by \uniE03B;
+    sub \atilde by \uniE03C;
+    sub \adieresis by \uniE03D;
+    sub \uni04D3 by \uniE03D;
+    sub \aring by \uniE03E;
+    sub \amacron by \uniE03F;
+    sub \abreve by \uniE040;
+    sub \uni04D1 by \uniE040;
+    sub \aogonek by \uniE041;
+    sub \uni01CE by \uniE042;
+    sub \uni01DF by \uniE043;
+    sub \uni01E1 by \uniE044;
+    sub \uni01FB by \uniE045;
+    sub \uni0227 by \uniE046;
+    # Monontonic Greek
+    sub \uni03AC by \uniE047;
+    sub \uni03B1 by \uniE048;
+    # Cyrillic
+    sub \uni0430 by \uniE048;
+    # Vietnamese
+    sub \uni1EA1 by \uniE049;
+    sub \uni1EA3 by \uniE04A;
+    sub \uni1EA5 by \uniE04B;
+    sub \uni1EA7 by \uniE04C;
+    sub \uni1EA9 by \uniE04D;
+    sub \uni1EAB by \uniE04E;
+    sub \uni1EAD by \uniE04F;
+    sub \uni1EAF by \uniE050;
+    sub \uni1EB1 by \uniE051;
+    sub \uni1EB3 by \uniE052;
+    sub \uni1EB5 by \uniE053;
+    sub \uni1EB7 by \uniE054;
+    # Polytonic Greek
+    sub \uni1F00 by \uniE055;
+    sub \uni1F01 by \uniE056;
+    sub \uni1F02 by \uniE057;
+    sub \uni1F03 by \uniE058;
+    sub \uni1F04 by \uniE059;
+    sub \uni1F05 by \uniE05A;
+    sub \uni1F06 by \uniE05B;
+    sub \uni1F07 by \uniE05C;
+    sub \uni1F70 by \uniE05D;
+    sub \uni1F71 by \uniE05E;
+    sub \uni1F80 by \uniE05F;
+    sub \uni1F81 by \uniE060;
+    sub \uni1F82 by \uniE061;
+    sub \uni1F83 by \uniE062;
+    sub \uni1F84 by \uniE063;
+    sub \uni1F85 by \uniE064;
+    sub \uni1F86 by \uniE065;
+    sub \uni1F87 by \uniE066;
+    sub \uni1FB0 by \uniE067;
+    sub \uni1FB1 by \uniE068;
+    sub \uni1FB2 by \uniE069;
+    sub \uni1FB3 by \uniE06A;
+    sub \uni1FB4 by \uniE06B;
+    sub \uni1FB6 by \uniE06C;
+    sub \uni1FB7 by \uniE06D;
+} oneStoreyA;
+
+# single-storey g, cursive Cyrillic de/De, cursive Greek Delta
+
+lookup oneStoreyG {
+  lookupflag 0;
+    sub \g by \uniE06E;
+    sub \uni011D by \uniE06F; # g circumflex
+    sub \gbreve by \uniE070;
+    sub \gdotaccent by \uniE071;
+    sub \gcommaaccent by \uniE072;
+    sub \uni01E7 by \uniE073; # g caron
+    sub \uni01F5 by \uniE074; # g acute
+    sub \uni0434 by \uni0434.loclBGR; # cyrillic de
+    sub \uni0414 by \D; # cyrillic De
+    sub \uni0394 by \D; # greek De
+} oneStoreyG;
+
+lookup singleStrokeOmega {
+  lookupflag 0;
+    sub \uni038F by \uniE022; # Omega tonos
+    sub \uni03A9 by \uniE023; # plain Omega
+    # these are for polytonic Greek
+    sub \uni1F68 by \uniE024; # psili
+    sub \uni1F69 by \uniE025; # dasia
+    sub \uni1F6A by \uniE026; # psili varia
+    sub \uni1F6B by \uniE027; # dasia varia
+    sub \uni1F6C by \uniE028; # psili oxia
+    sub \uni1F6D by \uniE029; # dasia oxia
+    sub \uni1F6E by \uniE02A; # psili perisp
+    sub \uni1F6F by \uniE02B; # dasia perisp
+    # these also have subscript-iota
+    sub \uni1FA8 by \uniE02C; # psili
+    sub \uni1FA9 by \uniE02D; # dasia
+    sub \uni1FAA by \uniE02E; # psili varia
+    sub \uni1FAB by \uniE02F; # dasia varia
+    sub \uni1FAC by \uniE030; # psili oxia
+    sub \uni1FAD by \uniE031; # dasia oxia
+    sub \uni1FAE by \uniE032; # psili perisp
+    sub \uni1FAF by \uniE033; # dasia perisp
+    # there are also these at the end
+    sub \uni1FFA by \uniE034; # varia
+    sub \uni1FFB by \uniE035; # oxia
+    sub \uni1FFC by \uniE036; # subscript-iota
+} singleStrokeOmega;
+
+lookup scriptBeta {
+  lookupflag 0;
+    sub \uni03B2 by \uni03D0;
+} scriptBeta;
+
+lookup scriptGamma {
+  lookupflag 0;
+    sub \uni03B3 by \uniE080;
+} scriptGamma;
+
+lookup scriptDelta {
+  lookupflag 0;
+    sub \uni03B4 by \uniE081;
+} scriptDelta;
+
+lookup loclCYR_loclBGR {
+  lookupflag 0;
+    sub @loclCYR by @loclBGR;
+} loclCYR_loclBGR;
+feature aalt {
+# Access All Alternates
+
+#> feature
+  feature locl;
+  feature ss01;
+  feature cv01;
+  feature cv02;
+  feature cv03;
+  feature cv04;
+  feature cv05;
+  feature cv06;
+  feature sups;
+#< feature
+} aalt;
+feature liga {
+
+ script DFLT;
+     language dflt ;
+      lookup ligaStandardPriority;
+      lookup ligaStandard;
+
+ script cyrl;
+     language dflt ;
+      lookup ligaStandardPriority;
+      lookup ligaStandard;
+
+ script grek;
+     language dflt ;
+      lookup ligaStandardPriority;
+      lookup ligaStandard;
+
+ script latn;
+     language dflt ;
+      lookup ligaStandardPriority;
+      lookup ligaStandard;
+     language NLD  ;
+      lookup langeIJ;
+
+ script shaw;
+     language dflt ;
+      lookup ligaStandardPriority;
+      lookup ligaStandard;
+} liga;
+feature dlig {
+
+ script DFLT;
+     language dflt ;
+      lookup dligStandardPriority;
+      lookup dligStandard;
+
+ script cyrl;
+     language dflt ;
+      lookup dligStandardPriority;
+      lookup dligStandard;
+
+ script grek;
+     language dflt ;
+      lookup dligStandardPriority;
+      lookup dligStandard;
+
+ script latn;
+     language dflt ;
+      lookup dligStandardPriority;
+      lookup dligStandard;
+
+ script shaw;
+     language dflt ;
+      lookup dligStandardPriority;
+      lookup dligStandard;
+
+} dlig;
+feature locl {
+# Localized Forms
+
+#> feature
+  script cyrl; # Cyrillic
+  language BGR; # Bulgarian
+  lookup loclCYR_loclBGR;
+
+  language SRB; # Serbian
+  sub uni0453 by uni0453.loclSRB;
+  sub uni045C by uni045C.loclSRB;
+
+  script latn; # Latin
+  language MOL; # Moldavian
+  sub Scedilla by Scommaaccent;
+  sub scedilla by scommaaccent;
+  sub uni0162 by Tcommaaccent;
+  sub uni0163 by tcommaaccent;
+
+  language ROM; # Romanian
+  sub Scedilla by Scommaaccent;
+  sub scedilla by scommaaccent;
+  sub uni0162 by Tcommaaccent;
+  sub uni0163 by tcommaaccent;
+#< feature
+} locl;
+feature ss01 {
+# Stylistic Set 01–20
+
+#> feature
+	lookup loclCYR_loclBGR;
+#< feature
+} ss01;
+feature cv01 {
+# Character Variant 01—99
+
+#> feature
+ script DFLT;
+     language dflt ;
+      lookup oneStoreyA;
+
+ script cyrl;
+     language dflt ;
+      lookup oneStoreyA;
+
+ script grek;
+     language dflt ;
+      lookup oneStoreyA;
+
+ script latn;
+     language dflt ;
+      lookup oneStoreyA;
+
+ script shaw;
+     language dflt ;
+      lookup oneStoreyA;
+} cv01;
+#< feature
+feature cv02 {
+# Character Variant 01—99
+
+#> feature
+ script DFLT;
+     language dflt ;
+      lookup oneStoreyG;
+
+ script cyrl;
+     language dflt ;
+      lookup oneStoreyG;
+
+ script grek;
+     language dflt ;
+      lookup oneStoreyG;
+
+ script latn;
+     language dflt ;
+      lookup oneStoreyG;
+
+ script shaw;
+     language dflt ;
+      lookup oneStoreyG;
+#< feature
+} cv02;
+feature cv03 {
+# Character Variant 01—99
+
+#> feature
+ script DFLT;
+     language dflt ;
+      lookup singleStrokeOmega;
+
+ script cyrl;
+     language dflt ;
+      lookup singleStrokeOmega;
+
+ script grek;
+     language dflt ;
+      lookup singleStrokeOmega;
+
+ script latn;
+     language dflt ;
+      lookup singleStrokeOmega;
+
+ script shaw;
+     language dflt ;
+      lookup singleStrokeOmega;
+#< feature
+} cv03;
+feature cv04 {
+# Character Variant 01—99
+
+#> feature
+ script DFLT;
+     language dflt ;
+      lookup scriptBeta;
+
+ script cyrl;
+     language dflt ;
+      lookup scriptBeta;
+
+ script grek;
+     language dflt ;
+      lookup scriptBeta;
+
+ script latn;
+     language dflt ;
+      lookup scriptBeta;
+
+ script shaw;
+     language dflt ;
+      lookup scriptBeta;
+#< feature
+} cv04;
+feature cv05 {
+# Character Variant 01—99
+
+#> feature
+ script DFLT;
+     language dflt ;
+      lookup scriptGamma;
+
+ script cyrl;
+     language dflt ;
+      lookup scriptGamma;
+
+ script grek;
+     language dflt ;
+      lookup scriptGamma;
+
+ script latn;
+     language dflt ;
+      lookup scriptGamma;
+
+ script shaw;
+     language dflt ;
+      lookup scriptGamma;
+#< feature
+} cv05;
+feature cv06 {
+# Character Variant 01—99
+
+#> feature
+ script DFLT;
+     language dflt ;
+      lookup scriptDelta;
+
+ script cyrl;
+     language dflt ;
+      lookup scriptDelta;
+
+ script grek;
+     language dflt ;
+      lookup scriptDelta;
+
+ script latn;
+     language dflt ;
+      lookup scriptDelta;
+
+ script shaw;
+     language dflt ;
+      lookup scriptDelta;
+#< feature
+} cv06;
+feature frac {
+# Fractions
+
+#> feature
+lookup frac_precomposed {
+
+  sub one slash four by uni00BC;
+  sub one slash two by uni00BD;
+  sub three slash four by uni00BE;
+  sub one fraction four by uni00BC;
+  sub one fraction two by uni00BD;
+  sub three fraction four by uni00BE;
+} frac_precomposed;
+#< feature
+} frac;
+feature ordn {
+# Ordinals
+
+#> feature
+  sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+  sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
+#< feature
+} ordn;
+feature sups {
+# Superscript
+
+#> feature
+  sub four by uni2074;
+  sub h by uni02B0;
+  sub j by uni02B2;
+  sub l by uni02E1;
+  sub n by uni207F;
+  sub one by uni00B9;
+  sub r by uni02B3;
+  sub s by uni02E2;
+  sub three by uni00B3;
+  sub two by uni00B2;
+  sub uni0259 by uni1D4A;
+  sub uni0263 by uni02E0;
+  sub uni0266 by uni02B1;
+  sub uni0279 by uni02B4;
+  sub uni027B by uni02B5;
+  sub uni0281 by uni02B6;
+  sub uni0295 by uni02E4;
+  sub uni03B8 by uni1DBF;
+  sub uni03C7 by uni1D61;
+  sub w by uni02B7;
+  sub y by uni02B8;
+#< feature
+} sups;
+feature kern {
+
+  lookup KERN_LTR  {
+  lookupflag IgnoreMarks;
+    pos A D -14;
+    pos A E -21;
+    pos A F -15;
+    pos A O -18;
+    pos A P -22;
+    pos A Q -24;
+    pos A T -65;
+    pos A U -19;
+    pos A V -59;
+    pos A W -54;
+    pos A X -35;
+    pos A Y -61;
+    pos A braceleft -3;
+    pos A braceright -51;
+    pos A bracketright -71;
+    pos A f -18;
+    pos A parenright -40;
+    pos A question -35;
+    pos A quotedbl -66;
+    pos A quotesingle -41;
+    pos A t -26;
+    pos B I -34;
+    pos B P -27;
+    pos B Q -14;
+    pos B S -8;
+    pos B T -78;
+    pos B U -12;
+    pos B V -53;
+    pos B W -57;
+    pos B X -58;
+    pos B Y -54;
+    pos B braceright -68;
+    pos B bracketright -78;
+    pos B f -37;
+    pos B parenright -62;
+    pos B question -23;
+    pos B quotedbl -54;
+    pos B quotesingle -28;
+    pos B t -21;
+    pos B x -19;
+    pos B z -19;
+    pos C I -23;
+    pos C O -6;
+    pos C Q -10;
+    pos C T -28;
+    pos C V -13;
+    pos C W -10;
+    pos C X -24;
+    pos C Y -17;
+    pos C braceleft -16;
+    pos C bracketright -36;
+    pos C f -16;
+    pos C j 14;
+    pos C parenright -9;
+    pos C s -13;
+    pos C t -33;
+    pos C v -9;
+    pos C x -24;
+    pos C z -29;
+    pos D A -37;
+    pos D E -17;
+    pos D I -44;
+    pos D J -32;
+    pos D T -36;
+    pos D V -22;
+    pos D W -14;
+    pos D X -37;
+    pos D Y -19;
+    pos D Z -55;
+    pos D braceright -26;
+    pos D bracketright -31;
+    pos D c -18;
+    pos D d -21;
+    pos D g -22;
+    pos D j 11;
+    pos D parenright -36;
+    pos D q -20;
+    pos D uni0251 -20;
+    pos E B -12;
+    pos E C -17;
+    pos E D -22;
+    pos E E -12;
+    pos E F -35;
+    pos E H -25;
+    pos E I -33;
+    pos E J -34;
+    pos E K -15;
+    pos E L -14;
+    pos E M -18;
+    pos E N -17;
+    pos E O -28;
+    pos E P -32;
+    pos E Q -31;
+    pos E R -18;
+    pos E S -14;
+    pos E T -20;
+    pos E V -31;
+    pos E W -32;
+    pos E X -29;
+    pos E Y -31;
+    pos E braceleft -30;
+    pos E braceright -26;
+    pos E bracketleft -22;
+    pos E bracketright -23;
+    pos E f -30;
+    pos E g -10;
+    pos E i -10;
+    pos E j -16;
+    pos E k -22;
+    pos E n -14;
+    pos E o -7;
+    pos E p -18;
+    pos E parenright -34;
+    pos E q -20;
+    pos E question -13;
+    pos E quotedbl -50;
+    pos E quotesingle -15;
+    pos E s -14;
+    pos E t -16;
+    pos E v -24;
+    pos E x -16;
+    pos E y -12;
+    pos E z -22;
+    pos F A -61;
+    pos F C -30;
+    pos F G -34;
+    pos F J -63;
+    pos F O -33;
+    pos F Q -11;
+    pos F S -14;
+    pos F a -32;
+    pos F braceleft -33;
+    pos F c -59;
+    pos F d -54;
+    pos F e -38;
+    pos F f -26;
+    pos F g -60;
+    pos F j 8;
+    pos F m -15;
+    pos F n -34;
+    pos F o -44;
+    pos F p -18;
+    pos F q -38;
+    pos F r -16;
+    pos F s -28;
+    pos F t -34;
+    pos F u -19;
+    pos F uni0251 -60;
+    pos F uni0261 -56;
+    pos F v -18;
+    pos F w -24;
+    pos F x -20;
+    pos F y -20;
+    pos F z -25;
+    pos G E -17;
+    pos G I -28;
+    pos G P -14;
+    pos G T -68;
+    pos G V -54;
+    pos G W -45;
+    pos G X -41;
+    pos G Y -50;
+    pos G Z -26;
+    pos G braceright -42;
+    pos G bracketright -73;
+    pos G parenright -55;
+    pos G question -30;
+    pos G quotedbl -66;
+    pos G quotesingle -37;
+    pos H E -16;
+    pos H F -18;
+    pos H I -14;
+    pos H J -18;
+    pos H T -25;
+    pos H V -38;
+    pos H W -22;
+    pos H X -19;
+    pos H Y -16;
+    pos H braceright -17;
+    pos H bracketright -40;
+    pos H parenright -46;
+    pos H quotedbl -22;
+    pos H t 14;
+    pos I B -33;
+    pos I C -45;
+    pos I D -31;
+    pos I E -36;
+    pos I F -33;
+    pos I G -17;
+    pos I H -29;
+    pos I I -28;
+    pos I J -30;
+    pos I K -27;
+    pos I L -12;
+    pos I M -22;
+    pos I N -35;
+    pos I O -46;
+    pos I P -26;
+    pos I Q -63;
+    pos I R -11;
+    pos I T -50;
+    pos I U -26;
+    pos I V -38;
+    pos I W -43;
+    pos I X -49;
+    pos I Y -47;
+    pos I b -29;
+    pos I braceleft -64;
+    pos I braceright -18;
+    pos I bracketright -44;
+    pos I c -30;
+    pos I d -22;
+    pos I e -26;
+    pos I f -78;
+    pos I g -34;
+    pos I k -18;
+    pos I n -36;
+    pos I o -50;
+    pos I p -16;
+    pos I parenright -48;
+    pos I q -39;
+    pos I question -37;
+    pos I quotedbl -49;
+    pos I r -12;
+    pos I t -74;
+    pos I u -28;
+    pos I uni0251 -43;
+    pos I v -46;
+    pos I x -57;
+    pos I y -24;
+    pos I z -30;
+    pos J J -14;
+    pos K C -52;
+    pos K D -42;
+    pos K E -38;
+    pos K F -48;
+    pos K G -14;
+    pos K H -18;
+    pos K I -17;
+    pos K J -40;
+    pos K K -44;
+    pos K M -31;
+    pos K N -13;
+    pos K O -55;
+    pos K P -55;
+    pos K Q -86;
+    pos K R -34;
+    pos K T -59;
+    pos K U -19;
+    pos K V -47;
+    pos K W -63;
+    pos K X -48;
+    pos K Y -42;
+    pos K b -30;
+    pos K braceleft -64;
+    pos K braceright -49;
+    pos K bracketright -57;
+    pos K c -42;
+    pos K d -18;
+    pos K e -15;
+    pos K f -109;
+    pos K g -46;
+    pos K i -19;
+    pos K n -20;
+    pos K o -41;
+    pos K parenright -61;
+    pos K q -31;
+    pos K question -38;
+    pos K quotedbl -58;
+    pos K quotesingle -29;
+    pos K t -84;
+    pos K u -30;
+    pos K uni0251 -24;
+    pos K v -30;
+    pos K x -40;
+    pos K y -34;
+    pos L B -19;
+    pos L C -48;
+    pos L D -44;
+    pos L E -27;
+    pos L F -35;
+    pos L G -35;
+    pos L I -21;
+    pos L J -29;
+    pos L K -40;
+    pos L M -40;
+    pos L N -30;
+    pos L O -30;
+    pos L P -42;
+    pos L Q -60;
+    pos L R -20;
+    pos L T -186;
+    pos L U -59;
+    pos L V -167;
+    pos L W -76;
+    pos L X -65;
+    pos L Y -165;
+    pos L b -34;
+    pos L braceleft -21;
+    pos L braceright -70;
+    pos L bracketleft -26;
+    pos L bracketright -71;
+    pos L c -24;
+    pos L f -96;
+    pos L g -42;
+    pos L k -25;
+    pos L n -21;
+    pos L o -22;
+    pos L parenright -67;
+    pos L question -85;
+    pos L quotedbl -143;
+    pos L quotesingle -126;
+    pos L t -97;
+    pos L u -13;
+    pos L uni0251 -24;
+    pos L v -50;
+    pos L x -46;
+    pos L z -22;
+    pos M D -13;
+    pos M E -21;
+    pos M F -25;
+    pos M H -12;
+    pos M I -21;
+    pos M J -16;
+    pos M O -13;
+    pos M Q -13;
+    pos M T -28;
+    pos M V -43;
+    pos M W -31;
+    pos M X -11;
+    pos M Y -23;
+    pos M Z -9;
+    pos M f -18;
+    pos M question -18;
+    pos M quotedbl -22;
+    pos M t -38;
+    pos M z -14;
+    pos N I -15;
+    pos N parenright -21;
+    pos O A -14;
+    pos O E -18;
+    pos O F -14;
+    pos O I -33;
+    pos O J -24;
+    pos O T -38;
+    pos O V -43;
+    pos O W -23;
+    pos O X -54;
+    pos O Y -54;
+    pos O Z -37;
+    pos O braceright -45;
+    pos O bracketright -72;
+    pos O parenright -63;
+    pos O question -3;
+    pos O quotedbl -25;
+    pos O uni0261 -24;
+    pos P A -53;
+    pos P E -24;
+    pos P G -12;
+    pos P I -37;
+    pos P J -71;
+    pos P T -75;
+    pos P V -28;
+    pos P W -18;
+    pos P X -70;
+    pos P Y -43;
+    pos P Z -62;
+    pos P a -12;
+    pos P braceleft -9;
+    pos P braceright -51;
+    pos P bracketright -85;
+    pos P c -28;
+    pos P d -45;
+    pos P e -23;
+    pos P f -14;
+    pos P g -46;
+    pos P i -18;
+    pos P o -21;
+    pos P parenright -38;
+    pos P q -28;
+    pos P quotedbl -15;
+    pos P s -46;
+    pos P uni0251 -40;
+    pos P uni0261 -56;
+    pos Q A -26;
+    pos Q E -18;
+    pos Q F -17;
+    pos Q G -18;
+    pos Q V -24;
+    pos Q W -18;
+    pos Q X -18;
+    pos Q Y -24;
+    pos Q Z -17;
+    pos Q c -23;
+    pos Q f -6;
+    pos Q o -18;
+    pos Q q -26;
+    pos R B -23;
+    pos R C -59;
+    pos R D -60;
+    pos R E -66;
+    pos R F -54;
+    pos R G -49;
+    pos R H -30;
+    pos R I -42;
+    pos R J -42;
+    pos R K -29;
+    pos R L -15;
+    pos R M -39;
+    pos R N -30;
+    pos R O -62;
+    pos R P -58;
+    pos R Q -59;
+    pos R R -40;
+    pos R T -106;
+    pos R U -49;
+    pos R V -70;
+    pos R W -76;
+    pos R X -78;
+    pos R Y -88;
+    pos R b -30;
+    pos R braceleft -57;
+    pos R braceright -85;
+    pos R bracketright -132;
+    pos R c -48;
+    pos R d -30;
+    pos R e -28;
+    pos R f -56;
+    pos R g -68;
+    pos R i -38;
+    pos R j -17;
+    pos R k -15;
+    pos R l -23;
+    pos R n -28;
+    pos R o -47;
+    pos R parenright -81;
+    pos R q -42;
+    pos R question -55;
+    pos R quotedbl -73;
+    pos R quotesingle -51;
+    pos R t -41;
+    pos R u -35;
+    pos R uni0251 -40;
+    pos R uni0261 -40;
+    pos R v -44;
+    pos R x -38;
+    pos R y -28;
+    pos R z -26;
+    pos S I -11;
+    pos S Q -16;
+    pos S T -22;
+    pos S V -41;
+    pos S W -38;
+    pos S X -40;
+    pos S Y -20;
+    pos S bracketright -28;
+    pos S f -23;
+    pos S j 16;
+    pos S parenright -39;
+    pos S question -8;
+    pos S quotedbl -26;
+    pos S s 19;
+    pos S t -47;
+    pos S x -33;
+    pos S z -14;
+    pos T A -90;
+    pos T C -89;
+    pos T G -110;
+    pos T I -14;
+    pos T J -74;
+    pos T O -62;
+    pos T Q -54;
+    pos T S -54;
+    pos T a -144;
+    pos T braceleft -84;
+    pos T c -126;
+    pos T d -172;
+    pos T e -127;
+    pos T f -114;
+    pos T g -125;
+    pos T i -27;
+    pos T j 12;
+    pos T m -110;
+    pos T n -151;
+    pos T o -136;
+    pos T p -141;
+    pos T q -151;
+    pos T r -129;
+    pos T s -131;
+    pos T t -88;
+    pos T u -142;
+    pos T uni0251 -145;
+    pos T uni0261 -134;
+    pos T v -129;
+    pos T w -141;
+    pos T x -139;
+    pos T y -145;
+    pos T z -146;
+    pos U J -12;
+    pos V A -71;
+    pos V C -33;
+    pos V G -42;
+    pos V J -30;
+    pos V O -25;
+    pos V Q -20;
+    pos V a -20;
+    pos V braceleft -41;
+    pos V c -69;
+    pos V d -42;
+    pos V e -59;
+    pos V f -36;
+    pos V g -66;
+    pos V j 16;
+    pos V m -17;
+    pos V n -46;
+    pos V o -42;
+    pos V p -32;
+    pos V q -72;
+    pos V r -33;
+    pos V s -32;
+    pos V t -17;
+    pos V u -40;
+    pos V uni0251 -76;
+    pos V uni0261 -65;
+    pos V v -36;
+    pos V w -38;
+    pos V x -32;
+    pos V y -55;
+    pos V z -36;
+    pos W A -31;
+    pos W C -18;
+    pos W G -29;
+    pos W J -26;
+    pos W O -18;
+    pos W Q -18;
+    pos W a -29;
+    pos W braceleft -12;
+    pos W c -30;
+    pos W d -37;
+    pos W e -20;
+    pos W f -15;
+    pos W g -27;
+    pos W n -25;
+    pos W o -25;
+    pos W p -14;
+    pos W q -31;
+    pos W s -33;
+    pos W t -4;
+    pos W u -14;
+    pos W uni0251 -48;
+    pos W uni0261 -46;
+    pos W v -18;
+    pos W w -12;
+    pos W x -24;
+    pos W y -24;
+    pos W z -17;
+    pos X C -30;
+    pos X G -21;
+    pos X O -21;
+    pos X Q -39;
+    pos X braceleft -48;
+    pos X f -51;
+    pos X g -24;
+    pos X j 28;
+    pos X t -59;
+    pos X v -11;
+    pos X x -47;
+    pos X z -17;
+    pos Y A -113;
+    pos Y C -70;
+    pos Y D -22;
+    pos Y G -102;
+    pos Y H -26;
+    pos Y I -19;
+    pos Y J -58;
+    pos Y K -23;
+    pos Y L -39;
+    pos Y N -21;
+    pos Y O -74;
+    pos Y P -22;
+    pos Y Q -54;
+    pos Y S -46;
+    pos Y T -10;
+    pos Y V -13;
+    pos Y a -95;
+    pos Y braceleft -64;
+    pos Y c -105;
+    pos Y d -104;
+    pos Y e -105;
+    pos Y f -96;
+    pos Y g -103;
+    pos Y i -20;
+    pos Y j 11;
+    pos Y m -62;
+    pos Y n -91;
+    pos Y o -117;
+    pos Y p -79;
+    pos Y parenright -16;
+    pos Y q -104;
+    pos Y r -92;
+    pos Y s -115;
+    pos Y t -88;
+    pos Y u -99;
+    pos Y uni0251 -113;
+    pos Y uni0261 -113;
+    pos Y v -82;
+    pos Y w -85;
+    pos Y x -74;
+    pos Y y -92;
+    pos Y z -92;
+    pos Z B -14;
+    pos Z C -29;
+    pos Z D -38;
+    pos Z E -35;
+    pos Z F -42;
+    pos Z G -34;
+    pos Z J -22;
+    pos Z K -21;
+    pos Z O -34;
+    pos Z P -42;
+    pos Z Q -76;
+    pos Z T -56;
+    pos Z U -40;
+    pos Z V -47;
+    pos Z W -24;
+    pos Z X -39;
+    pos Z Y -41;
+    pos Z braceleft -46;
+    pos Z braceright -29;
+    pos Z bracketright -39;
+    pos Z c -40;
+    pos Z f -74;
+    pos Z g -41;
+    pos Z o -28;
+    pos Z parenright -42;
+    pos Z q -23;
+    pos Z question -20;
+    pos Z quotedbl -45;
+    pos Z quotesingle -26;
+    pos Z t -80;
+    pos Z u -26;
+    pos Z v -59;
+    pos Z x -37;
+    pos a P -12;
+    pos a T -154;
+    pos a V -59;
+    pos a W -42;
+    pos a X -46;
+    pos a Y -93;
+    pos a braceright -90;
+    pos a bracketright -129;
+    pos a parenright -78;
+    pos a question -40;
+    pos b I -42;
+    pos b P -20;
+    pos b T -143;
+    pos b V -65;
+    pos b W -50;
+    pos b X -100;
+    pos b Y -84;
+    pos b Z -30;
+    pos b braceright -58;
+    pos b bracketright -119;
+    pos b parenright -32;
+    pos b question -47;
+    pos b quotedbl -78;
+    pos b quotesingle -21;
+    pos bar j 120;
+    pos braceleft braceleft -96;
+    pos braceright braceright -103;
+    pos braceright bracketright -94;
+    pos braceright parenright -102;
+    pos braceright question -37;
+    pos braceright quotedbl -78;
+    pos braceright quotesingle -52;
+    pos bracketleft A -108;
+    pos bracketleft C -108;
+    pos bracketleft G -131;
+    pos bracketleft H -38;
+    pos bracketleft I -26;
+    pos bracketleft J -109;
+    pos bracketleft L -30;
+    pos bracketleft O -92;
+    pos bracketleft P -31;
+    pos bracketleft Q -91;
+    pos bracketleft S -84;
+    pos bracketleft T -50;
+    pos bracketleft a -94;
+    pos bracketleft braceleft -136;
+    pos bracketleft c -130;
+    pos bracketleft d -124;
+    pos bracketleft e -93;
+    pos bracketleft f -104;
+    pos bracketleft g -76;
+    pos bracketleft i -14;
+    pos bracketleft j 55;
+    pos bracketleft m -90;
+    pos bracketleft n -94;
+    pos bracketleft o -104;
+    pos bracketleft p -32;
+    pos bracketleft q -129;
+    pos bracketleft r -92;
+    pos bracketleft s -106;
+    pos bracketleft t -102;
+    pos bracketleft u -94;
+    pos bracketleft v -80;
+    pos bracketleft w -83;
+    pos bracketleft x -107;
+    pos bracketleft y -78;
+    pos bracketleft z -112;
+    pos bracketright braceleft -27;
+    pos bracketright bracketleft -18;
+    pos bracketright j 69;
+    pos c C -13;
+    pos c D -29;
+    pos c E -30;
+    pos c F -19;
+    pos c O -7;
+    pos c P -34;
+    pos c Q -22;
+    pos c T -162;
+    pos c U -20;
+    pos c V -98;
+    pos c W -68;
+    pos c X -53;
+    pos c Y -122;
+    pos c braceright -79;
+    pos c bracketright -107;
+    pos c f -14;
+    pos c parenright -62;
+    pos c question -70;
+    pos c s -11;
+    pos c t -40;
+    pos c v -17;
+    pos c x -29;
+    pos c z -13;
+    pos comma C -29;
+    pos comma D -37;
+    pos comma G -37;
+    pos comma J -14;
+    pos comma O -51;
+    pos comma P -14;
+    pos comma Q -54;
+    pos comma T -84;
+    pos comma U -64;
+    pos comma V -104;
+    pos comma W -67;
+    pos comma X -49;
+    pos comma Y -52;
+    pos comma braceleft -78;
+    pos comma braceright -38;
+    pos comma bracketright -35;
+    pos comma f -86;
+    pos comma parenright -21;
+    pos comma question -74;
+    pos comma t -73;
+    pos comma uni040B -56;
+    pos comma uni041E -36;
+    pos comma uni0422 -59;
+    pos comma v -50;
+    pos d D -16;
+    pos d E -23;
+    pos d F -19;
+    pos d I -22;
+    pos d O -18;
+    pos d P -14;
+    pos d Q -19;
+    pos d T -38;
+    pos d V -51;
+    pos d W -36;
+    pos d X -34;
+    pos d Y -33;
+    pos d Z -13;
+    pos d braceright -28;
+    pos d bracketleft -14;
+    pos d bracketright -34;
+    pos d f -28;
+    pos d parenright -48;
+    pos d question -16;
+    pos d quotedbl -32;
+    pos d t -19;
+    pos d x -14;
+    pos d z -13;
+    pos e E -18;
+    pos e F -10;
+    pos e I -20;
+    pos e P -17;
+    pos e T -154;
+    pos e V -64;
+    pos e W -30;
+    pos e X -53;
+    pos e Y -103;
+    pos e braceright -59;
+    pos e bracketright -79;
+    pos e j -8;
+    pos e parenright -79;
+    pos e t -12;
+    pos e x -13;
+    pos exclamdown T -101;
+    pos exclamdown V -68;
+    pos exclamdown W -61;
+    pos exclamdown X -55;
+    pos exclamdown Y -82;
+    pos exclamdown j 113;
+    pos exclamdown question -53;
+    pos exclamdown t -30;
+    pos f A -17;
+    pos f J -43;
+    pos f c -14;
+    pos f d -30;
+    pos f e -6;
+    pos f g -22;
+    pos f o -19;
+    pos f q -30;
+    pos f uni0251 -32;
+    pos g F -20;
+    pos g I -26;
+    pos g J -13;
+    pos g P -31;
+    pos g T -122;
+    pos g V -62;
+    pos g W -42;
+    pos g X -98;
+    pos g Y -104;
+    pos g Z -22;
+    pos g braceright -34;
+    pos g bracketright -50;
+    pos g j 67;
+    pos g parenright -75;
+    pos g question -58;
+    pos h E -25;
+    pos h F -16;
+    pos h I -21;
+    pos h P -29;
+    pos h T -122;
+    pos h V -64;
+    pos h W -66;
+    pos h X -50;
+    pos h Y -98;
+    pos h braceright -48;
+    pos h bracketright -98;
+    pos h f -16;
+    pos h parenright -73;
+    pos h question -33;
+    pos h quotedbl -80;
+    pos h quotesingle -38;
+    pos h t -34;
+    pos hyphen I -36;
+    pos hyphen S -27;
+    pos hyphen T -140;
+    pos hyphen V -84;
+    pos hyphen W -18;
+    pos hyphen X -70;
+    pos hyphen Y -119;
+    pos hyphen Z -52;
+    pos hyphen braceright -58;
+    pos hyphen bracketright -80;
+    pos hyphen f -30;
+    pos hyphen parenright -81;
+    pos hyphen question -38;
+    pos hyphen t -47;
+    pos hyphen uni0402 -46;
+    pos hyphen uni0409 -38;
+    pos hyphen uni040B -40;
+    pos hyphen uni0416 -79;
+    pos hyphen uni0418 26;
+    pos hyphen uni0422 -112;
+    pos hyphen x -20;
+    pos hyphen z -18;
+    pos i E -18;
+    pos i F -17;
+    pos i I -30;
+    pos i T -5;
+    pos i V -30;
+    pos i W -22;
+    pos i X -7;
+    pos i Y -30;
+    pos i Z -14;
+    pos i braceright -39;
+    pos i bracketright -37;
+    pos i parenright -42;
+    pos i t -22;
+    pos i z -12;
+    pos j E -15;
+    pos j F -12;
+    pos j T -34;
+    pos j V -28;
+    pos j W -15;
+    pos j X -35;
+    pos j Y -34;
+    pos j Z -22;
+    pos j f -14;
+    pos j j 78;
+    pos j parenright -30;
+    pos j t -22;
+    pos j uni0135 102;
+    pos k C -29;
+    pos k D -41;
+    pos k E -34;
+    pos k F -57;
+    pos k G -33;
+    pos k H -20;
+    pos k I -29;
+    pos k J -17;
+    pos k K -26;
+    pos k M -41;
+    pos k N -14;
+    pos k O -31;
+    pos k P -50;
+    pos k Q -50;
+    pos k R -34;
+    pos k T -122;
+    pos k U -26;
+    pos k V -94;
+    pos k W -62;
+    pos k X -50;
+    pos k Y -122;
+    pos k b -36;
+    pos k braceleft -38;
+    pos k braceright -78;
+    pos k bracketleft -19;
+    pos k bracketright -111;
+    pos k c -37;
+    pos k d -30;
+    pos k e -30;
+    pos k f -46;
+    pos k g -30;
+    pos k i -28;
+    pos k j -2;
+    pos k k -14;
+    pos k l -14;
+    pos k n -18;
+    pos k o -34;
+    pos k parenright -91;
+    pos k q -43;
+    pos k question -70;
+    pos k quotedbl -106;
+    pos k quotesingle -100;
+    pos k t -34;
+    pos k u -10;
+    pos k uni0251 -32;
+    pos k uni0261 -40;
+    pos k v -37;
+    pos k x -20;
+    pos k y -19;
+    pos l C -11;
+    pos l D -38;
+    pos l E -22;
+    pos l F -36;
+    pos l G -50;
+    pos l H -15;
+    pos l I -20;
+    pos l J -10;
+    pos l K -31;
+    pos l M -26;
+    pos l N -19;
+    pos l O -42;
+    pos l P -44;
+    pos l Q -36;
+    pos l R -11;
+    pos l T -38;
+    pos l U -48;
+    pos l V -64;
+    pos l W -68;
+    pos l X -35;
+    pos l Y -42;
+    pos l b -14;
+    pos l braceleft -39;
+    pos l braceright -32;
+    pos l bracketleft -19;
+    pos l bracketright -61;
+    pos l c -28;
+    pos l f -50;
+    pos l g -34;
+    pos l i -20;
+    pos l n -14;
+    pos l o -25;
+    pos l parenright -38;
+    pos l q -22;
+    pos l question -16;
+    pos l quotedbl -65;
+    pos l quotesingle -34;
+    pos l t -41;
+    pos l u -15;
+    pos l v -50;
+    pos l x -26;
+    pos m T -158;
+    pos m V -82;
+    pos m W -37;
+    pos m X -65;
+    pos m Y -89;
+    pos m braceright -66;
+    pos m bracketright -108;
+    pos m parenright -63;
+    pos m question -73;
+    pos n E -18;
+    pos n F -17;
+    pos n I -30;
+    pos n P -21;
+    pos n T -114;
+    pos n V -66;
+    pos n W -50;
+    pos n X -56;
+    pos n Y -100;
+    pos n braceright -64;
+    pos n bracketright -86;
+    pos n parenright -103;
+    pos n question -57;
+    pos o I -43;
+    pos o T -146;
+    pos o V -64;
+    pos o W -43;
+    pos o X -93;
+    pos o Y -106;
+    pos o Z -33;
+    pos o braceright -63;
+    pos o bracketright -104;
+    pos o parenright -74;
+    pos o question -45;
+    pos p I -35;
+    pos p T -166;
+    pos p V -82;
+    pos p W -45;
+    pos p X -88;
+    pos p Y -122;
+    pos p Z -11;
+    pos p braceright -103;
+    pos p bracketright -90;
+    pos p f -14;
+    pos p parenright -106;
+    pos p question -54;
+    pos p t -26;
+    pos p x -11;
+    pos parenleft A -59;
+    pos parenleft C -68;
+    pos parenleft G -108;
+    pos parenleft J -50;
+    pos parenleft O -63;
+    pos parenleft Q -46;
+    pos parenleft S -42;
+    pos parenleft a -67;
+    pos parenleft braceleft -113;
+    pos parenleft c -89;
+    pos parenleft d -90;
+    pos parenleft e -78;
+    pos parenleft f -93;
+    pos parenleft g -78;
+    pos parenleft j 82;
+    pos parenleft m -44;
+    pos parenleft n -69;
+    pos parenleft o -59;
+    pos parenleft p -36;
+    pos parenleft q -101;
+    pos parenleft r -53;
+    pos parenleft s -60;
+    pos parenleft t -66;
+    pos parenleft u -51;
+    pos parenleft v -55;
+    pos parenleft w -62;
+    pos parenleft x -25;
+    pos parenleft y -60;
+    pos parenleft z -71;
+    pos period C -25;
+    pos period D -52;
+    pos period E -30;
+    pos period F -26;
+    pos period G -23;
+    pos period J -26;
+    pos period K -17;
+    pos period O -64;
+    pos period P -36;
+    pos period Q -91;
+    pos period T -134;
+    pos period U -43;
+    pos period V -115;
+    pos period W -94;
+    pos period X -47;
+    pos period Y -128;
+    pos period braceright -82;
+    pos period bracketright -96;
+    pos period f -59;
+    pos period g -32;
+    pos period parenright -87;
+    pos period question -94;
+    pos period t -106;
+    pos period u10450 -112;
+    pos period u10451 -104;
+    pos period u10452 -37;
+    pos period u10453 -5;
+    pos period u10454 -40;
+    pos period u10455 -19;
+    pos period u10456 -26;
+    pos period u10457 -66;
+    pos period u10458 -216;
+    pos period u10459 -3;
+    pos period u10464 -26;
+    pos period u10467 -28;
+    pos period u1046A -65;
+    pos period u1046B -79;
+    pos period u1046C -41;
+    pos period u1046D -27;
+    pos period u1046E -48;
+    pos period u1046F -65;
+    pos period u10470 -48;
+    pos period u10471 -29;
+    pos period u10472 -40;
+    pos period u10473 -68;
+    pos period u10474 -18;
+    pos period u10476 -35;
+    pos period u10477 -80;
+    pos period u10479 -58;
+    pos period u1047B -68;
+    pos period u1047E -35;
+    pos period u1047F -83;
+    pos period uniE021 -9;
+    pos period v -63;
+    pos period x -18;
+    pos periodcentered u10450 -96;
+    pos periodcentered u10451 -74;
+    pos periodcentered u10453 -2;
+    pos periodcentered u10455 -15;
+    pos periodcentered u10457 -25;
+    pos periodcentered u10458 -144;
+    pos periodcentered u10459 -30;
+    pos periodcentered u10468 -8;
+    pos periodcentered u1046A -32;
+    pos periodcentered u1046B -24;
+    pos periodcentered u10473 -54;
+    pos periodcentered u10475 -15;
+    pos periodcentered u10476 -36;
+    pos periodcentered u10478 -8;
+    pos periodcentered u1047C -18;
+    pos periodcentered u1047F -26;
+    pos q E -13;
+    pos q F -22;
+    pos q I -34;
+    pos q J -28;
+    pos q P -26;
+    pos q Q -12;
+    pos q T -146;
+    pos q V -70;
+    pos q W -58;
+    pos q X -58;
+    pos q Y -99;
+    pos q Z -27;
+    pos q q -15;
+    pos q question -57;
+    pos q t -15;
+    pos question period -72;
+    pos question u1045D -42;
+    pos question u1045E -47;
+    pos question u1045F -31;
+    pos question u10460 -21;
+    pos question u10461 -16;
+    pos question u10462 -164;
+    pos question u10464 -56;
+    pos question u10465 -64;
+    pos question u10467 -13;
+    pos question u10468 -54;
+    pos question u10469 -25;
+    pos question u1046A -14;
+    pos question u1046C -52;
+    pos question u1046D -14;
+    pos question u1046E -22;
+    pos question u1046F -40;
+    pos question u10473 -4;
+    pos question u10474 -48;
+    pos question u10475 -68;
+    pos question u10476 -10;
+    pos question u10478 -40;
+    pos question u1047A -49;
+    pos question u1047B -13;
+    pos question u1047C -62;
+    pos question uni0410 -32;
+    pos question uni0414 -72;
+    pos question uni0418 26;
+    pos question uni041B -40;
+    pos question uniE01F -29;
+    pos questiondown A -83;
+    pos questiondown B -89;
+    pos questiondown C -96;
+    pos questiondown D -114;
+    pos questiondown E -130;
+    pos questiondown F -130;
+    pos questiondown G -114;
+    pos questiondown H -106;
+    pos questiondown I -132;
+    pos questiondown J -132;
+    pos questiondown K -120;
+    pos questiondown L -98;
+    pos questiondown M -103;
+    pos questiondown N -97;
+    pos questiondown O -125;
+    pos questiondown P -97;
+    pos questiondown Q -101;
+    pos questiondown R -92;
+    pos questiondown S -85;
+    pos questiondown T -192;
+    pos questiondown U -102;
+    pos questiondown V -147;
+    pos questiondown W -115;
+    pos questiondown X -126;
+    pos questiondown Y -172;
+    pos questiondown Z -128;
+    pos questiondown a -66;
+    pos questiondown b -92;
+    pos questiondown braceleft -93;
+    pos questiondown braceright -44;
+    pos questiondown bracketright -18;
+    pos questiondown c -92;
+    pos questiondown d -95;
+    pos questiondown e -91;
+    pos questiondown f -100;
+    pos questiondown h -56;
+    pos questiondown i -98;
+    pos questiondown j 95;
+    pos questiondown k -100;
+    pos questiondown l -112;
+    pos questiondown m -70;
+    pos questiondown n -89;
+    pos questiondown o -110;
+    pos questiondown parenright -36;
+    pos questiondown q -120;
+    pos questiondown question -98;
+    pos questiondown quotedbl -115;
+    pos questiondown quotesingle -82;
+    pos questiondown r -75;
+    pos questiondown s -76;
+    pos questiondown t -84;
+    pos questiondown u -96;
+    pos questiondown v -89;
+    pos questiondown w -77;
+    pos questiondown x -93;
+    pos questiondown y -74;
+    pos questiondown z -93;
+    pos quotedbl A -126;
+    pos quotedbl C -23;
+    pos quotedbl F -16;
+    pos quotedbl G -60;
+    pos quotedbl I -16;
+    pos quotedbl J -77;
+    pos quotedbl braceleft -64;
+    pos quotedbl d -73;
+    pos quotedbl f -83;
+    pos quotedbl parenright -14;
+    pos quotedbl quotedbl -36;
+    pos quotedbl t -38;
+    pos quotesingle u1045C -37;
+    pos quotesingle u1045D -60;
+    pos quotesingle u1045E -70;
+    pos quotesingle u1045F -52;
+    pos quotesingle u10460 -21;
+    pos quotesingle u10461 -48;
+    pos quotesingle u10462 -128;
+    pos quotesingle u10463 -37;
+    pos quotesingle u10464 -80;
+    pos quotesingle u10465 -70;
+    pos quotesingle u10467 -24;
+    pos quotesingle u10468 -83;
+    pos quotesingle u10469 -62;
+    pos quotesingle u1046A -48;
+    pos quotesingle u1046B -40;
+    pos quotesingle u1046C -64;
+    pos quotesingle u1046D -45;
+    pos quotesingle u1046E -48;
+    pos quotesingle u1046F -48;
+    pos quotesingle u10470 -26;
+    pos quotesingle u10471 -42;
+    pos quotesingle u10472 -5;
+    pos quotesingle u10473 -12;
+    pos quotesingle u10474 -58;
+    pos quotesingle u10475 -68;
+    pos quotesingle u10476 -32;
+    pos quotesingle u10477 -62;
+    pos quotesingle u10478 -64;
+    pos quotesingle u10479 -27;
+    pos quotesingle u1047A -71;
+    pos quotesingle u1047B -56;
+    pos quotesingle u1047C -56;
+    pos quotesingle u1047D -6;
+    pos quotesingle uni0408 -56;
+    pos quotesingle uni0409 -76;
+    pos quotesingle uni0410 -64;
+    pos quotesingle uni0414 -64;
+    pos quotesingle uni041B -44;
+    pos quotesingle uniE01F -38;
+    pos quotesingle uniE021 -14;
+    pos r I -29;
+    pos r J -45;
+    pos r T -78;
+    pos r X -76;
+    pos r Y -50;
+    pos r Z -82;
+    pos r braceright -54;
+    pos r bracketright -76;
+    pos r parenright -38;
+    pos r uni0261 -10;
+    pos s E -22;
+    pos s F -16;
+    pos s I -18;
+    pos s J -17;
+    pos s P -25;
+    pos s T -118;
+    pos s V -58;
+    pos s W -48;
+    pos s X -57;
+    pos s Y -89;
+    pos s braceright -73;
+    pos s bracketright -89;
+    pos s g -12;
+    pos s j -14;
+    pos s parenright -64;
+    pos s question -24;
+    pos t I -22;
+    pos t J -24;
+    pos t M -17;
+    pos t O -10;
+    pos t P -22;
+    pos t T -94;
+    pos t V -55;
+    pos t W -34;
+    pos t X -58;
+    pos t Y -70;
+    pos t braceleft -38;
+    pos t braceright -72;
+    pos t bracketright -116;
+    pos t c -22;
+    pos t f -38;
+    pos t g -26;
+    pos t o -20;
+    pos t parenright -54;
+    pos t question -48;
+    pos t quotedbl -55;
+    pos t quotesingle -42;
+    pos t t -28;
+    pos t z -18;
+    pos u E -17;
+    pos u F -12;
+    pos u J -14;
+    pos u P -20;
+    pos u T -108;
+    pos u V -61;
+    pos u W -35;
+    pos u X -34;
+    pos u Y -78;
+    pos u braceleft -19;
+    pos u braceright -51;
+    pos u bracketright -91;
+    pos u f -14;
+    pos u parenright -50;
+    pos u question -38;
+    pos u t -13;
+    pos u10450 u10458 -69;
+    pos u10450 u10462 -112;
+    pos u10451 u10462 -120;
+    pos u10452 u10462 -128;
+    pos u10452 u10464 -10;
+    pos u10452 u1046C -12;
+    pos u10452 u1046D -9;
+    pos u10452 u10475 -22;
+    pos u10452 u10476 -24;
+    pos u10452 u10478 -14;
+    pos u10453 period -23;
+    pos u10453 u10462 -170;
+    pos u10453 u10476 -22;
+    pos u10453 u1047C -28;
+    pos u10454 period -46;
+    pos u10454 u10450 -30;
+    pos u10454 u10451 -40;
+    pos u10454 u10455 -27;
+    pos u10454 u10457 -29;
+    pos u10454 u10458 -91;
+    pos u10454 u10459 -56;
+    pos u10454 u10462 -184;
+    pos u10454 u10463 -38;
+    pos u10454 u1046B -1;
+    pos u10454 u1046C -12;
+    pos u10454 u10472 -22;
+    pos u10454 u10473 -14;
+    pos u10454 u10475 -37;
+    pos u10454 u10476 -27;
+    pos u10454 u1047C -42;
+    pos u10454 u1047F -27;
+    pos u10455 period -25;
+    pos u10455 periodcentered -6;
+    pos u10455 u10457 -28;
+    pos u10455 u10458 -80;
+    pos u10455 u1045F -23;
+    pos u10455 u10460 -20;
+    pos u10455 u10461 -29;
+    pos u10455 u10462 -147;
+    pos u10455 u10463 -46;
+    pos u10455 u1046A -34;
+    pos u10455 u1046B -40;
+    pos u10455 u1046D -15;
+    pos u10455 u1046E -27;
+    pos u10455 u1046F -12;
+    pos u10455 u10472 -31;
+    pos u10455 u10473 -52;
+    pos u10455 u10475 -23;
+    pos u10455 u10476 -41;
+    pos u10455 u10477 -15;
+    pos u10455 u10478 -30;
+    pos u10455 u10479 -13;
+    pos u10455 u1047B -8;
+    pos u10455 u1047C -5;
+    pos u10455 u1047F -29;
+    pos u10456 u10450 -72;
+    pos u10456 u10451 -136;
+    pos u10456 u10457 -25;
+    pos u10456 u10458 -47;
+    pos u10456 u10459 -12;
+    pos u10456 u1045F -66;
+    pos u10456 u10460 -61;
+    pos u10456 u10461 -68;
+    pos u10456 u10462 -128;
+    pos u10456 u10463 -30;
+    pos u10456 u10464 -6;
+    pos u10456 u1046A -62;
+    pos u10456 u1046B -37;
+    pos u10456 u1046D -28;
+    pos u10456 u1046E -28;
+    pos u10456 u1046F -88;
+    pos u10456 u10472 -27;
+    pos u10456 u10473 -66;
+    pos u10456 u10475 -5;
+    pos u10456 u10476 -44;
+    pos u10456 u10477 -14;
+    pos u10456 u10478 -15;
+    pos u10456 u10479 -18;
+    pos u10456 u1047B -66;
+    pos u10456 u1047C -6;
+    pos u10456 u1047E -8;
+    pos u10456 u1047F -24;
+    pos u10457 u10450 -94;
+    pos u10457 u10451 -136;
+    pos u10457 u10456 -3;
+    pos u10457 u10457 -1;
+    pos u10457 u10458 -80;
+    pos u10457 u10459 -10;
+    pos u10457 u1045F -71;
+    pos u10457 u10460 -30;
+    pos u10457 u10461 -89;
+    pos u10457 u10462 -132;
+    pos u10457 u10463 -11;
+    pos u10457 u1046A -80;
+    pos u10457 u1046B -45;
+    pos u10457 u1046D -14;
+    pos u10457 u1046E -18;
+    pos u10457 u1046F -74;
+    pos u10457 u10470 -10;
+    pos u10457 u10473 -72;
+    pos u10457 u10476 -72;
+    pos u10457 u10478 -12;
+    pos u10457 u10479 -36;
+    pos u10457 u1047B -44;
+    pos u10457 u1047F -55;
+    pos u10458 u10450 -101;
+    pos u10458 u10451 -72;
+    pos u10458 u10452 -17;
+    pos u10458 u10454 -8;
+    pos u10458 u10455 -9;
+    pos u10458 u10456 -13;
+    pos u10458 u10457 -31;
+    pos u10458 u10458 -8;
+    pos u10458 u1045F -24;
+    pos u10458 u10460 -33;
+    pos u10458 u10461 -42;
+    pos u10458 u10462 -64;
+    pos u10458 u10464 -32;
+    pos u10458 u10467 -9;
+    pos u10458 u1046A -46;
+    pos u10458 u1046B -29;
+    pos u10458 u1046C -22;
+    pos u10458 u1046F -29;
+    pos u10458 u10470 -23;
+    pos u10458 u10472 -26;
+    pos u10458 u10473 -61;
+    pos u10458 u10477 -29;
+    pos u10458 u10479 -28;
+    pos u10458 u1047B -31;
+    pos u10458 u1047F -69;
+    pos u10459 periodcentered -46;
+    pos u10459 u10454 -32;
+    pos u10459 u10456 -57;
+    pos u10459 u10458 -39;
+    pos u10459 u1045E -28;
+    pos u10459 u1045F -33;
+    pos u10459 u10460 -21;
+    pos u10459 u10461 -37;
+    pos u10459 u10462 -160;
+    pos u10459 u10463 -16;
+    pos u10459 u10464 -46;
+    pos u10459 u10465 -20;
+    pos u10459 u10467 -23;
+    pos u10459 u10468 -36;
+    pos u10459 u10469 -7;
+    pos u10459 u1046A -32;
+    pos u10459 u1046C -80;
+    pos u10459 u1046D -42;
+    pos u10459 u1046E -31;
+    pos u10459 u1046F -60;
+    pos u10459 u10470 -32;
+    pos u10459 u10471 -38;
+    pos u10459 u10472 -15;
+    pos u10459 u10473 -26;
+    pos u10459 u10474 -24;
+    pos u10459 u10476 -48;
+    pos u10459 u10477 -40;
+    pos u10459 u10479 -56;
+    pos u10459 u1047A -22;
+    pos u10459 u1047B -43;
+    pos u10459 u1047E -9;
+    pos u10459 u1047F -7;
+    pos u1045A periodcentered -120;
+    pos u1045A question -168;
+    pos u1045A quotesingle -128;
+    pos u1045A u10450 -221;
+    pos u1045A u10451 -224;
+    pos u1045A u10452 -208;
+    pos u1045A u10453 -216;
+    pos u1045A u10454 -210;
+    pos u1045A u10455 -218;
+    pos u1045A u10456 -200;
+    pos u1045A u10457 -200;
+    pos u1045A u10458 -264;
+    pos u1045A u10459 -224;
+    pos u1045A u1045E -80;
+    pos u1045A u1045F -93;
+    pos u1045A u10460 -128;
+    pos u1045A u10461 -88;
+    pos u1045A u10463 -80;
+    pos u1045A u10464 -232;
+    pos u1045A u10465 -224;
+    pos u1045A u10466 -128;
+    pos u1045A u10467 -176;
+    pos u1045A u10468 -144;
+    pos u1045A u10469 -192;
+    pos u1045A u1046A -232;
+    pos u1045A u1046B -224;
+    pos u1045A u1046C -232;
+    pos u1045A u1046D -216;
+    pos u1045A u1046E -232;
+    pos u1045A u1046F -232;
+    pos u1045A u10470 -208;
+    pos u1045A u10471 -144;
+    pos u1045A u10472 -176;
+    pos u1045A u10473 -224;
+    pos u1045A u10474 -208;
+    pos u1045A u10475 -200;
+    pos u1045A u10476 -208;
+    pos u1045A u10477 -216;
+    pos u1045A u10478 -224;
+    pos u1045A u10479 -224;
+    pos u1045A u1047A -222;
+    pos u1045A u1047B -224;
+    pos u1045A u1047C -208;
+    pos u1045A u1047D -216;
+    pos u1045A u1047E -216;
+    pos u1045A u1047F -224;
+    pos u1045B periodcentered -69;
+    pos u1045B question -81;
+    pos u1045B quotesingle -80;
+    pos u1045B u10450 -190;
+    pos u1045B u10451 -200;
+    pos u1045B u10452 -72;
+    pos u1045B u10453 -40;
+    pos u1045B u10454 -64;
+    pos u1045B u10455 -56;
+    pos u1045B u10456 -48;
+    pos u1045B u10457 -64;
+    pos u1045B u10458 -184;
+    pos u1045B u10459 -32;
+    pos u1045B u1045E -18;
+    pos u1045B u1045F -67;
+    pos u1045B u10460 -126;
+    pos u1045B u10461 -82;
+    pos u1045B u10463 -40;
+    pos u1045B u10464 -72;
+    pos u1045B u10465 -34;
+    pos u1045B u10466 -24;
+    pos u1045B u10467 -72;
+    pos u1045B u1046A -120;
+    pos u1045B u1046B -88;
+    pos u1045B u1046C -120;
+    pos u1045B u1046D -24;
+    pos u1045B u1046E -64;
+    pos u1045B u1046F -184;
+    pos u1045B u10470 -104;
+    pos u1045B u10471 -56;
+    pos u1045B u10472 -56;
+    pos u1045B u10473 -136;
+    pos u1045B u10474 -32;
+    pos u1045B u10476 -48;
+    pos u1045B u10477 -112;
+    pos u1045B u10479 -96;
+    pos u1045B u1047A -16;
+    pos u1045B u1047B -120;
+    pos u1045B u1047E -16;
+    pos u1045B u1047F -88;
+    pos u1045C question -60;
+    pos u1045C quotesingle -64;
+    pos u1045C u10450 -137;
+    pos u1045C u10451 -56;
+    pos u1045C u10457 -22;
+    pos u1045C u10458 -138;
+    pos u1045C u10459 -33;
+    pos u1045C u10463 -22;
+    pos u1045C u1046A -10;
+    pos u1045C u1046D -7;
+    pos u1045C u10473 -26;
+    pos u1045C u10475 -25;
+    pos u1045C u10476 -20;
+    pos u1045C u10478 -23;
+    pos u1045C u1047C -14;
+    pos u1045C u1047F -43;
+    pos u1045D periodcentered -56;
+    pos u1045D question -44;
+    pos u1045D quotesingle -32;
+    pos u1045D u10450 -98;
+    pos u1045D u10453 -120;
+    pos u1045D u10454 -24;
+    pos u1045D u10455 -66;
+    pos u1045D u10457 -32;
+    pos u1045D u10458 -88;
+    pos u1045D u10459 -48;
+    pos u1045D u1045E -10;
+    pos u1045D u10464 -26;
+    pos u1045D u10465 -134;
+    pos u1045D u10468 -96;
+    pos u1045D u10469 -8;
+    pos u1045D u1046C -54;
+    pos u1045D u10475 -88;
+    pos u1045D u10476 -6;
+    pos u1045D u10478 -46;
+    pos u1045D u1047A -100;
+    pos u1045D u1047C -112;
+    pos u1045D u1047F -32;
+    pos u1045E periodcentered -6;
+    pos u1045E question -48;
+    pos u1045E quotesingle -33;
+    pos u1045E u10450 -98;
+    pos u1045E u10451 -32;
+    pos u1045E u10453 -26;
+    pos u1045E u10455 -38;
+    pos u1045E u10457 -22;
+    pos u1045E u10458 -98;
+    pos u1045E u10459 -45;
+    pos u1045E u10465 -19;
+    pos u1045E u10468 -31;
+    pos u1045E u1046C -13;
+    pos u1045E u10472 -21;
+    pos u1045E u10473 -8;
+    pos u1045E u10475 -34;
+    pos u1045E u10476 -22;
+    pos u1045E u10478 -20;
+    pos u1045E u1047A -6;
+    pos u1045E u1047C -39;
+    pos u1045E u1047F -28;
+    pos u1045F periodcentered -13;
+    pos u1045F question -60;
+    pos u1045F quotesingle -48;
+    pos u1045F u10450 -136;
+    pos u1045F u10451 -80;
+    pos u1045F u10455 -25;
+    pos u1045F u10457 -26;
+    pos u1045F u10458 -125;
+    pos u1045F u10459 -28;
+    pos u1045F u10463 -18;
+    pos u1045F u10468 -18;
+    pos u1045F u1046A -12;
+    pos u1045F u1046B -10;
+    pos u1045F u10472 -25;
+    pos u1045F u10473 -30;
+    pos u1045F u10475 -29;
+    pos u1045F u10476 -18;
+    pos u1045F u10478 -24;
+    pos u1045F u1047A -10;
+    pos u1045F u1047C -34;
+    pos u1045F u1047F -40;
+    pos u10460 question -64;
+    pos u10460 quotesingle -41;
+    pos u10460 u10450 -128;
+    pos u10460 u10451 -48;
+    pos u10460 u10455 -7;
+    pos u10460 u10457 -12;
+    pos u10460 u10458 -130;
+    pos u10460 u10459 -10;
+    pos u10460 u10462 -116;
+    pos u10460 u10463 -15;
+    pos u10460 u1046A -9;
+    pos u10460 u1046B -9;
+    pos u10460 u10473 -30;
+    pos u10460 u10475 -3;
+    pos u10460 u10476 -23;
+    pos u10460 u10477 -6;
+    pos u10460 u10478 -5;
+    pos u10460 u1047F -53;
+    pos u10461 periodcentered -18;
+    pos u10461 question -48;
+    pos u10461 quotesingle -40;
+    pos u10461 u10450 -112;
+    pos u10461 u10451 -8;
+    pos u10461 u10454 -14;
+    pos u10461 u10455 -40;
+    pos u10461 u10457 -22;
+    pos u10461 u10458 -122;
+    pos u10461 u10459 -48;
+    pos u10461 u10465 -15;
+    pos u10461 u10468 -23;
+    pos u10461 u10469 -13;
+    pos u10461 u1046C -13;
+    pos u10461 u10472 -9;
+    pos u10461 u10473 -5;
+    pos u10461 u10474 -17;
+    pos u10461 u10475 -30;
+    pos u10461 u10476 -16;
+    pos u10461 u10478 -36;
+    pos u10461 u1047A -17;
+    pos u10461 u1047C -42;
+    pos u10461 u1047F -46;
+    pos u10462 periodcentered -49;
+    pos u10462 question -12;
+    pos u10462 u10450 -120;
+    pos u10462 u10452 -16;
+    pos u10462 u10453 -63;
+    pos u10462 u10454 -24;
+    pos u10462 u10455 -38;
+    pos u10462 u10457 -13;
+    pos u10462 u10458 -88;
+    pos u10462 u10459 -48;
+    pos u10462 u10464 -40;
+    pos u10462 u10465 -64;
+    pos u10462 u10468 -55;
+    pos u10462 u10469 -10;
+    pos u10462 u1046C -48;
+    pos u10462 u10474 -25;
+    pos u10462 u10475 -80;
+    pos u10462 u10478 -40;
+    pos u10462 u1047A -26;
+    pos u10462 u1047C -49;
+    pos u10462 u1047F -19;
+    pos u10463 u10450 -72;
+    pos u10463 u10452 -56;
+    pos u10463 u10453 -45;
+    pos u10463 u10454 -53;
+    pos u10463 u10455 -23;
+    pos u10463 u10456 -26;
+    pos u10463 u10457 -27;
+    pos u10463 u10458 -56;
+    pos u10463 u10459 -23;
+    pos u10463 u1045C -15;
+    pos u10463 u1045E -46;
+    pos u10463 u1045F -30;
+    pos u10463 u10460 -23;
+    pos u10463 u10462 -88;
+    pos u10463 u10463 -1;
+    pos u10463 u10464 -38;
+    pos u10463 u10465 -22;
+    pos u10463 u10467 -6;
+    pos u10463 u10468 -22;
+    pos u10463 u10469 -30;
+    pos u10463 u1046A -38;
+    pos u10463 u1046C -46;
+    pos u10463 u1046E -25;
+    pos u10463 u1046F -23;
+    pos u10463 u10471 -8;
+    pos u10463 u10474 -22;
+    pos u10463 u10475 -38;
+    pos u10463 u10476 -38;
+    pos u10463 u10478 -30;
+    pos u10463 u1047A -38;
+    pos u10463 u1047B -53;
+    pos u10463 u1047C -38;
+    pos u10464 question -50;
+    pos u10464 quotesingle -45;
+    pos u10464 u10450 -152;
+    pos u10464 u10451 -48;
+    pos u10464 u10457 -27;
+    pos u10464 u10458 -120;
+    pos u10464 u10459 -24;
+    pos u10464 u10462 -144;
+    pos u10464 u10463 -14;
+    pos u10464 u1047F -41;
+    pos u10465 period -90;
+    pos u10465 periodcentered -22;
+    pos u10465 question -30;
+    pos u10465 quotesingle -24;
+    pos u10465 u10450 -152;
+    pos u10465 u10451 -40;
+    pos u10465 u10453 -99;
+    pos u10465 u10455 -74;
+    pos u10465 u10457 -29;
+    pos u10465 u10458 -121;
+    pos u10465 u10459 -50;
+    pos u10465 u10462 -215;
+    pos u10465 u10465 -114;
+    pos u10465 u10468 -91;
+    pos u10465 u1046C -10;
+    pos u10465 u10473 -7;
+    pos u10465 u10475 -68;
+    pos u10465 u10478 -14;
+    pos u10465 u1047A -26;
+    pos u10465 u1047C -72;
+    pos u10465 u1047F -15;
+    pos u10466 u10450 -96;
+    pos u10466 u10457 -26;
+    pos u10466 u10458 -104;
+    pos u10466 u10462 -137;
+    pos u10467 periodcentered -18;
+    pos u10467 question -75;
+    pos u10467 quotesingle -56;
+    pos u10467 u10450 -220;
+    pos u10467 u10451 -184;
+    pos u10467 u10455 -31;
+    pos u10467 u10457 -38;
+    pos u10467 u10458 -176;
+    pos u10467 u10459 -21;
+    pos u10467 u1045F -80;
+    pos u10467 u10460 -113;
+    pos u10467 u10461 -114;
+    pos u10467 u10462 -132;
+    pos u10467 u10463 -20;
+    pos u10467 u10467 -8;
+    pos u10467 u1046A -88;
+    pos u10467 u1046B -58;
+    pos u10467 u1046D -23;
+    pos u10467 u1046E -31;
+    pos u10467 u1046F -106;
+    pos u10467 u10470 -16;
+    pos u10467 u10471 -20;
+    pos u10467 u10472 -32;
+    pos u10467 u10473 -112;
+    pos u10467 u10476 -34;
+    pos u10467 u10477 -17;
+    pos u10467 u10478 -6;
+    pos u10467 u10479 -31;
+    pos u10467 u1047B -87;
+    pos u10467 u1047C -6;
+    pos u10467 u1047E -22;
+    pos u10467 u1047F -81;
+    pos u10468 period -15;
+    pos u10468 question -2;
+    pos u10468 quotesingle -32;
+    pos u10468 u10450 -120;
+    pos u10468 u10457 -21;
+    pos u10468 u10458 -110;
+    pos u10468 u10459 -11;
+    pos u10468 u10462 -131;
+    pos u10468 u10475 -12;
+    pos u10468 u1047F -20;
+    pos u10469 period -68;
+    pos u10469 periodcentered -58;
+    pos u10469 question -32;
+    pos u10469 quotesingle -8;
+    pos u10469 u10450 -128;
+    pos u10469 u10452 -10;
+    pos u10469 u10453 -96;
+    pos u10469 u10454 -29;
+    pos u10469 u10455 -50;
+    pos u10469 u10457 -26;
+    pos u10469 u10458 -102;
+    pos u10469 u10459 -41;
+    pos u10469 u1045D -32;
+    pos u10469 u10462 -200;
+    pos u10469 u10464 -38;
+    pos u10469 u10465 -91;
+    pos u10469 u10468 -98;
+    pos u10469 u1046C -47;
+    pos u10469 u10475 -64;
+    pos u10469 u10478 -39;
+    pos u10469 u1047A -84;
+    pos u10469 u1047C -90;
+    pos u10469 u1047F -16;
+    pos u1046A question -56;
+    pos u1046A quotesingle -50;
+    pos u1046A u10450 -152;
+    pos u1046A u10451 -56;
+    pos u1046A u10455 -19;
+    pos u1046A u10457 -44;
+    pos u1046A u10458 -133;
+    pos u1046A u10462 -152;
+    pos u1046A u1046A -1;
+    pos u1046A u1046B -5;
+    pos u1046A u10472 -30;
+    pos u1046A u10473 -16;
+    pos u1046A u1047F -54;
+    pos u1046B period -95;
+    pos u1046B periodcentered -72;
+    pos u1046B question -32;
+    pos u1046B quotesingle -32;
+    pos u1046B u10450 -128;
+    pos u1046B u10452 -29;
+    pos u1046B u10453 -95;
+    pos u1046B u10454 -62;
+    pos u1046B u10455 -54;
+    pos u1046B u10456 -10;
+    pos u1046B u10457 -56;
+    pos u1046B u10458 -117;
+    pos u1046B u10459 -62;
+    pos u1046B u1045C -8;
+    pos u1046B u1045E -30;
+    pos u1046B u1045F -10;
+    pos u1046B u10460 -9;
+    pos u1046B u10462 -238;
+    pos u1046B u10464 -46;
+    pos u1046B u10465 -105;
+    pos u1046B u10468 -101;
+    pos u1046B u10469 -24;
+    pos u1046B u1046A -6;
+    pos u1046B u1046C -66;
+    pos u1046B u1046D -13;
+    pos u1046B u1046E -30;
+    pos u1046B u1046F -30;
+    pos u1046B u10474 -37;
+    pos u1046B u10475 -77;
+    pos u1046B u10476 -24;
+    pos u1046B u10478 -51;
+    pos u1046B u1047A -70;
+    pos u1046B u1047C -102;
+    pos u1046B u1047F -24;
+    pos u1046C periodcentered -64;
+    pos u1046C question -53;
+    pos u1046C quotesingle -86;
+    pos u1046C u10450 -240;
+    pos u1046C u10451 -96;
+    pos u1046C u10452 -48;
+    pos u1046C u10454 -37;
+    pos u1046C u10455 -40;
+    pos u1046C u10456 -36;
+    pos u1046C u10457 -72;
+    pos u1046C u10458 -160;
+    pos u1046C u1045E -22;
+    pos u1046C u1045F -70;
+    pos u1046C u10460 -64;
+    pos u1046C u10461 -72;
+    pos u1046C u10462 -120;
+    pos u1046C u10463 -38;
+    pos u1046C u10464 -30;
+    pos u1046C u10467 -16;
+    pos u1046C u1046A -70;
+    pos u1046C u1046B -54;
+    pos u1046C u1046C -76;
+    pos u1046C u1046D -30;
+    pos u1046C u1046E -25;
+    pos u1046C u1046F -82;
+    pos u1046C u10470 -52;
+    pos u1046C u10471 -20;
+    pos u1046C u10472 -22;
+    pos u1046C u10473 -59;
+    pos u1046C u10474 -9;
+    pos u1046C u10476 -53;
+    pos u1046C u10477 -46;
+    pos u1046C u10478 -11;
+    pos u1046C u10479 -56;
+    pos u1046C u1047B -80;
+    pos u1046C u1047F -78;
+    pos u1046D period -68;
+    pos u1046D periodcentered -40;
+    pos u1046D question -40;
+    pos u1046D quotesingle -14;
+    pos u1046D u10450 -200;
+    pos u1046D u10452 -15;
+    pos u1046D u10453 -30;
+    pos u1046D u10455 -60;
+    pos u1046D u10457 -33;
+    pos u1046D u10458 -104;
+    pos u1046D u10459 -52;
+    pos u1046D u1045C -13;
+    pos u1046D u1045E -25;
+    pos u1046D u10462 -178;
+    pos u1046D u10464 -26;
+    pos u1046D u10465 -45;
+    pos u1046D u10468 -45;
+    pos u1046D u1046C -34;
+    pos u1046D u1046D -1;
+    pos u1046D u10474 -21;
+    pos u1046D u10475 -61;
+    pos u1046D u10478 -42;
+    pos u1046D u1047A -39;
+    pos u1046D u1047C -72;
+    pos u1046D u1047F -22;
+    pos u1046E period -40;
+    pos u1046E question -58;
+    pos u1046E quotesingle -72;
+    pos u1046E u10450 -176;
+    pos u1046E u10451 -64;
+    pos u1046E u10457 -37;
+    pos u1046E u10458 -144;
+    pos u1046E u10459 -26;
+    pos u1046E u10462 -144;
+    pos u1046E u10463 -8;
+    pos u1046E u10472 -30;
+    pos u1046E u10473 -22;
+    pos u1046E u10475 -38;
+    pos u1046E u10476 -19;
+    pos u1046E u1047C -22;
+    pos u1046E u1047F -51;
+    pos u1046F period -9;
+    pos u1046F question -77;
+    pos u1046F quotesingle -62;
+    pos u1046F u10450 -248;
+    pos u1046F u10451 -216;
+    pos u1046F u10455 -14;
+    pos u1046F u10456 -10;
+    pos u1046F u10457 -32;
+    pos u1046F u10458 -194;
+    pos u1046F u10459 -26;
+    pos u1046F u1045E -5;
+    pos u1046F u1045F -82;
+    pos u1046F u10460 -80;
+    pos u1046F u10461 -126;
+    pos u1046F u10462 -136;
+    pos u1046F u10463 -10;
+    pos u1046F u1046A -91;
+    pos u1046F u1046B -68;
+    pos u1046F u1046C -6;
+    pos u1046F u1046D -35;
+    pos u1046F u1046F -152;
+    pos u1046F u10472 -46;
+    pos u1046F u10473 -122;
+    pos u1046F u10475 -28;
+    pos u1046F u10476 -66;
+    pos u1046F u10477 -7;
+    pos u1046F u10478 -21;
+    pos u1046F u10479 -16;
+    pos u1046F u1047B -45;
+    pos u1046F u1047F -72;
+    pos u10470 question -63;
+    pos u10470 quotesingle -65;
+    pos u10470 u10450 -200;
+    pos u10470 u10451 -144;
+    pos u10470 u10457 -34;
+    pos u10470 u10458 -160;
+    pos u10470 u10459 -11;
+    pos u10470 u10460 -29;
+    pos u10470 u10461 -22;
+    pos u10470 u10462 -129;
+    pos u10470 u10463 -10;
+    pos u10470 u1046A -30;
+    pos u10470 u1046B -20;
+    pos u10470 u10472 -28;
+    pos u10470 u10473 -71;
+    pos u10470 u10476 -25;
+    pos u10470 u10477 -10;
+    pos u10470 u1047B -9;
+    pos u10470 u1047E -8;
+    pos u10470 u1047F -48;
+    pos u10471 question -64;
+    pos u10471 quotesingle -52;
+    pos u10471 u10450 -186;
+    pos u10471 u10451 -88;
+    pos u10471 u10455 -12;
+    pos u10471 u10457 -26;
+    pos u10471 u10458 -144;
+    pos u10471 u10459 -44;
+    pos u10471 u1045F -50;
+    pos u10471 u10460 -46;
+    pos u10471 u10461 -54;
+    pos u10471 u10462 -152;
+    pos u10471 u10464 -8;
+    pos u10471 u10467 -16;
+    pos u10471 u1046A -31;
+    pos u10471 u1046B -18;
+    pos u10471 u1046D -24;
+    pos u10471 u1046E -30;
+    pos u10471 u1046F -53;
+    pos u10471 u10471 -1;
+    pos u10471 u10472 -22;
+    pos u10471 u10473 -37;
+    pos u10471 u10475 -16;
+    pos u10471 u10476 -38;
+    pos u10471 u10477 -12;
+    pos u10471 u10478 -26;
+    pos u10471 u1047B -23;
+    pos u10471 u1047E -9;
+    pos u10471 u1047F -54;
+    pos u10472 period -32;
+    pos u10472 question -40;
+    pos u10472 quotesingle -29;
+    pos u10472 u10450 -176;
+    pos u10472 u10457 -33;
+    pos u10472 u10458 -126;
+    pos u10472 u10459 -37;
+    pos u10472 u10462 -168;
+    pos u10472 u10468 -14;
+    pos u10472 u10475 -21;
+    pos u10472 u1047F -24;
+    pos u10473 period -72;
+    pos u10473 periodcentered -49;
+    pos u10473 question -31;
+    pos u10473 quotesingle -6;
+    pos u10473 u10450 -152;
+    pos u10473 u10452 -14;
+    pos u10473 u10453 -64;
+    pos u10473 u10454 -37;
+    pos u10473 u10455 -42;
+    pos u10473 u10457 -32;
+    pos u10473 u10458 -108;
+    pos u10473 u10459 -40;
+    pos u10473 u1045C -6;
+    pos u10473 u1045D -32;
+    pos u10473 u1045E -26;
+    pos u10473 u10462 -208;
+    pos u10473 u10464 -38;
+    pos u10473 u10465 -70;
+    pos u10473 u10468 -80;
+    pos u10473 u10469 -10;
+    pos u10473 u1046C -55;
+    pos u10473 u1046E -15;
+    pos u10473 u1046F -18;
+    pos u10473 u10474 -26;
+    pos u10473 u10475 -60;
+    pos u10473 u10478 -34;
+    pos u10473 u1047A -54;
+    pos u10473 u1047C -56;
+    pos u10473 u1047F -14;
+    pos u10474 period -30;
+    pos u10474 question -38;
+    pos u10474 quotesingle -40;
+    pos u10474 u10450 -208;
+    pos u10474 u10451 -56;
+    pos u10474 u10455 -22;
+    pos u10474 u10457 -40;
+    pos u10474 u10458 -130;
+    pos u10474 u10459 -48;
+    pos u10474 u1045C -8;
+    pos u10474 u1045F -10;
+    pos u10474 u10460 -5;
+    pos u10474 u10461 -8;
+    pos u10474 u10462 -176;
+    pos u10474 u1046A -12;
+    pos u10474 u1046B -10;
+    pos u10474 u10473 -40;
+    pos u10474 u10475 -12;
+    pos u10474 u10476 -26;
+    pos u10474 u10478 -15;
+    pos u10474 u1047C -7;
+    pos u10474 u1047F -51;
+    pos u10475 periodcentered -38;
+    pos u10475 question -91;
+    pos u10475 quotesingle -61;
+    pos u10475 u10450 -192;
+    pos u10475 u10451 -118;
+    pos u10475 u10452 -47;
+    pos u10475 u10453 -21;
+    pos u10475 u10454 -27;
+    pos u10475 u10455 -30;
+    pos u10475 u10456 -27;
+    pos u10475 u10457 -48;
+    pos u10475 u10458 -176;
+    pos u10475 u1045C -10;
+    pos u10475 u1045E -14;
+    pos u10475 u1045F -70;
+    pos u10475 u10460 -82;
+    pos u10475 u10461 -66;
+    pos u10475 u10462 -104;
+    pos u10475 u10463 -22;
+    pos u10475 u10464 -32;
+    pos u10475 u10467 -26;
+    pos u10475 u1046A -82;
+    pos u10475 u1046B -58;
+    pos u10475 u1046C -61;
+    pos u10475 u1046D -38;
+    pos u10475 u1046E -30;
+    pos u10475 u1046F -70;
+    pos u10475 u10470 -52;
+    pos u10475 u10471 -14;
+    pos u10475 u10472 -21;
+    pos u10475 u10473 -96;
+    pos u10475 u10474 -15;
+    pos u10475 u10476 -30;
+    pos u10475 u10477 -49;
+    pos u10475 u10479 -58;
+    pos u10475 u1047B -51;
+    pos u10475 u1047E -22;
+    pos u10475 u1047F -98;
+    pos u10476 period -50;
+    pos u10476 question -48;
+    pos u10476 quotesingle -48;
+    pos u10476 u10450 -200;
+    pos u10476 u10451 -86;
+    pos u10476 u10452 -10;
+    pos u10476 u10455 -34;
+    pos u10476 u10457 -29;
+    pos u10476 u10458 -130;
+    pos u10476 u10459 -56;
+    pos u10476 u1045C -39;
+    pos u10476 u1045E -4;
+    pos u10476 u10460 -12;
+    pos u10476 u10461 -6;
+    pos u10476 u10462 -166;
+    pos u10476 u10463 -22;
+    pos u10476 u10468 -33;
+    pos u10476 u1046A -14;
+    pos u10476 u1046B -28;
+    pos u10476 u1046E -14;
+    pos u10476 u10472 -18;
+    pos u10476 u10473 -78;
+    pos u10476 u10475 -38;
+    pos u10476 u10476 -8;
+    pos u10476 u10478 -24;
+    pos u10476 u1047C -14;
+    pos u10476 u1047F -47;
+    pos u10477 periodcentered -56;
+    pos u10477 question -101;
+    pos u10477 quotesingle -110;
+    pos u10477 u10450 -213;
+    pos u10477 u10451 -114;
+    pos u10477 u10452 -50;
+    pos u10477 u10455 -22;
+    pos u10477 u10456 -30;
+    pos u10477 u10457 -58;
+    pos u10477 u10458 -190;
+    pos u10477 u1045F -80;
+    pos u10477 u10460 -85;
+    pos u10477 u10461 -73;
+    pos u10477 u10462 -127;
+    pos u10477 u10464 -66;
+    pos u10477 u10465 -14;
+    pos u10477 u10467 -17;
+    pos u10477 u1046A -78;
+    pos u10477 u1046B -70;
+    pos u10477 u1046C -62;
+    pos u10477 u1046D -20;
+    pos u10477 u1046E -20;
+    pos u10477 u1046F -70;
+    pos u10477 u10470 -58;
+    pos u10477 u10471 -15;
+    pos u10477 u10472 -36;
+    pos u10477 u10473 -83;
+    pos u10477 u10476 -56;
+    pos u10477 u10477 1;
+    pos u10477 u10479 -76;
+    pos u10477 u1047B -89;
+    pos u10477 u1047E -24;
+    pos u10477 u1047F -85;
+    pos u10478 period -41;
+    pos u10478 question -48;
+    pos u10478 quotesingle -48;
+    pos u10478 u10450 -215;
+    pos u10478 u10451 -96;
+    pos u10478 u10455 -36;
+    pos u10478 u10457 -33;
+    pos u10478 u10458 -166;
+    pos u10478 u10459 -56;
+    pos u10478 u10461 -21;
+    pos u10478 u10462 -162;
+    pos u10478 u10465 -3;
+    pos u10478 u10468 -17;
+    pos u10478 u1046A -6;
+    pos u10478 u1046D -18;
+    pos u10478 u1046E -38;
+    pos u10478 u10473 -34;
+    pos u10478 u10475 -30;
+    pos u10478 u10476 -42;
+    pos u10478 u10478 -32;
+    pos u10478 u1047C -14;
+    pos u10478 u1047F -50;
+    pos u10479 period -35;
+    pos u10479 question -40;
+    pos u10479 quotesingle -48;
+    pos u10479 u10450 -168;
+    pos u10479 u10451 -40;
+    pos u10479 u10455 -30;
+    pos u10479 u10457 -35;
+    pos u10479 u10458 -136;
+    pos u10479 u10459 -46;
+    pos u10479 u10461 -3;
+    pos u10479 u10462 -170;
+    pos u10479 u10468 -22;
+    pos u10479 u1046D -6;
+    pos u10479 u10473 -19;
+    pos u10479 u10475 -43;
+    pos u10479 u10476 -14;
+    pos u10479 u10478 -35;
+    pos u10479 u1047C -25;
+    pos u10479 u1047F -44;
+    pos u1047A period -29;
+    pos u1047A question -40;
+    pos u1047A quotesingle -24;
+    pos u1047A u10450 -192;
+    pos u1047A u10451 -56;
+    pos u1047A u10455 -22;
+    pos u1047A u10457 -26;
+    pos u1047A u10458 -131;
+    pos u1047A u10459 -23;
+    pos u1047A u10462 -120;
+    pos u1047A u10468 -17;
+    pos u1047A u10473 -8;
+    pos u1047A u10478 -18;
+    pos u1047A u1047C -22;
+    pos u1047A u1047F -35;
+    pos u1047B period -64;
+    pos u1047B periodcentered -15;
+    pos u1047B question -40;
+    pos u1047B quotesingle -16;
+    pos u1047B u10450 -216;
+    pos u1047B u10451 -48;
+    pos u1047B u10455 -28;
+    pos u1047B u10457 -37;
+    pos u1047B u10458 -122;
+    pos u1047B u10459 -57;
+    pos u1047B u10462 -175;
+    pos u1047B u10465 -24;
+    pos u1047B u10468 -44;
+    pos u1047B u10475 -40;
+    pos u1047B u10478 -43;
+    pos u1047B u1047A -14;
+    pos u1047B u1047C -64;
+    pos u1047B u1047F -40;
+    pos u1047C question -46;
+    pos u1047C quotesingle -24;
+    pos u1047C u10450 -208;
+    pos u1047C u10451 -80;
+    pos u1047C u10455 -10;
+    pos u1047C u10457 -22;
+    pos u1047C u10458 -133;
+    pos u1047C u10459 -6;
+    pos u1047C u10462 -120;
+    pos u1047C u10473 -23;
+    pos u1047C u10478 -3;
+    pos u1047C u1047F -48;
+    pos u1047D period -10;
+    pos u1047D question -34;
+    pos u1047D quotesingle -32;
+    pos u1047D u10450 -200;
+    pos u1047D u10451 -72;
+    pos u1047D u10457 -19;
+    pos u1047D u10458 -137;
+    pos u1047D u10459 -5;
+    pos u1047D u10462 -155;
+    pos u1047D u10473 -40;
+    pos u1047D u10476 -22;
+    pos u1047D u1047F -39;
+    pos u1047E period -87;
+    pos u1047E periodcentered -24;
+    pos u1047E question -34;
+    pos u1047E quotesingle -28;
+    pos u1047E u10450 -208;
+    pos u1047E u10451 -64;
+    pos u1047E u10453 -99;
+    pos u1047E u10454 -26;
+    pos u1047E u10455 -48;
+    pos u1047E u10456 -12;
+    pos u1047E u10457 -39;
+    pos u1047E u10458 -113;
+    pos u1047E u10459 -67;
+    pos u1047E u1045D -20;
+    pos u1047E u1045E -20;
+    pos u1047E u10462 -240;
+    pos u1047E u10464 -24;
+    pos u1047E u10465 -100;
+    pos u1047E u10468 -96;
+    pos u1047E u1046C -32;
+    pos u1047E u10472 -24;
+    pos u1047E u10473 -6;
+    pos u1047E u10474 -15;
+    pos u1047E u10475 -68;
+    pos u1047E u10478 -32;
+    pos u1047E u1047A -48;
+    pos u1047E u1047C -83;
+    pos u1047E u1047F -30;
+    pos u1047F periodcentered -30;
+    pos u1047F question -79;
+    pos u1047F quotesingle -88;
+    pos u1047F u10450 -136;
+    pos u1047F u10451 -104;
+    pos u1047F u10452 -37;
+    pos u1047F u10453 -15;
+    pos u1047F u10454 -33;
+    pos u1047F u10455 -30;
+    pos u1047F u10456 -30;
+    pos u1047F u10457 -64;
+    pos u1047F u10458 -182;
+    pos u1047F u1045E -23;
+    pos u1047F u1045F -56;
+    pos u1047F u10460 -77;
+    pos u1047F u10461 -74;
+    pos u1047F u10462 -112;
+    pos u1047F u10464 -26;
+    pos u1047F u10467 -30;
+    pos u1047F u1046A -67;
+    pos u1047F u1046B -68;
+    pos u1047F u1046C -30;
+    pos u1047F u1046D -24;
+    pos u1047F u1046E -30;
+    pos u1047F u1046F -74;
+    pos u1047F u10470 -41;
+    pos u1047F u10471 -28;
+    pos u1047F u10472 -34;
+    pos u1047F u10473 -81;
+    pos u1047F u10474 -18;
+    pos u1047F u10476 -44;
+    pos u1047F u10477 -52;
+    pos u1047F u10478 -4;
+    pos u1047F u10479 -42;
+    pos u1047F u1047A -12;
+    pos u1047F u1047B -64;
+    pos u1047F u1047F -8;
+    pos uni0135 j 90;
+    pos uni0135 uni0135 173;
+    pos uni0251 T -134;
+    pos uni0251 V -76;
+    pos uni0251 W -52;
+    pos uni0251 X -60;
+    pos uni0251 Y -88;
+    pos uni0261 T -138;
+    pos uni0261 V -56;
+    pos uni0261 W -35;
+    pos uni0261 X -62;
+    pos uni0261 Y -83;
+    pos uni0261 j 81;
+    pos uni0400 uni0416 -56;
+    pos uni0400 uni045B -22;
+    pos uni0400 uni0462 -68;
+    pos uni0401 uni040D -15;
+    pos uni0401 uni0416 -46;
+    pos uni0401 uni0418 -22;
+    pos uni0401 uni0419 -30;
+    pos uni0401 uni0424 -46;
+    pos uni0401 uni0425 -38;
+    pos uni0401 uni0427 -22;
+    pos uni0401 uni0434 -30;
+    pos uni0401 uni0436 -22;
+    pos uni0401 uni043B -22;
+    pos uni0401 uni0442 -53;
+    pos uni0401 uni0445 -15;
+    pos uni0401 uni0447 -38;
+    pos uni0401 uni0454 -30;
+    pos uni0401 uni0457 38;
+    pos uni0401 uni045B -53;
+    pos uni0401 uni0462 -98;
+    pos uni0401 uni0463 -91;
+    pos uni0402 question -61;
+    pos uni0402 quotesingle -98;
+    pos uni0402 uni0400 -30;
+    pos uni0402 uni0401 -30;
+    pos uni0402 uni0402 -76;
+    pos uni0402 uni0403 -22;
+    pos uni0402 uni0406 -46;
+    pos uni0402 uni0407 -38;
+    pos uni0402 uni0409 -61;
+    pos uni0402 uni040B -91;
+    pos uni0402 uni040D -30;
+    pos uni0402 uni0414 -46;
+    pos uni0402 uni0416 -98;
+    pos uni0402 uni0418 -12;
+    pos uni0402 uni0419 -22;
+    pos uni0402 uni0422 -114;
+    pos uni0402 uni0425 -76;
+    pos uni0402 uni0427 -61;
+    pos uni0402 uni042A -98;
+    pos uni0402 uni042D -83;
+    pos uni0402 uni0434 -53;
+    pos uni0402 uni0436 -30;
+    pos uni0402 uni0437 -22;
+    pos uni0402 uni043B -53;
+    pos uni0402 uni0442 -38;
+    pos uni0402 uni044A -30;
+    pos uni0402 uni0452 -68;
+    pos uni0402 uni0459 -46;
+    pos uni0402 uni045B -53;
+    pos uni0402 uni0462 -106;
+    pos uni0402 uni0463 -91;
+    pos uni0403 comma -106;
+    pos uni0403 hyphen -129;
+    pos uni0403 uni0401 22;
+    pos uni0403 uni0404 -61;
+    pos uni0403 uni0405 -61;
+    pos uni0403 uni0408 -76;
+    pos uni0403 uni0409 -221;
+    pos uni0403 uni040B 15;
+    pos uni0403 uni0410 -114;
+    pos uni0403 uni0414 -167;
+    pos uni0403 uni041B -112;
+    pos uni0403 uni0421 -61;
+    pos uni0403 uni0424 -83;
+    pos uni0403 uni0430 -129;
+    pos uni0403 uni0431 -106;
+    pos uni0403 uni0432 -137;
+    pos uni0403 uni0433 -152;
+    pos uni0403 uni0434 -198;
+    pos uni0403 uni0435 -175;
+    pos uni0403 uni0436 -206;
+    pos uni0403 uni0437 -152;
+    pos uni0403 uni0438 -175;
+    pos uni0403 uni0439 -114;
+    pos uni0403 uni043A -137;
+    pos uni0403 uni043B -221;
+    pos uni0403 uni043C -190;
+    pos uni0403 uni043D -228;
+    pos uni0403 uni043E -198;
+    pos uni0403 uni043F -160;
+    pos uni0403 uni0440 -130;
+    pos uni0403 uni0441 -167;
+    pos uni0403 uni0442 -235;
+    pos uni0403 uni0443 -175;
+    pos uni0403 uni0444 -198;
+    pos uni0403 uni0445 -221;
+    pos uni0403 uni0446 -221;
+    pos uni0403 uni0447 -228;
+    pos uni0403 uni0448 -182;
+    pos uni0403 uni0449 -182;
+    pos uni0403 uni044A -198;
+    pos uni0403 uni044B -206;
+    pos uni0403 uni044C -206;
+    pos uni0403 uni044D -198;
+    pos uni0403 uni044E -160;
+    pos uni0403 uni044F -167;
+    pos uni0403 uni0453 -61;
+    pos uni0403 uni0454 -221;
+    pos uni0403 uni0455 -221;
+    pos uni0403 uni0457 83;
+    pos uni0403 uni0459 -236;
+    pos uni0403 uni045A -190;
+    pos uni0403 uni045C -91;
+    pos uni0403 uni045D -61;
+    pos uni0403 uni045F -206;
+    pos uni0403 uni0491 -228;
+    pos uni0404 quotesingle -40;
+    pos uni0404 uni0402 -38;
+    pos uni0404 uni0406 -24;
+    pos uni0404 uni0407 -24;
+    pos uni0404 uni0409 -24;
+    pos uni0404 uni040B -62;
+    pos uni0404 uni0414 -8;
+    pos uni0404 uni0416 -48;
+    pos uni0404 uni0418 -16;
+    pos uni0404 uni0422 -46;
+    pos uni0404 uni0425 -56;
+    pos uni0404 uni0427 -24;
+    pos uni0404 uni042A -54;
+    pos uni0404 uni042D -24;
+    pos uni0404 uni0434 -32;
+    pos uni0404 uni0436 -32;
+    pos uni0404 uni043B -24;
+    pos uni0404 uni0442 -72;
+    pos uni0404 uni0445 -32;
+    pos uni0404 uni044A -40;
+    pos uni0404 uni0452 -40;
+    pos uni0404 uni0455 -8;
+    pos uni0404 uni0457 24;
+    pos uni0404 uni0459 -8;
+    pos uni0404 uni045B -24;
+    pos uni0404 uni0462 -80;
+    pos uni0404 uni0463 -80;
+    pos uni0405 uni0416 -16;
+    pos uni0405 uni0434 -16;
+    pos uni0405 uni043B -24;
+    pos uni0405 uni0442 -72;
+    pos uni0405 uni044A -48;
+    pos uni0405 uni0452 -64;
+    pos uni0405 uni0457 40;
+    pos uni0405 uni045B -40;
+    pos uni0405 uni0462 -83;
+    pos uni0405 uni0463 -68;
+    pos uni0406 uni0404 -40;
+    pos uni0406 uni040D -30;
+    pos uni0406 uni0416 -40;
+    pos uni0406 uni041E -32;
+    pos uni0406 uni0421 -40;
+    pos uni0406 uni0424 -80;
+    pos uni0406 uni0442 -80;
+    pos uni0406 uni0445 -24;
+    pos uni0406 uni0447 -64;
+    pos uni0406 uni044A -56;
+    pos uni0406 uni044D -16;
+    pos uni0406 uni0452 -56;
+    pos uni0406 uni0457 32;
+    pos uni0406 uni045B -48;
+    pos uni0406 uni0462 -80;
+    pos uni0406 uni0463 -80;
+    pos uni0407 uni0404 -40;
+    pos uni0407 uni0421 -40;
+    pos uni0407 uni0424 -80;
+    pos uni0407 uni0442 -80;
+    pos uni0407 uni0445 -24;
+    pos uni0407 uni0447 -64;
+    pos uni0407 uni044A -48;
+    pos uni0407 uni044D -24;
+    pos uni0407 uni0452 -64;
+    pos uni0407 uni0457 46;
+    pos uni0407 uni045B -48;
+    pos uni0407 uni0462 -64;
+    pos uni0407 uni0463 -72;
+    pos uni0408 uni0409 -40;
+    pos uni0408 uni041B -16;
+    pos uni0408 uni0426 24;
+    pos uni0408 uni0434 -40;
+    pos uni0408 uni043B -32;
+    pos uni0408 uni0457 96;
+    pos uni0408 uni0459 -40;
+    pos uni0409 comma -76;
+    pos uni0409 uni0402 -53;
+    pos uni0409 uni0406 -46;
+    pos uni0409 uni0407 -56;
+    pos uni0409 uni0409 -8;
+    pos uni0409 uni040B -64;
+    pos uni0409 uni0415 -15;
+    pos uni0409 uni0416 -68;
+    pos uni0409 uni0422 -122;
+    pos uni0409 uni0425 -106;
+    pos uni0409 uni042A -83;
+    pos uni0409 uni042D -38;
+    pos uni0409 uni0434 -83;
+    pos uni0409 uni043B -46;
+    pos uni0409 uni0452 -53;
+    pos uni0409 uni0459 -68;
+    pos uni0409 uni045B -38;
+    pos uni0409 uni0462 -98;
+    pos uni0409 uni0463 -76;
+    pos uni040A uni0402 -53;
+    pos uni040A uni0406 -46;
+    pos uni040A uni0407 -48;
+    pos uni040A uni0409 -40;
+    pos uni040A uni040B -60;
+    pos uni040A uni0414 -60;
+    pos uni040A uni0416 -60;
+    pos uni040A uni0422 -121;
+    pos uni040A uni042A -81;
+    pos uni040A uni042D -16;
+    pos uni040A uni0434 -48;
+    pos uni040A uni043B -40;
+    pos uni040A uni0452 -16;
+    pos uni040A uni0457 16;
+    pos uni040A uni0458 16;
+    pos uni040A uni0459 -32;
+    pos uni040A uni0462 -32;
+    pos uni040A uni0463 -24;
+    pos uni040B uni0452 -32;
+    pos uni040B uni0457 80;
+    pos uni040B uni0462 -32;
+    pos uni040B uni0463 -64;
+    pos uni040C hyphen -48;
+    pos uni040C quotesingle -24;
+    pos uni040C uni0404 -24;
+    pos uni040C uni0416 -32;
+    pos uni040C uni0422 -40;
+    pos uni040C uni0424 -90;
+    pos uni040C uni0427 -28;
+    pos uni040C uni042A -38;
+    pos uni040C uni043E -16;
+    pos uni040C uni0441 -16;
+    pos uni040C uni0442 -80;
+    pos uni040C uni0445 -18;
+    pos uni040C uni0447 -72;
+    pos uni040C uni044A -64;
+    pos uni040C uni0452 -64;
+    pos uni040C uni0457 40;
+    pos uni040C uni045B -40;
+    pos uni040C uni0462 -72;
+    pos uni040C uni0463 -64;
+    pos uni040D quotesingle -60;
+    pos uni040D uni0401 -29;
+    pos uni040D uni0402 -53;
+    pos uni040D uni0403 -24;
+    pos uni040D uni0404 -40;
+    pos uni040D uni0406 -30;
+    pos uni040D uni040B -81;
+    pos uni040D uni040E -24;
+    pos uni040D uni0416 -50;
+    pos uni040D uni0418 -25;
+    pos uni040D uni0419 -40;
+    pos uni040D uni0420 -24;
+    pos uni040D uni0422 -64;
+    pos uni040D uni0423 -40;
+    pos uni040D uni0424 -56;
+    pos uni040D uni0425 -32;
+    pos uni040D uni0427 -42;
+    pos uni040D uni042A -60;
+    pos uni040D uni042D -40;
+    pos uni040D uni0431 -32;
+    pos uni040D uni0437 -24;
+    pos uni040D uni043E -19;
+    pos uni040D uni0442 -70;
+    pos uni040D uni0447 -60;
+    pos uni040D uni044A -50;
+    pos uni040D uni044D -40;
+    pos uni040D uni0452 -81;
+    pos uni040D uni045B -60;
+    pos uni040D uni0462 -101;
+    pos uni040D uni0463 -70;
+    pos uni040E comma -48;
+    pos uni040E uni0403 30;
+    pos uni040E uni0409 -51;
+    pos uni040E uni0414 -50;
+    pos uni040E uni041B -16;
+    pos uni040E uni0434 -50;
+    pos uni040E uni043B -60;
+    pos uni040E uni0457 88;
+    pos uni040E uni0459 -40;
+    pos uni040F uni0431 -16;
+    pos uni040F uni0442 -24;
+    pos uni040F uni0445 -8;
+    pos uni040F uni0457 64;
+    pos uni040F uni0462 -16;
+    pos uni040F uni0463 -8;
+    pos uni0410 question -48;
+    pos uni0410 quotesingle -48;
+    pos uni0410 uni0402 -61;
+    pos uni0410 uni0404 -16;
+    pos uni0410 uni040B -56;
+    pos uni0410 uni0415 -18;
+    pos uni0410 uni0416 -85;
+    pos uni0410 uni0418 -9;
+    pos uni0410 uni0419 -19;
+    pos uni0410 uni041E -32;
+    pos uni0410 uni0420 -29;
+    pos uni0410 uni0422 -64;
+    pos uni0410 uni0424 -40;
+    pos uni0410 uni0425 -32;
+    pos uni0410 uni0427 -30;
+    pos uni0410 uni042A -83;
+    pos uni0410 uni042D -48;
+    pos uni0410 uni0431 -14;
+    pos uni0410 uni0436 -19;
+    pos uni0410 uni0437 -7;
+    pos uni0410 uni0438 -10;
+    pos uni0410 uni0439 -30;
+    pos uni0410 uni043E -20;
+    pos uni0410 uni0442 -56;
+    pos uni0410 uni0447 -43;
+    pos uni0410 uni0449 -14;
+    pos uni0410 uni044A -39;
+    pos uni0410 uni0452 -58;
+    pos uni0410 uni0454 -8;
+    pos uni0410 uni045B -48;
+    pos uni0410 uni0462 -86;
+    pos uni0410 uni0463 -54;
+    pos uni0411 uni0409 -32;
+    pos uni0411 uni0414 -22;
+    pos uni0411 uni0416 -54;
+    pos uni0411 uni0434 -45;
+    pos uni0411 uni043B -32;
+    pos uni0411 uni0442 -24;
+    pos uni0411 uni0445 -40;
+    pos uni0411 uni0452 -38;
+    pos uni0411 uni0457 16;
+    pos uni0411 uni0459 -36;
+    pos uni0411 uni045B -26;
+    pos uni0411 uni0462 -97;
+    pos uni0411 uni0463 -78;
+    pos uni0412 quotesingle -22;
+    pos uni0412 uni0402 -53;
+    pos uni0412 uni0409 -16;
+    pos uni0412 uni040B -56;
+    pos uni0412 uni0414 -19;
+    pos uni0412 uni0416 -58;
+    pos uni0412 uni0422 -74;
+    pos uni0412 uni0425 -64;
+    pos uni0412 uni042A -80;
+    pos uni0412 uni0434 -32;
+    pos uni0412 uni0436 -28;
+    pos uni0412 uni043B -24;
+    pos uni0412 uni0442 -56;
+    pos uni0412 uni0445 -40;
+    pos uni0412 uni0452 -37;
+    pos uni0412 uni0457 21;
+    pos uni0412 uni0459 -30;
+    pos uni0412 uni045B -36;
+    pos uni0412 uni0462 -48;
+    pos uni0412 uni0463 -56;
+    pos uni0413 hyphen -120;
+    pos uni0413 uni0408 -32;
+    pos uni0413 uni0409 -192;
+    pos uni0413 uni0410 -121;
+    pos uni0413 uni0414 -146;
+    pos uni0413 uni041B -93;
+    pos uni0413 uni041E -27;
+    pos uni0413 uni0421 -72;
+    pos uni0413 uni0424 -96;
+    pos uni0413 uni0430 -180;
+    pos uni0413 uni0431 -127;
+    pos uni0413 uni0432 -216;
+    pos uni0413 uni0433 -176;
+    pos uni0413 uni0434 -216;
+    pos uni0413 uni0435 -176;
+    pos uni0413 uni0436 -176;
+    pos uni0413 uni0437 -168;
+    pos uni0413 uni0438 -176;
+    pos uni0413 uni0439 -64;
+    pos uni0413 uni043A -176;
+    pos uni0413 uni043B -200;
+    pos uni0413 uni043C -192;
+    pos uni0413 uni043D -168;
+    pos uni0413 uni043E -168;
+    pos uni0413 uni043F -176;
+    pos uni0413 uni0440 -184;
+    pos uni0413 uni0441 -206;
+    pos uni0413 uni0442 -232;
+    pos uni0413 uni0443 -198;
+    pos uni0413 uni0444 -154;
+    pos uni0413 uni0445 -208;
+    pos uni0413 uni0446 -184;
+    pos uni0413 uni0447 -184;
+    pos uni0413 uni0448 -192;
+    pos uni0413 uni0449 -152;
+    pos uni0413 uni044A -152;
+    pos uni0413 uni044B -168;
+    pos uni0413 uni044C -184;
+    pos uni0413 uni044D -176;
+    pos uni0413 uni044E -155;
+    pos uni0413 uni044F -142;
+    pos uni0413 uni0450 -25;
+    pos uni0413 uni0452 -32;
+    pos uni0413 uni0453 -104;
+    pos uni0413 uni0454 -184;
+    pos uni0413 uni0455 -200;
+    pos uni0413 uni0457 41;
+    pos uni0413 uni0459 -241;
+    pos uni0413 uni045A -192;
+    pos uni0413 uni045B -32;
+    pos uni0413 uni045C -80;
+    pos uni0413 uni045D -36;
+    pos uni0413 uni045E -64;
+    pos uni0413 uni045F -184;
+    pos uni0413 uni0462 -56;
+    pos uni0413 uni0463 -72;
+    pos uni0413 uni0491 -202;
+    pos uni0414 question -88;
+    pos uni0414 quotesingle -40;
+    pos uni0414 uni0401 -22;
+    pos uni0414 uni0402 -83;
+    pos uni0414 uni0403 -30;
+    pos uni0414 uni0404 -32;
+    pos uni0414 uni040A -40;
+    pos uni0414 uni040B -72;
+    pos uni0414 uni040E -40;
+    pos uni0414 uni0411 -25;
+    pos uni0414 uni0415 -26;
+    pos uni0414 uni0416 -91;
+    pos uni0414 uni0417 -11;
+    pos uni0414 uni0418 -39;
+    pos uni0414 uni0419 -32;
+    pos uni0414 uni041E -56;
+    pos uni0414 uni0422 -112;
+    pos uni0414 uni0424 -80;
+    pos uni0414 uni0425 -48;
+    pos uni0414 uni0427 -94;
+    pos uni0414 uni042A -136;
+    pos uni0414 uni042D -44;
+    pos uni0414 uni0442 -48;
+    pos uni0414 uni0443 -7;
+    pos uni0414 uni0445 -34;
+    pos uni0414 uni0447 -46;
+    pos uni0414 uni044A -66;
+    pos uni0414 uni0452 -67;
+    pos uni0414 uni0458 96;
+    pos uni0414 uni045B -43;
+    pos uni0414 uni0462 -120;
+    pos uni0414 uni0463 -84;
+    pos uni0415 uni0416 -41;
+    pos uni0415 uni0418 6;
+    pos uni0415 uni0422 -29;
+    pos uni0415 uni0424 -18;
+    pos uni0415 uni0442 -38;
+    pos uni0415 uni0447 -22;
+    pos uni0415 uni044A -16;
+    pos uni0415 uni044D -16;
+    pos uni0415 uni0452 -28;
+    pos uni0415 uni0457 63;
+    pos uni0415 uni045B -20;
+    pos uni0415 uni0462 -49;
+    pos uni0415 uni0463 -51;
+    pos uni0416 question -14;
+    pos uni0416 quotesingle -37;
+    pos uni0416 uni0400 -6;
+    pos uni0416 uni0401 -18;
+    pos uni0416 uni0402 -38;
+    pos uni0416 uni0404 -16;
+    pos uni0416 uni0405 -8;
+    pos uni0416 uni0406 -40;
+    pos uni0416 uni040B -40;
+    pos uni0416 uni0414 -14;
+    pos uni0416 uni0416 -78;
+    pos uni0416 uni0417 -5;
+    pos uni0416 uni0422 -57;
+    pos uni0416 uni0424 -68;
+    pos uni0416 uni0425 -30;
+    pos uni0416 uni0427 -38;
+    pos uni0416 uni042D -24;
+    pos uni0416 uni042F -11;
+    pos uni0416 uni0445 -22;
+    pos uni0416 uni044A -22;
+    pos uni0416 uni0452 -38;
+    pos uni0416 uni0457 19;
+    pos uni0416 uni045B -7;
+    pos uni0416 uni0462 -76;
+    pos uni0416 uni0463 -62;
+    pos uni0417 uni0409 -19;
+    pos uni0417 uni0414 -16;
+    pos uni0417 uni0416 -32;
+    pos uni0417 uni0417 -1;
+    pos uni0417 uni041B -7;
+    pos uni0417 uni041E -7;
+    pos uni0417 uni0424 -21;
+    pos uni0417 uni0425 -21;
+    pos uni0417 uni0434 -40;
+    pos uni0417 uni0436 -28;
+    pos uni0417 uni043B -34;
+    pos uni0417 uni0442 -39;
+    pos uni0417 uni0445 -14;
+    pos uni0417 uni0447 -9;
+    pos uni0417 uni044A -15;
+    pos uni0417 uni0452 -26;
+    pos uni0417 uni0457 54;
+    pos uni0417 uni0459 -43;
+    pos uni0417 uni045B -14;
+    pos uni0417 uni0462 -15;
+    pos uni0417 uni0463 -34;
+    pos uni0418 question -38;
+    pos uni0418 quotesingle -54;
+    pos uni0418 uni0401 -46;
+    pos uni0418 uni0402 -53;
+    pos uni0418 uni0404 -24;
+    pos uni0418 uni040B -48;
+    pos uni0418 uni040D -25;
+    pos uni0418 uni0416 -39;
+    pos uni0418 uni0418 -1;
+    pos uni0418 uni0419 -23;
+    pos uni0418 uni0420 -20;
+    pos uni0418 uni0422 -35;
+    pos uni0418 uni0424 -59;
+    pos uni0418 uni0425 -19;
+    pos uni0418 uni0427 -13;
+    pos uni0418 uni042A -57;
+    pos uni0418 uni042C 7;
+    pos uni0418 uni0438 -16;
+    pos uni0418 uni0442 -63;
+    pos uni0418 uni0445 -20;
+    pos uni0418 uni0447 -29;
+    pos uni0418 uni044A -42;
+    pos uni0418 uni0452 -47;
+    pos uni0418 uni0456 -28;
+    pos uni0418 uni0457 19;
+    pos uni0418 uni045A -6;
+    pos uni0418 uni045B -38;
+    pos uni0418 uni045E -10;
+    pos uni0418 uni0462 -75;
+    pos uni0418 uni0463 -66;
+    pos uni0418 uni0491 -13;
+    pos uni0419 uni043B -29;
+    pos uni0419 uni0442 -18;
+    pos uni0419 uni0452 -18;
+    pos uni0419 uni0457 70;
+    pos uni041A hyphen -40;
+    pos uni041A uni0404 -32;
+    pos uni041A uni0408 -16;
+    pos uni041A uni040E -16;
+    pos uni041A uni0415 -22;
+    pos uni041A uni0416 -70;
+    pos uni041A uni041E -30;
+    pos uni041A uni0422 -70;
+    pos uni041A uni0424 -78;
+    pos uni041A uni0425 -39;
+    pos uni041A uni0427 -33;
+    pos uni041A uni042A -41;
+    pos uni041A uni042D -40;
+    pos uni041A uni0431 -9;
+    pos uni041A uni0441 -20;
+    pos uni041A uni0442 -82;
+    pos uni041A uni0445 -32;
+    pos uni041A uni0447 -74;
+    pos uni041A uni044A -56;
+    pos uni041A uni0452 -53;
+    pos uni041A uni0454 -21;
+    pos uni041A uni0457 46;
+    pos uni041A uni045B -39;
+    pos uni041A uni0462 -88;
+    pos uni041A uni0463 -86;
+    pos uni041B hyphen -29;
+    pos uni041B question -83;
+    pos uni041B quotesingle -48;
+    pos uni041B uni0402 -68;
+    pos uni041B uni0404 -32;
+    pos uni041B uni0406 -16;
+    pos uni041B uni0408 -16;
+    pos uni041B uni040B -90;
+    pos uni041B uni040D -32;
+    pos uni041B uni040E -8;
+    pos uni041B uni0415 -48;
+    pos uni041B uni0416 -74;
+    pos uni041B uni0417 -10;
+    pos uni041B uni041E -35;
+    pos uni041B uni0420 -42;
+    pos uni041B uni0422 -102;
+    pos uni041B uni0423 -7;
+    pos uni041B uni0424 -60;
+    pos uni041B uni0425 -58;
+    pos uni041B uni0427 -70;
+    pos uni041B uni042A -134;
+    pos uni041B uni042D -60;
+    pos uni041B uni0441 -22;
+    pos uni041B uni0442 -82;
+    pos uni041B uni0445 -44;
+    pos uni041B uni0447 -54;
+    pos uni041B uni0449 -25;
+    pos uni041B uni044A -71;
+    pos uni041B uni044C -20;
+    pos uni041B uni044D -40;
+    pos uni041B uni0452 -61;
+    pos uni041B uni0454 -13;
+    pos uni041B uni045B -60;
+    pos uni041B uni0462 -129;
+    pos uni041B uni0463 -98;
+    pos uni041C uni0402 -53;
+    pos uni041C uni0457 50;
+    pos uni041D uni0457 56;
+    pos uni041D uni0462 -43;
+    pos uni041D uni0463 -34;
+    pos uni041E comma -74;
+    pos uni041E uni0402 -53;
+    pos uni041E uni0406 -32;
+    pos uni041E uni0408 -16;
+    pos uni041E uni040B -48;
+    pos uni041E uni0410 -27;
+    pos uni041E uni0414 -56;
+    pos uni041E uni0415 -15;
+    pos uni041E uni0416 -48;
+    pos uni041E uni0417 -18;
+    pos uni041E uni041B -35;
+    pos uni041E uni0422 -36;
+    pos uni041E uni0425 -46;
+    pos uni041E uni042A -71;
+    pos uni041E uni042D -27;
+    pos uni041E uni0431 -8;
+    pos uni041E uni0434 -72;
+    pos uni041E uni043B -56;
+    pos uni041E uni0457 50;
+    pos uni041E uni0459 -74;
+    pos uni041E uni0462 -48;
+    pos uni041E uni0463 -23;
+    pos uni041F uni0403 16;
+    pos uni041F uni0457 75;
+    pos uni0420 comma -56;
+    pos uni0420 hyphen -38;
+    pos uni0420 question -2;
+    pos uni0420 quotesingle -6;
+    pos uni0420 uni0402 -30;
+    pos uni0420 uni0406 -40;
+    pos uni0420 uni0407 -40;
+    pos uni0420 uni0408 -48;
+    pos uni0420 uni0409 -129;
+    pos uni0420 uni040B -60;
+    pos uni0420 uni0410 -39;
+    pos uni0420 uni0414 -74;
+    pos uni0420 uni0416 -30;
+    pos uni0420 uni0417 -19;
+    pos uni0420 uni041B -37;
+    pos uni0420 uni0422 -64;
+    pos uni0420 uni042A -96;
+    pos uni0420 uni0431 -40;
+    pos uni0420 uni0434 -111;
+    pos uni0420 uni043B -112;
+    pos uni0420 uni0441 -18;
+    pos uni0420 uni0444 -18;
+    pos uni0420 uni044F -12;
+    pos uni0420 uni0454 -20;
+    pos uni0420 uni0457 34;
+    pos uni0420 uni0459 -130;
+    pos uni0420 uni0462 -11;
+    pos uni0420 uni0463 -12;
+    pos uni0421 uni0422 -14;
+    pos uni0421 uni0424 -29;
+    pos uni0421 uni0425 -6;
+    pos uni0421 uni042A -38;
+    pos uni0422 comma -66;
+    pos uni0422 hyphen -96;
+    pos uni0422 uni0404 -30;
+    pos uni0422 uni0408 -32;
+    pos uni0422 uni0409 -167;
+    pos uni0422 uni0410 -106;
+    pos uni0422 uni0414 -97;
+    pos uni0422 uni041B -85;
+    pos uni0422 uni041E -13;
+    pos uni0422 uni0421 -70;
+    pos uni0422 uni0424 -90;
+    pos uni0422 uni0430 -90;
+    pos uni0422 uni0431 -110;
+    pos uni0422 uni0432 -120;
+    pos uni0422 uni0433 -118;
+    pos uni0422 uni0434 -160;
+    pos uni0422 uni0435 -120;
+    pos uni0422 uni0436 -160;
+    pos uni0422 uni0437 -120;
+    pos uni0422 uni0438 -112;
+    pos uni0422 uni0439 -96;
+    pos uni0422 uni043A -104;
+    pos uni0422 uni043B -176;
+    pos uni0422 uni043C -136;
+    pos uni0422 uni043D -128;
+    pos uni0422 uni043E -132;
+    pos uni0422 uni043F -130;
+    pos uni0422 uni0440 -118;
+    pos uni0422 uni0441 -136;
+    pos uni0422 uni0442 -149;
+    pos uni0422 uni0443 -124;
+    pos uni0422 uni0444 -130;
+    pos uni0422 uni0445 -144;
+    pos uni0422 uni0446 -144;
+    pos uni0422 uni0447 -147;
+    pos uni0422 uni0448 -107;
+    pos uni0422 uni0449 -107;
+    pos uni0422 uni044A -119;
+    pos uni0422 uni044B -107;
+    pos uni0422 uni044C -136;
+    pos uni0422 uni044D -136;
+    pos uni0422 uni044E -120;
+    pos uni0422 uni044F -88;
+    pos uni0422 uni0450 -27;
+    pos uni0422 uni0452 -41;
+    pos uni0422 uni0453 -42;
+    pos uni0422 uni0454 -137;
+    pos uni0422 uni0455 -126;
+    pos uni0422 uni0457 110;
+    pos uni0422 uni0458 8;
+    pos uni0422 uni0459 -174;
+    pos uni0422 uni045A -104;
+    pos uni0422 uni045B -38;
+    pos uni0422 uni045C -104;
+    pos uni0422 uni045D -50;
+    pos uni0422 uni045E -39;
+    pos uni0422 uni045F -135;
+    pos uni0422 uni0462 -44;
+    pos uni0422 uni0463 -22;
+    pos uni0422 uni0491 -137;
+    pos uni0423 uni0408 -8;
+    pos uni0423 uni0409 -68;
+    pos uni0423 uni0418 18;
+    pos uni0423 uni041B -7;
+    pos uni0424 uni0402 -46;
+    pos uni0424 uni0406 -64;
+    pos uni0424 uni0407 -80;
+    pos uni0424 uni0408 -32;
+    pos uni0424 uni0409 -98;
+    pos uni0424 uni040B -60;
+    pos uni0424 uni0410 -38;
+    pos uni0424 uni0414 -80;
+    pos uni0424 uni0416 -60;
+    pos uni0424 uni0417 -26;
+    pos uni0424 uni0418 2;
+    pos uni0424 uni041B -44;
+    pos uni0424 uni0422 -70;
+    pos uni0425 uni0404 -16;
+    pos uni0425 uni0418 8;
+    pos uni0425 uni041E -14;
+    pos uni0425 uni0421 -8;
+    pos uni0426 uni0401 -46;
+    pos uni0426 uni0402 -46;
+    pos uni0426 uni0404 -32;
+    pos uni0426 uni040B -70;
+    pos uni0426 uni040D -30;
+    pos uni0426 uni0415 -39;
+    pos uni0426 uni0416 -46;
+    pos uni0426 uni0418 -15;
+    pos uni0426 uni041E -28;
+    pos uni0426 uni0421 -15;
+    pos uni0426 uni0422 -60;
+    pos uni0427 uni0418 8;
+    pos uni0429 uni0402 -53;
+    pos uni0429 uni040B -81;
+    pos uni0429 uni0416 -39;
+    pos uni0429 uni041E -32;
+    pos uni0429 uni0422 -70;
+    pos uni042A uni0402 -76;
+    pos uni042A uni0406 -48;
+    pos uni042A uni0407 -32;
+    pos uni042A uni0416 -74;
+    pos uni042A uni0422 -151;
+    pos uni042B uni0418 22;
+    pos uni042C uni0402 -91;
+    pos uni042C uni0406 -56;
+    pos uni042C uni0407 -60;
+    pos uni042C uni0408 -16;
+    pos uni042C uni0409 -38;
+    pos uni042C uni0416 -71;
+    pos uni042C uni0418 30;
+    pos uni042C uni0422 -121;
+    pos uni042D uni0402 -53;
+    pos uni042D uni0406 -32;
+    pos uni042D uni0409 -91;
+    pos uni042D uni0410 -32;
+    pos uni042D uni0414 -37;
+    pos uni042D uni0416 -48;
+    pos uni042D uni041B -22;
+    pos uni042D uni0422 -29;
+    pos uni042E uni0408 -24;
+    pos uni042E uni0409 -76;
+    pos uni042E uni0410 -24;
+    pos uni042E uni0414 -54;
+    pos uni042E uni0416 -17;
+    pos uni042E uni041B -36;
+    pos uni042F uni0402 -30;
+    pos uni042F uni0408 -16;
+    pos uni0430 uni0402 -30;
+    pos uni0430 uni040B -90;
+    pos uni0430 uni0416 -60;
+    pos uni0430 uni0422 -98;
+    pos uni0431 uni0401 22;
+    pos uni0431 uni0402 38;
+    pos uni0431 uni0406 16;
+    pos uni0431 uni0409 -53;
+    pos uni0431 uni040F 23;
+    pos uni0431 uni0410 -32;
+    pos uni0431 uni0411 5;
+    pos uni0431 uni0414 -40;
+    pos uni0431 uni0415 13;
+    pos uni0431 uni0418 13;
+    pos uni0431 uni0419 14;
+    pos uni0431 uni041A 13;
+    pos uni0431 uni041B -35;
+    pos uni0432 uni0402 -61;
+    pos uni0432 uni040B -90;
+    pos uni0432 uni0416 -80;
+    pos uni0432 uni0422 -144;
+    pos uni0433 uni0402 -38;
+    pos uni0433 uni0406 -80;
+    pos uni0433 uni0407 -64;
+    pos uni0433 uni0408 -88;
+    pos uni0433 uni0409 -137;
+    pos uni0433 uni040B -81;
+    pos uni0433 uni0410 -42;
+    pos uni0433 uni0414 -67;
+    pos uni0433 uni0416 -39;
+    pos uni0433 uni0417 -23;
+    pos uni0433 uni0418 17;
+    pos uni0433 uni041B -42;
+    pos uni0433 uni0422 -128;
+    pos uni0433 uni0434 -96;
+    pos uni0434 uni0401 -38;
+    pos uni0434 uni0402 -98;
+    pos uni0434 uni0404 -40;
+    pos uni0434 uni0405 -16;
+    pos uni0434 uni0408 -16;
+    pos uni0434 uni040A -48;
+    pos uni0434 uni040B -90;
+    pos uni0434 uni040C -48;
+    pos uni0434 uni040D -48;
+    pos uni0434 uni040E -16;
+    pos uni0434 uni0411 -48;
+    pos uni0434 uni0412 -34;
+    pos uni0434 uni0415 -46;
+    pos uni0434 uni0416 -71;
+    pos uni0434 uni0417 -40;
+    pos uni0434 uni0418 -38;
+    pos uni0434 uni0419 -38;
+    pos uni0434 uni041A -34;
+    pos uni0434 uni041D -34;
+    pos uni0434 uni041E -56;
+    pos uni0434 uni0420 -43;
+    pos uni0434 uni0422 -160;
+    pos uni0435 uni0402 -61;
+    pos uni0435 uni040B -60;
+    pos uni0435 uni0416 -72;
+    pos uni0435 uni0422 -144;
+    pos uni0436 uni0402 -61;
+    pos uni0436 uni040A -16;
+    pos uni0436 uni040B -64;
+    pos uni0436 uni0416 -71;
+    pos uni0436 uni0417 -27;
+    pos uni0436 uni0418 -17;
+    pos uni0436 uni0422 -144;
+    pos uni0437 uni0402 -61;
+    pos uni0437 uni040B -64;
+    pos uni0437 uni0416 -80;
+    pos uni0437 uni0422 -136;
+    pos uni0438 uni0402 -53;
+    pos uni0438 uni040B -64;
+    pos uni0438 uni0416 -46;
+    pos uni0438 uni0418 5;
+    pos uni0438 uni0422 -114;
+    pos uni0439 uni0419 10;
+    pos uni0439 uni0422 -48;
+    pos uni043A uni0402 -53;
+    pos uni043A uni040B -56;
+    pos uni043A uni0416 -68;
+    pos uni043A uni0422 -115;
+    pos uni043B uni0401 -46;
+    pos uni043B uni0402 -98;
+    pos uni043B uni0404 -48;
+    pos uni043B uni0405 -32;
+    pos uni043B uni0408 -24;
+    pos uni043B uni040A -32;
+    pos uni043B uni040B -64;
+    pos uni043B uni040D -14;
+    pos uni043B uni040E -32;
+    pos uni043B uni0411 -24;
+    pos uni043B uni0415 -50;
+    pos uni043B uni0416 -71;
+    pos uni043B uni0417 -33;
+    pos uni043B uni0418 -27;
+    pos uni043B uni0419 -29;
+    pos uni043B uni041A -21;
+    pos uni043B uni041D -28;
+    pos uni043B uni041E -36;
+    pos uni043B uni0422 -136;
+    pos uni043C uni0401 -38;
+    pos uni043C uni0402 -61;
+    pos uni043C uni0404 -16;
+    pos uni043C uni040B -64;
+    pos uni043C uni040D -16;
+    pos uni043C uni0416 -68;
+    pos uni043C uni0418 -22;
+    pos uni043C uni0419 -29;
+    pos uni043C uni0422 -176;
+    pos uni043D uni0402 -68;
+    pos uni043D uni040B -64;
+    pos uni043D uni0416 -80;
+    pos uni043D uni0419 -16;
+    pos uni043D uni0422 -144;
+    pos uni043E uni0402 -46;
+    pos uni043E uni040B -56;
+    pos uni043E uni0416 -80;
+    pos uni043E uni0422 -143;
+    pos uni043F uni0402 -61;
+    pos uni043F uni040B -56;
+    pos uni043F uni0416 -48;
+    pos uni043F uni0422 -114;
+    pos uni0440 uni0402 -68;
+    pos uni0440 uni040B -48;
+    pos uni0440 uni0416 -76;
+    pos uni0440 uni0422 -140;
+    pos uni0441 uni0402 -68;
+    pos uni0441 uni040B -56;
+    pos uni0441 uni0416 -80;
+    pos uni0441 uni0422 -143;
+    pos uni0442 uni0402 -61;
+    pos uni0442 uni0406 -80;
+    pos uni0442 uni0407 -80;
+    pos uni0442 uni0408 -64;
+    pos uni0442 uni0409 -122;
+    pos uni0442 uni040B -48;
+    pos uni0442 uni0410 -51;
+    pos uni0442 uni0414 -64;
+    pos uni0442 uni0416 -80;
+    pos uni0442 uni0417 -31;
+    pos uni0442 uni041B -42;
+    pos uni0442 uni0422 -134;
+    pos uni0443 uni0402 -53;
+    pos uni0443 uni040B -48;
+    pos uni0443 uni040F 8;
+    pos uni0443 uni0416 -84;
+    pos uni0443 uni0422 -119;
+    pos uni0444 uni0402 -30;
+    pos uni0444 uni0407 -32;
+    pos uni0444 uni040B -56;
+    pos uni0444 uni0416 -66;
+    pos uni0444 uni0417 -13;
+    pos uni0444 uni0422 -109;
+    pos uni0445 uni0402 -68;
+    pos uni0445 uni0406 -16;
+    pos uni0445 uni040B -40;
+    pos uni0445 uni0414 -32;
+    pos uni0445 uni0416 -56;
+    pos uni0445 uni0417 -12;
+    pos uni0445 uni0422 -124;
+    pos uni0446 uni0402 -76;
+    pos uni0446 uni040A -24;
+    pos uni0446 uni040B -80;
+    pos uni0446 uni040D -40;
+    pos uni0446 uni040E -24;
+    pos uni0446 uni0411 -15;
+    pos uni0446 uni0416 -80;
+    pos uni0446 uni0417 -18;
+    pos uni0446 uni0418 -50;
+    pos uni0446 uni0419 -46;
+    pos uni0446 uni041A -32;
+    pos uni0446 uni041D -32;
+    pos uni0446 uni041E -49;
+    pos uni0446 uni041F -35;
+    pos uni0446 uni0422 -178;
+    pos uni0447 uni0402 -53;
+    pos uni0447 uni040B -48;
+    pos uni0447 uni0416 -64;
+    pos uni0447 uni0417 -5;
+    pos uni0447 uni0422 -128;
+    pos uni0448 uni0402 -61;
+    pos uni0448 uni040B -64;
+    pos uni0448 uni0416 -32;
+    pos uni0448 uni0422 -147;
+    pos uni0449 uni0401 -38;
+    pos uni0449 uni0402 -91;
+    pos uni0449 uni040A -40;
+    pos uni0449 uni040B -48;
+    pos uni0449 uni040D -50;
+    pos uni0449 uni040E -32;
+    pos uni0449 uni0411 -22;
+    pos uni0449 uni0416 -40;
+    pos uni0449 uni0417 -12;
+    pos uni0449 uni0418 -36;
+    pos uni0449 uni0419 -49;
+    pos uni0449 uni041E -48;
+    pos uni0449 uni041F -40;
+    pos uni0449 uni0422 -172;
+    pos uni044A uni0402 -37;
+    pos uni044A uni0406 -16;
+    pos uni044A uni040B -32;
+    pos uni044A uni0416 -54;
+    pos uni044A uni0422 -114;
+    pos uni044B uni0402 -46;
+    pos uni044B uni040B -32;
+    pos uni044B uni0416 -24;
+    pos uni044B uni0422 -96;
+    pos uni044C uni0402 -61;
+    pos uni044C uni0406 -24;
+    pos uni044C uni0407 -32;
+    pos uni044C uni040B -56;
+    pos uni044C uni0416 -59;
+    pos uni044C uni0422 -128;
+    pos uni044D uni0402 -61;
+    pos uni044D uni0406 -40;
+    pos uni044D uni0407 -32;
+    pos uni044D uni040B -56;
+    pos uni044D uni0416 -64;
+    pos uni044D uni0422 -138;
+    pos uni044E uni0402 -53;
+    pos uni044E uni0406 -32;
+    pos uni044E uni0407 -40;
+    pos uni044E uni0416 -72;
+    pos uni044E uni0422 -95;
+    pos uni044F uni0402 -76;
+    pos uni044F uni040B -72;
+    pos uni044F uni0416 -42;
+    pos uni044F uni0422 -123;
+    pos uni0450 uni0402 -53;
+    pos uni0450 uni040B -64;
+    pos uni0450 uni0416 -49;
+    pos uni0450 uni0422 -63;
+    pos uni0451 uni0402 -46;
+    pos uni0451 uni040B -32;
+    pos uni0451 uni0416 -16;
+    pos uni0452 uni0402 -68;
+    pos uni0452 uni0406 -24;
+    pos uni0452 uni040B -56;
+    pos uni0452 uni0415 -15;
+    pos uni0452 uni0416 -43;
+    pos uni0452 uni0422 -107;
+    pos uni0453 uni0406 -24;
+    pos uni0453 uni0408 -72;
+    pos uni0453 uni0409 -122;
+    pos uni0453 uni040B -16;
+    pos uni0453 uni0410 -50;
+    pos uni0453 uni0414 -90;
+    pos uni0453 uni0416 -14;
+    pos uni0453 uni041B -40;
+    pos uni0454 uni0402 -61;
+    pos uni0454 uni0404 -8;
+    pos uni0454 uni0406 -16;
+    pos uni0454 uni040B -48;
+    pos uni0454 uni0416 -63;
+    pos uni0454 uni0422 -130;
+    pos uni0455 uni0402 -61;
+    pos uni0455 uni040B -56;
+    pos uni0455 uni0416 -48;
+    pos uni0455 uni0422 -125;
+    pos uni0457 uni0401 53;
+    pos uni0457 uni0402 46;
+    pos uni0457 uni0403 76;
+    pos uni0457 uni0404 40;
+    pos uni0457 uni0405 48;
+    pos uni0457 uni0406 32;
+    pos uni0457 uni0407 61;
+    pos uni0457 uni0408 24;
+    pos uni0457 uni040A 49;
+    pos uni0457 uni040B 32;
+    pos uni0457 uni040C 64;
+    pos uni0457 uni040D 50;
+    pos uni0457 uni040E 64;
+    pos uni0457 uni040F 64;
+    pos uni0457 uni0411 60;
+    pos uni0457 uni0412 39;
+    pos uni0457 uni0413 66;
+    pos uni0457 uni0415 57;
+    pos uni0457 uni0416 63;
+    pos uni0457 uni0417 42;
+    pos uni0457 uni0418 62;
+    pos uni0457 uni0419 60;
+    pos uni0457 uni041A 68;
+    pos uni0457 uni041C 68;
+    pos uni0457 uni041D 47;
+    pos uni0457 uni041E 43;
+    pos uni0457 uni041F 46;
+    pos uni0457 uni0420 63;
+    pos uni0457 uni0422 66;
+    pos uni0459 uni0402 -68;
+    pos uni0459 uni0404 -16;
+    pos uni0459 uni0406 -40;
+    pos uni0459 uni0407 -64;
+    pos uni0459 uni0409 -61;
+    pos uni0459 uni040A -16;
+    pos uni0459 uni040B -72;
+    pos uni0459 uni040E -24;
+    pos uni0459 uni0416 -98;
+    pos uni0459 uni0417 -23;
+    pos uni0459 uni0418 -26;
+    pos uni0459 uni0422 -182;
+    pos uni045A uni0402 -61;
+    pos uni045A uni0404 -8;
+    pos uni045A uni0405 -35;
+    pos uni045A uni0406 -24;
+    pos uni045A uni0407 -48;
+    pos uni045A uni040A -16;
+    pos uni045A uni040B -64;
+    pos uni045A uni0416 -80;
+    pos uni045A uni0417 -6;
+    pos uni045A uni0418 -8;
+    pos uni045A uni0422 -131;
+    pos uni045B uni0402 -61;
+    pos uni045B uni040B -64;
+    pos uni045B uni0416 -50;
+    pos uni045B uni0422 -136;
+    pos uni045C uni040B -24;
+    pos uni045C uni0422 -13;
+    pos uni045D uni0402 -53;
+    pos uni045D uni040B -56;
+    pos uni045D uni0416 -53;
+    pos uni045D uni0422 -102;
+    pos uni045E uni040B -32;
+    pos uni045E uni0416 -28;
+    pos uni045E uni0418 13;
+    pos uni045E uni0422 -38;
+    pos uni045F uni0402 -22;
+    pos uni045F uni040B -40;
+    pos uni045F uni040F 17;
+    pos uni045F uni0416 -47;
+    pos uni045F uni0418 31;
+    pos uni045F uni0422 -106;
+    pos uni0462 uni0402 -15;
+    pos uni0462 uni040B -32;
+    pos uni0462 uni0414 -9;
+    pos uni0462 uni0416 -48;
+    pos uni0462 uni0422 -74;
+    pos uni0463 uni0402 -68;
+    pos uni0463 uni0406 -32;
+    pos uni0463 uni040B -48;
+    pos uni0463 uni0414 -38;
+    pos uni0463 uni0416 -58;
+    pos uni0463 uni0417 -26;
+    pos uni0463 uni0422 -66;
+    pos uni0490 uni0402 22;
+    pos uni0490 uni0404 -24;
+    pos uni0490 uni0405 -76;
+    pos uni0490 uni0408 -72;
+    pos uni0490 uni0409 -221;
+    pos uni0490 uni0410 -152;
+    pos uni0490 uni0414 -160;
+    pos uni0490 uni041B -106;
+    pos uni0490 uni041E -29;
+    pos uni0491 uni0400 -22;
+    pos uni0491 uni0401 -24;
+    pos uni0491 uni0406 -40;
+    pos uni0491 uni0407 -40;
+    pos uni0491 uni0408 -72;
+    pos uni0491 uni0409 -160;
+    pos uni0491 uni040B -64;
+    pos uni0491 uni0410 -72;
+    pos uni0491 uni0414 -104;
+    pos uni0491 uni0417 -37;
+    pos uni0491 uni041B -56;
+    pos uni0491 uni0422 -29;
+    pos uniE01F question -79;
+    pos uniE01F quotesingle -50;
+    pos uniE021 periodcentered -40;
+    pos uniE021 question -83;
+    pos uniE021 quotesingle -37;
+    pos uniE0AE uniE0B0 -56;
+    pos v A -14;
+    pos v I -56;
+    pos v J -21;
+    pos v T -101;
+    pos v V -11;
+    pos v W -14;
+    pos v X -57;
+    pos v Y -9;
+    pos v Z -32;
+    pos v braceright -45;
+    pos v bracketright -65;
+    pos v g -13;
+    pos v parenright -22;
+    pos v uni0251 -12;
+    pos v uni0261 -24;
+    pos w I -38;
+    pos w T -138;
+    pos w V -38;
+    pos w W -27;
+    pos w X -78;
+    pos w Y -83;
+    pos w Z -50;
+    pos w braceright -72;
+    pos w bracketright -105;
+    pos w parenright -73;
+    pos w question -34;
+    pos x E -13;
+    pos x F -14;
+    pos x I -47;
+    pos x J -18;
+    pos x T -93;
+    pos x V -22;
+    pos x W -15;
+    pos x X -57;
+    pos x Y -46;
+    pos x Z -4;
+    pos x braceright -76;
+    pos x bracketright -74;
+    pos x c -21;
+    pos x parenright -61;
+    pos x q -12;
+    pos x question -31;
+    pos x uni0251 -8;
+    pos x uni0261 -24;
+    pos y E -16;
+    pos y F -15;
+    pos y I -39;
+    pos y P -18;
+    pos y T -147;
+    pos y V -56;
+    pos y W -38;
+    pos y X -54;
+    pos y Y -81;
+    pos y Z -16;
+    pos y braceright -34;
+    pos y bracketright -50;
+    pos y parenright -42;
+    pos y question -54;
+    pos z E -27;
+    pos z I -38;
+    pos z P -33;
+    pos z T -154;
+    pos z V -77;
+    pos z W -64;
+    pos z X -52;
+    pos z Y -75;
+    pos z Z -33;
+    pos z braceright -86;
+    pos z bracketright -136;
+    pos z f -27;
+    pos z parenright -94;
+    pos z question -78;
+    pos z t -24;
+    pos z x -17;
+  } KERN_LTR;
+
+} kern;
+feature mark {
+# GPOS feature : Mark Positioning
+    markClass acutecomb <anchor -240 704> @top;
+    markClass brevecomb <anchor -216 704> @top;
+    markClass caroncomb <anchor -249 704> @top;
+    markClass cedillacomb <anchor -278 0> @bottom;
+    markClass circumflexcomb <anchor -240 704> @top;
+    markClass commaaccentcomb <anchor -214 93> @bottom;
+    markClass dieresiscomb <anchor -210 704> @top;
+    markClass dotaccentcomb <anchor -178 704> @top;
+    markClass gravecomb <anchor -240 704> @top;
+    markClass hungarumlautcomb <anchor -288 712> @top;
+    markClass macroncomb <anchor -240 704> @top;
+    markClass ringcomb <anchor -304 648> @top;
+    markClass tildecomb <anchor -240 704> @top;
+    markClass uni0309 <anchor -203 704> @top;
+    markClass uni030D <anchor -249 704> @top;
+    markClass uni030F <anchor -288 712> @top;
+    markClass uni0316 <anchor -213 -16> @bottom;
+    markClass uni0317 <anchor -213 -16> @bottom;
+    markClass uni0318 <anchor -214 93> @bottom;
+    markClass uni0319 <anchor -214 93> @bottom;
+    markClass uni031A <anchor -240 704> @top;
+    markClass uni031C <anchor -213 -16> @bottom;
+    markClass uni031D <anchor -214 93> @bottom;
+    markClass uni031E <anchor -214 93> @bottom;
+    markClass uni031F <anchor -214 93> @bottom;
+    markClass uni0320 <anchor -214 93> @bottom;
+    markClass uni0323 <anchor -213 -16> @bottom;
+    markClass uni0324 <anchor -214 93> @bottom;
+    markClass uni0325 <anchor -214 93> @bottom;
+    markClass uni0329 <anchor -214 93> @bottom;
+    markClass uni032A <anchor -214 93> @bottom;
+    markClass uni032B <anchor -214 93> @bottom;
+    markClass uni032C <anchor -214 93> @bottom;
+    markClass uni032D <anchor -214 93> @bottom;
+    markClass uni032E <anchor -214 93> @bottom;
+    markClass uni032F <anchor -214 93> @bottom;
+    markClass uni0330 <anchor -214 93> @bottom;
+    markClass uni0331 <anchor -214 93> @bottom;
+    markClass uni0332 <anchor -214 93> @bottom;
+    markClass uni033A <anchor -214 93> @bottom;
+    markClass uni033D <anchor -240 704> @top;
+    markClass uni034D <anchor -334 93> @bottom;
+    markClass uni037A <anchor 73 22> @bottom;
+    markClass uni0384 <anchor 65 467> @top;
+    markClass uni0385 <anchor 164 438> @top;
+
+  lookup markLTR {
+      pos base A
+          <anchor 256 33> mark @bottom
+          <anchor 291 750> mark @top;
+      pos base AE
+          <anchor 482 26> mark @bottom
+          <anchor 451 727> mark @top;
+      pos base Aacute
+          <anchor 256 33> mark @bottom
+          <anchor 291 950> mark @top;
+      pos base Abreve
+          <anchor 256 33> mark @bottom
+          <anchor 291 950> mark @top;
+      pos base Acircumflex
+          <anchor 256 33> mark @bottom
+          <anchor 291 950> mark @top;
+      pos base Adieresis
+          <anchor 256 33> mark @bottom
+          <anchor 291 950> mark @top;
+      pos base Agrave
+          <anchor 256 33> mark @bottom
+          <anchor 291 950> mark @top;
+      pos base Amacron
+          <anchor 256 33> mark @bottom
+          <anchor 291 950> mark @top;
+      pos base Aogonek
+          <anchor 342 -213> mark @bottom
+          <anchor 352 764> mark @top;
+      pos base Aring
+          <anchor 243 34> mark @bottom
+          <anchor 237 890> mark @top;
+      pos base Atilde
+          <anchor 256 33> mark @bottom
+          <anchor 291 950> mark @top;
+      pos base B
+          <anchor 256 33> mark @bottom
+          <anchor 234 758> mark @top;
+      pos base C
+          <anchor 294 33> mark @bottom
+          <anchor 314 743> mark @top;
+      pos base Cacute
+          <anchor 294 33> mark @bottom
+          <anchor 314 967> mark @top;
+      pos base Ccaron
+          <anchor 294 33> mark @bottom
+          <anchor 314 967> mark @top;
+      pos base Ccedilla
+          <anchor 282 -229> mark @bottom
+          <anchor 291 784> mark @top;
+      pos base Cdotaccent
+          <anchor 294 33> mark @bottom
+          <anchor 314 967> mark @top;
+      pos base D
+          <anchor 264 73> mark @bottom
+          <anchor 261 740> mark @top;
+      pos base Dcaron
+          <anchor 264 73> mark @bottom
+          <anchor 261 996> mark @top;
+      pos base Dcroat
+          <anchor 298 42> mark @bottom
+          <anchor 317 754> mark @top;
+      pos base E
+          <anchor 288 23> mark @bottom
+          <anchor 256 746> mark @top;
+      pos base Eacute
+          <anchor 288 33> mark @bottom
+          <anchor 256 962> mark @top;
+      pos base Ecaron
+          <anchor 288 33> mark @bottom
+          <anchor 256 962> mark @top;
+      pos base Ecircumflex
+          <anchor 288 33> mark @bottom
+          <anchor 256 962> mark @top;
+      pos base Edieresis
+          <anchor 288 33> mark @bottom
+          <anchor 256 962> mark @top;
+      pos base Edotaccent
+          <anchor 288 33> mark @bottom
+          <anchor 256 962> mark @top;
+      pos base Egrave
+          <anchor 288 33> mark @bottom
+          <anchor 256 962> mark @top;
+      pos base Emacron
+          <anchor 288 33> mark @bottom
+          <anchor 256 962> mark @top;
+      pos base Eogonek
+          <anchor 314 33> mark @bottom
+          <anchor 306 756> mark @top;
+      pos base Eth
+          <anchor 286 54> mark @bottom
+          <anchor 291 750> mark @top;
+      pos base F
+          <anchor 128 25> mark @bottom
+          <anchor 277 750> mark @top;
+      pos base G
+          <anchor 354 -145> mark @bottom
+          <anchor 306 748> mark @top;
+      pos base Gbreve
+          <anchor 354 -145> mark @bottom
+          <anchor 306 980> mark @top;
+      pos base Gcommaaccent
+          <anchor 245 -303> mark @bottom
+          <anchor 302 775> mark @top;
+      pos base Gdotaccent
+          <anchor 354 -145> mark @bottom
+          <anchor 306 980> mark @top;
+      pos base H
+          <anchor 312 25> mark @bottom
+          <anchor 288 737> mark @top;
+      pos base Hbar
+          <anchor 312 25> mark @bottom
+          <anchor 288 737> mark @top;
+      pos base I
+          <anchor 240 34> mark @bottom
+          <anchor 229 737> mark @top;
+      pos base Iacute
+          <anchor 240 25> mark @bottom
+          <anchor 208 954> mark @top;
+      pos base Icircumflex
+          <anchor 240 25> mark @bottom
+          <anchor 208 954> mark @top;
+      pos base Idieresis
+          <anchor 240 25> mark @bottom
+          <anchor 208 954> mark @top;
+      pos base Idotaccent
+          <anchor 240 34> mark @bottom
+          <anchor 229 913> mark @top;
+      pos base Igrave
+          <anchor 240 25> mark @bottom
+          <anchor 208 954> mark @top;
+      pos base Imacron
+          <anchor 240 34> mark @bottom
+          <anchor 229 913> mark @top;
+      pos base Iogonek
+          <anchor 256 -174> mark @bottom
+          <anchor 245 761> mark @top;
+      pos base J
+          <anchor 266 33> mark @bottom
+          <anchor 291 719> mark @top;
+      pos base K
+          <anchor 272 33> mark @bottom
+          <anchor 264 742> mark @top;
+      pos base Kcommaaccent
+          <anchor 265 -284> mark @bottom
+          <anchor 264 742> mark @top;
+      pos base L
+          <anchor 256 41> mark @bottom
+          <anchor 243 729> mark @top;
+      pos base Lacute
+          <anchor 256 41> mark @bottom
+          <anchor 243 961> mark @top;
+      pos base Lcaron
+          <anchor 256 41> mark @bottom
+          <anchor 243 729> mark @top;
+      pos base Lcommaaccent
+          <anchor 256 -279> mark @bottom
+          <anchor 243 729> mark @top;
+      pos base Lslash
+          <anchor 312 25> mark @bottom
+          <anchor 266 725> mark @top;
+      pos base M
+          <anchor 376 33> mark @bottom
+          <anchor 349 727> mark @top;
+      pos base N
+          <anchor 320 33> mark @bottom
+          <anchor 317 730> mark @top;
+      pos base Nacute
+          <anchor 320 33> mark @bottom
+          <anchor 317 954> mark @top;
+      pos base Ncaron
+          <anchor 320 33> mark @bottom
+          <anchor 317 954> mark @top;
+      pos base Ncommaaccent
+          <anchor 320 -279> mark @bottom
+          <anchor 317 730> mark @top;
+      pos base Ntilde
+          <anchor 317 33> mark @bottom
+          <anchor 285 962> mark @top;
+      pos base O
+          <anchor 280 33> mark @bottom
+          <anchor 310 745> mark @top;
+      pos base OE
+          <anchor 488 47> mark @bottom
+          <anchor 448 759> mark @top;
+      pos base Oacute
+          <anchor 310 28> mark @bottom
+          <anchor 316 946> mark @top;
+      pos base Ocircumflex
+          <anchor 310 28> mark @bottom
+          <anchor 316 986> mark @top;
+      pos base Odieresis
+          <anchor 310 28> mark @bottom
+          <anchor 316 946> mark @top;
+      pos base Ograve
+          <anchor 310 28> mark @bottom
+          <anchor 316 946> mark @top;
+      pos base Ohungarumlaut
+          <anchor 310 28> mark @bottom
+          <anchor 316 1002> mark @top;
+      pos base Oslash
+          <anchor 387 31> mark @bottom
+          <anchor 382 769> mark @top;
+      pos base Otilde
+          <anchor 310 28> mark @bottom
+          <anchor 316 946> mark @top;
+      pos base P
+          <anchor 143 33> mark @bottom
+          <anchor 235 742> mark @top;
+      pos base Q
+          <anchor 306 38> mark @bottom
+          <anchor 330 758> mark @top;
+      pos base R
+          <anchor 280 33> mark @bottom
+          <anchor 251 732> mark @top;
+      pos base Racute
+          <anchor 280 33> mark @bottom
+          <anchor 251 948> mark @top;
+      pos base Rcaron
+          <anchor 280 33> mark @bottom
+          <anchor 251 948> mark @top;
+      pos base S
+          <anchor 248 34> mark @bottom
+          <anchor 267 751> mark @top;
+      pos base Sacute
+          <anchor 248 34> mark @bottom
+          <anchor 267 975> mark @top;
+      pos base Scaron
+          <anchor 248 34> mark @bottom
+          <anchor 267 975> mark @top;
+      pos base Scedilla
+          <anchor 303 -204> mark @bottom
+          <anchor 267 751> mark @top;
+      pos base Scommaaccent
+          <anchor 248 -296> mark @bottom
+          <anchor 267 751> mark @top;
+      pos base T
+          <anchor 320 33> mark @bottom
+          <anchor 288 742> mark @top;
+      pos base Tcaron
+          <anchor 320 33> mark @bottom
+          <anchor 288 982> mark @top;
+      pos base Tcommaaccent
+          <anchor 320 -297> mark @bottom
+          <anchor 288 742> mark @top;
+      pos base Thorn
+          <anchor 88 31> mark @bottom
+          <anchor 243 759> mark @top;
+      pos base U
+          <anchor 270 33> mark @bottom
+          <anchor 269 758> mark @top;
+      pos base Uacute
+          <anchor 276 21> mark @bottom
+          <anchor 273 979> mark @top;
+      pos base Ucircumflex
+          <anchor 276 21> mark @bottom
+          <anchor 273 979> mark @top;
+      pos base Udieresis
+          <anchor 276 21> mark @bottom
+          <anchor 273 959> mark @top;
+      pos base Ugrave
+          <anchor 276 21> mark @bottom
+          <anchor 273 979> mark @top;
+      pos base Uhungarumlaut
+          <anchor 270 33> mark @bottom
+          <anchor 269 1030> mark @top;
+      pos base Umacron
+          <anchor 270 33> mark @bottom
+          <anchor 269 958> mark @top;
+      pos base Uogonek
+          <anchor 306 -246> mark @bottom
+          <anchor 285 751> mark @top;
+      pos base Uring
+          <anchor 270 33> mark @bottom
+          <anchor 269 982> mark @top;
+      pos base V
+          <anchor 307 33> mark @bottom
+          <anchor 282 750> mark @top;
+      pos base W
+          <anchor 368 33> mark @bottom
+          <anchor 342 743> mark @top;
+      pos base Wcircumflex
+          <anchor 368 33> mark @bottom
+          <anchor 342 999> mark @top;
+      pos base X
+          <anchor 344 33> mark @bottom
+          <anchor 314 746> mark @top;
+      pos base Y
+          <anchor 304 3> mark @bottom
+          <anchor 291 750> mark @top;
+      pos base Yacute
+          <anchor 316 21> mark @bottom
+          <anchor 309 967> mark @top;
+      pos base Ycircumflex
+          <anchor 316 21> mark @bottom
+          <anchor 309 967> mark @top;
+      pos base Ydieresis
+          <anchor 316 21> mark @bottom
+          <anchor 309 967> mark @top;
+      pos base Z
+          <anchor 336 33> mark @bottom
+          <anchor 309 748> mark @top;
+      pos base Zacute
+          <anchor 336 33> mark @bottom
+          <anchor 309 972> mark @top;
+      pos base Zcaron
+          <anchor 336 33> mark @bottom
+          <anchor 309 972> mark @top;
+      pos base Zdotaccent
+          <anchor 336 33> mark @bottom
+          <anchor 309 972> mark @top;
+      pos base a
+          <anchor 216 33> mark @bottom
+          <anchor 218 484> mark @top;
+      pos base aacute
+          <anchor 216 33> mark @bottom
+          <anchor 216 676> mark @top;
+      pos base abreve
+          <anchor 216 33> mark @bottom
+          <anchor 216 676> mark @top;
+      pos base acircumflex
+          <anchor 216 33> mark @bottom
+          <anchor 216 708> mark @top;
+      pos base adieresis
+          <anchor 216 33> mark @bottom
+          <anchor 216 676> mark @top;
+      pos base ae
+          <anchor 322 22> mark @bottom
+          <anchor 330 486> mark @top;
+      pos base agrave
+          <anchor 216 33> mark @bottom
+          <anchor 216 676> mark @top;
+      pos base amacron
+          <anchor 216 33> mark @bottom
+          <anchor 216 676> mark @top;
+      pos base aogonek
+          <anchor 216 -175> mark @bottom
+          <anchor 216 468> mark @top;
+      pos base aring
+          <anchor 203 17> mark @bottom
+          <anchor 211 692> mark @top;
+      pos base atilde
+          <anchor 216 33> mark @bottom
+          <anchor 216 676> mark @top;
+      pos base b
+          <anchor 240 33> mark @bottom
+          <anchor 248 468> mark @top;
+      pos base c
+          <anchor 216 33> mark @bottom
+          <anchor 203 495> mark @top;
+      pos base cacute
+          <anchor 216 33> mark @bottom
+          <anchor 216 732> mark @top;
+      pos base ccaron
+          <anchor 216 33> mark @bottom
+          <anchor 216 732> mark @top;
+      pos base ccedilla
+          <anchor 226 -194> mark @bottom
+          <anchor 226 489> mark @top;
+      pos base cdotaccent
+          <anchor 216 33> mark @bottom
+          <anchor 216 732> mark @top;
+      pos base d
+          <anchor 240 1> mark @bottom
+          <anchor 253 738> mark @top;
+      pos base dcaron
+          <anchor 240 1> mark @bottom
+          <anchor 253 738> mark @top;
+      pos base dcroat
+          <anchor 256 33> mark @bottom
+          <anchor 234 748> mark @top;
+      pos base e
+          <anchor 223 5> mark @bottom
+          <anchor 200 506> mark @top;
+      pos base eacute
+          <anchor 224 19> mark @bottom
+          <anchor 200 714> mark @top;
+      pos base ecaron
+          <anchor 224 19> mark @bottom
+          <anchor 200 714> mark @top;
+      pos base ecircumflex
+          <anchor 224 19> mark @bottom
+          <anchor 200 714> mark @top;
+      pos base edieresis
+          <anchor 224 19> mark @bottom
+          <anchor 200 714> mark @top;
+      pos base edotaccent
+          <anchor 224 19> mark @bottom
+          <anchor 200 714> mark @top;
+      pos base egrave
+          <anchor 224 19> mark @bottom
+          <anchor 200 714> mark @top;
+      pos base emacron
+          <anchor 224 19> mark @bottom
+          <anchor 200 714> mark @top;
+      pos base eogonek
+          <anchor 206 -6> mark @bottom
+          <anchor 213 514> mark @top;
+      pos base eth
+          <anchor 256 46> mark @bottom
+          <anchor 272 767> mark @top;
+      pos base f
+          <anchor 224 25> mark @bottom
+          <anchor 251 785> mark @top;
+      pos base g
+          <anchor 216 -170> mark @bottom
+          <anchor 210 500> mark @top;
+      pos base gbreve
+          <anchor 216 -170> mark @bottom
+          <anchor 210 740> mark @top;
+      pos base gcommaaccent
+          <anchor 216 -170> mark @bottom
+          <anchor 210 820> mark @top;
+      pos base gdotaccent
+          <anchor 216 -170> mark @bottom
+          <anchor 210 740> mark @top;
+      pos base germandbls
+          <anchor 270 22> mark @bottom
+          <anchor 253 756> mark @top;
+      pos base h
+          <anchor 232 33> mark @bottom
+          <anchor 230 735> mark @top;
+      pos base hbar
+          <anchor 280 33> mark @bottom
+          <anchor 262 751> mark @top;
+      pos base i
+          <anchor 114 33> mark @bottom
+          <anchor 94 687> mark @top;
+      pos base iacute
+          <anchor 114 33> mark @bottom
+          <anchor 94 687> mark @top;
+      pos base icircumflex
+          <anchor 114 33> mark @bottom
+          <anchor 94 743> mark @top;
+      pos base idieresis
+          <anchor 114 33> mark @bottom
+          <anchor 94 687> mark @top;
+      pos base idotless
+          <anchor 114 26> mark @bottom
+          <anchor 94 502> mark @top;
+      pos base igrave
+          <anchor 114 33> mark @bottom
+          <anchor 94 687> mark @top;
+      pos base imacron
+          <anchor 114 33> mark @bottom
+          <anchor 94 687> mark @top;
+      pos base iogonek
+          <anchor 119 -262> mark @bottom
+          <anchor 94 711> mark @top;
+      pos base j
+          <anchor 88 -183> mark @bottom
+          <anchor 106 697> mark @top;
+      pos base jdotless
+          <anchor 88 -183> mark @bottom
+          <anchor 90 490> mark @top;
+      pos base k
+          <anchor 248 33> mark @bottom
+          <anchor 214 726> mark @top;
+      pos base kcommaaccent
+          <anchor 248 -271> mark @bottom
+          <anchor 214 726> mark @top;
+      pos base l
+          <anchor 136 33> mark @bottom
+          <anchor 102 786> mark @top;
+      pos base lacute
+          <anchor 136 33> mark @bottom
+          <anchor 102 1002> mark @top;
+      pos base lcaron
+          <anchor 136 33> mark @bottom
+          <anchor 148 825> mark @top;
+      pos base lcommaaccent
+          <anchor 120 -287> mark @bottom
+          <anchor 102 770> mark @top;
+      pos base lslash
+          <anchor 237 28> mark @bottom
+          <anchor 206 762> mark @top;
+      pos base m
+          <anchor 352 33> mark @bottom
+          <anchor 347 479> mark @top;
+      pos base n
+          <anchor 240 33> mark @bottom
+          <anchor 238 486> mark @top;
+      pos base nacute
+          <anchor 240 33> mark @bottom
+          <anchor 238 718> mark @top;
+      pos base ncommaaccent
+          <anchor 224 -287> mark @bottom
+          <anchor 238 470> mark @top;
+      pos base ntilde
+          <anchor 240 33> mark @bottom
+          <anchor 238 678> mark @top;
+      pos base o
+          <anchor 221 23> mark @bottom
+          <anchor 224 474> mark @top;
+      pos base oacute
+          <anchor 221 23> mark @bottom
+          <anchor 224 690> mark @top;
+      pos base ocircumflex
+          <anchor 221 23> mark @bottom
+          <anchor 224 714> mark @top;
+      pos base odieresis
+          <anchor 221 23> mark @bottom
+          <anchor 224 650> mark @top;
+      pos base oe
+          <anchor 326 25> mark @bottom
+          <anchor 312 482> mark @top;
+      pos base ograve
+          <anchor 221 23> mark @bottom
+          <anchor 224 690> mark @top;
+      pos base ohungarumlaut
+          <anchor 221 23> mark @bottom
+          <anchor 224 730> mark @top;
+      pos base oslash
+          <anchor 256 33> mark @bottom
+          <anchor 238 558> mark @top;
+      pos base otilde
+          <anchor 221 23> mark @bottom
+          <anchor 224 690> mark @top;
+      pos base p
+          <anchor 104 -225> mark @bottom
+          <anchor 227 490> mark @top;
+      pos base q
+          <anchor 392 -196> mark @bottom
+          <anchor 224 476> mark @top;
+      pos base r
+          <anchor 102 33> mark @bottom
+          <anchor 200 482> mark @top;
+      pos base racute
+          <anchor 102 33> mark @bottom
+          <anchor 200 714> mark @top;
+      pos base rcaron
+          <anchor 102 33> mark @bottom
+          <anchor 200 714> mark @top;
+      pos base s
+          <anchor 176 33> mark @bottom
+          <anchor 173 478> mark @top;
+      pos base sacute
+          <anchor 176 33> mark @bottom
+          <anchor 173 702> mark @top;
+      pos base scaron
+          <anchor 176 33> mark @bottom
+          <anchor 173 702> mark @top;
+      pos base scedilla
+          <anchor 210 -202> mark @bottom
+          <anchor 206 466> mark @top;
+      pos base scommaaccent
+          <anchor 176 -297> mark @bottom
+          <anchor 173 478> mark @top;
+      pos base t
+          <anchor 256 17> mark @bottom
+          <anchor 232 713> mark @top;
+      pos base tcaron
+          <anchor 256 18> mark @bottom
+          <anchor 241 796> mark @top;
+      pos base tcommaaccent
+          <anchor 256 -303> mark @bottom
+          <anchor 232 713> mark @top;
+      pos base thorn
+          <anchor 110 -204> mark @bottom
+          <anchor 224 750> mark @top;
+      pos base u
+          <anchor 224 41> mark @bottom
+          <anchor 214 478> mark @top;
+      pos base u1DF04
+          <anchor 290 58> mark @bottom
+          <anchor 261 437> mark @top;
+      pos base u1DF05
+          <anchor 192 -83> mark @bottom
+          <anchor 234 731> mark @top;
+      pos base u1DF06
+          <anchor 307 30> mark @bottom
+          <anchor 299 755> mark @top;
+      pos base uacute
+          <anchor 224 41> mark @bottom
+          <anchor 214 694> mark @top;
+      pos base ucircumflex
+          <anchor 224 41> mark @bottom
+          <anchor 214 718> mark @top;
+      pos base udieresis
+          <anchor 224 41> mark @bottom
+          <anchor 214 694> mark @top;
+      pos base ugrave
+          <anchor 224 41> mark @bottom
+          <anchor 214 694> mark @top;
+      pos base uhungarumlaut
+          <anchor 224 41> mark @bottom
+          <anchor 214 734> mark @top;
+      pos base umacron
+          <anchor 224 41> mark @bottom
+          <anchor 214 662> mark @top;
+      pos base uni0108
+          <anchor 294 33> mark @bottom
+          <anchor 314 967> mark @top;
+      pos base uni0109
+          <anchor 216 33> mark @bottom
+          <anchor 216 732> mark @top;
+      pos base uni0114
+          <anchor 288 33> mark @bottom
+          <anchor 256 962> mark @top;
+      pos base uni0115
+          <anchor 224 19> mark @bottom
+          <anchor 200 714> mark @top;
+      pos base uni011C
+          <anchor 354 -145> mark @bottom
+          <anchor 306 980> mark @top;
+      pos base uni011D
+          <anchor 216 -170> mark @bottom
+          <anchor 210 740> mark @top;
+      pos base uni0124
+          <anchor 312 25> mark @bottom
+          <anchor 288 969> mark @top;
+      pos base uni0125
+          <anchor 232 33> mark @bottom
+          <anchor 230 967> mark @top;
+      pos base uni0128
+          <anchor 240 34> mark @bottom
+          <anchor 229 913> mark @top;
+      pos base uni0129
+          <anchor 114 33> mark @bottom
+          <anchor 94 687> mark @top;
+      pos base uni012C
+          <anchor 240 34> mark @bottom
+          <anchor 229 913> mark @top;
+      pos base uni012D
+          <anchor 114 33> mark @bottom
+          <anchor 94 687> mark @top;
+      pos base uni0132
+          <anchor 240 26> mark @bottom
+          <anchor 236 763> mark @top;
+      pos base uni0133
+          <anchor 223 -252> mark @bottom
+          <anchor 229 666> mark @top;
+      pos base uni0134
+          <anchor 266 33> mark @bottom
+          <anchor 291 951> mark @top;
+      pos base uni0135
+          <anchor 88 -183> mark @bottom
+          <anchor 106 713> mark @top;
+      pos base uni0138
+          <anchor 205 9> mark @bottom
+          <anchor 200 479> mark @top;
+      pos base uni013F
+          <anchor 256 41> mark @bottom
+          <anchor 243 729> mark @top;
+      pos base uni0140
+          <anchor 150 18> mark @bottom
+          <anchor 88 762> mark @top;
+      pos base uni0149
+          <anchor 368 33> mark @bottom
+          <anchor 350 518> mark @top;
+      pos base uni014A
+          <anchor 320 -215> mark @bottom
+          <anchor 317 746> mark @top;
+      pos base uni014B
+          <anchor 240 -224> mark @bottom
+          <anchor 238 461> mark @top;
+      pos base uni014C
+          <anchor 310 28> mark @bottom
+          <anchor 316 946> mark @top;
+      pos base uni014D
+          <anchor 221 23> mark @bottom
+          <anchor 224 634> mark @top;
+      pos base uni014E
+          <anchor 310 28> mark @bottom
+          <anchor 316 946> mark @top;
+      pos base uni014F
+          <anchor 221 23> mark @bottom
+          <anchor 224 666> mark @top;
+      pos base uni0156
+          <anchor 280 -279> mark @bottom
+          <anchor 251 732> mark @top;
+      pos base uni0157
+          <anchor 102 -287> mark @bottom
+          <anchor 200 466> mark @top;
+      pos base uni015C
+          <anchor 248 34> mark @bottom
+          <anchor 267 975> mark @top;
+      pos base uni015D
+          <anchor 176 33> mark @bottom
+          <anchor 173 702> mark @top;
+      pos base uni0162
+          <anchor 318 -254> mark @bottom
+          <anchor 337 759> mark @top;
+      pos base uni0163
+          <anchor 285 30> mark @bottom
+          <anchor 262 716> mark @top;
+      pos base uni0166
+          <anchor 390 1> mark @bottom
+          <anchor 304 764> mark @top;
+      pos base uni0167
+          <anchor 277 33> mark @bottom
+          <anchor 243 700> mark @top;
+      pos base uni0168
+          <anchor 270 33> mark @bottom
+          <anchor 269 958> mark @top;
+      pos base uni0169
+          <anchor 224 41> mark @bottom
+          <anchor 214 662> mark @top;
+      pos base uni016C
+          <anchor 270 33> mark @bottom
+          <anchor 269 958> mark @top;
+      pos base uni016D
+          <anchor 224 41> mark @bottom
+          <anchor 214 662> mark @top;
+      pos base uni018E
+          <anchor 256 -17> mark @bottom
+          <anchor 246 735> mark @top;
+      pos base uni018F
+          <anchor 256 17> mark @bottom
+          <anchor 251 759> mark @top;
+      pos base uni0190
+          <anchor 266 23> mark @bottom
+          <anchor 258 758> mark @top;
+      pos base uni01A0
+          <anchor 272 25> mark @bottom
+          <anchor 253 745> mark @top;
+      pos base uni01A1
+          <anchor 224 33> mark @bottom
+          <anchor 179 518> mark @top;
+      pos base uni01AF
+          <anchor 264 33> mark @bottom
+          <anchor 272 758> mark @top;
+      pos base uni01B0
+          <anchor 232 1> mark @bottom
+          <anchor 213 529> mark @top;
+      pos base uni01B7
+          <anchor 256 23> mark @bottom
+          <anchor 248 758> mark @top;
+      pos base uni01C0
+          <anchor 142 98> mark @bottom
+          <anchor 106 738> mark @top;
+      pos base uni01C1
+          <anchor 177 10> mark @bottom
+          <anchor 165 702> mark @top;
+      pos base uni01C3
+          <anchor 120 44> mark @bottom
+          <anchor 91 774> mark @top;
+      pos base uni01CD
+          <anchor 256 33> mark @bottom
+          <anchor 291 1000> mark @top;
+      pos base uni01CE
+          <anchor 216 33> mark @bottom
+          <anchor 216 726> mark @top;
+      pos base uni01CF
+          <anchor 240 34> mark @bottom
+          <anchor 229 963> mark @top;
+      pos base uni01D0
+          <anchor 114 33> mark @bottom
+          <anchor 94 737> mark @top;
+      pos base uni01D1
+          <anchor 310 28> mark @bottom
+          <anchor 316 986> mark @top;
+      pos base uni01D2
+          <anchor 221 23> mark @bottom
+          <anchor 224 704> mark @top;
+      pos base uni01D3
+          <anchor 270 33> mark @bottom
+          <anchor 269 988> mark @top;
+      pos base uni01D4
+          <anchor 224 41> mark @bottom
+          <anchor 214 712> mark @top;
+      pos base uni01D5
+          <anchor 270 33> mark @bottom
+          <anchor 269 1098> mark @top;
+      pos base uni01D6
+          <anchor 224 41> mark @bottom
+          <anchor 214 824> mark @top;
+      pos base uni01DE
+          <anchor 256 33> mark @bottom
+          <anchor 291 1076> mark @top;
+      pos base uni01DF
+          <anchor 216 33> mark @bottom
+          <anchor 216 796> mark @top;
+      pos base uni01E0
+          <anchor 256 33> mark @bottom
+          <anchor 291 1076> mark @top;
+      pos base uni01E2
+          <anchor 448 33> mark @bottom
+          <anchor 443 886> mark @top;
+      pos base uni01E3
+          <anchor 322 22> mark @bottom
+          <anchor 330 616> mark @top;
+      pos base uni01EA
+          <anchor 302 -248> mark @bottom
+          <anchor 310 756> mark @top;
+      pos base uni01EB
+          <anchor 224 -240> mark @bottom
+          <anchor 222 458> mark @top;
+      pos base uni01EC
+          <anchor 302 -248> mark @bottom
+          <anchor 310 896> mark @top;
+      pos base uni01ED
+          <anchor 224 -240> mark @bottom
+          <anchor 222 588> mark @top;
+      pos base uni01EE
+          <anchor 256 23> mark @bottom
+          <anchor 248 998> mark @top;
+      pos base uni01EF
+          <anchor 243 -234> mark @bottom
+          <anchor 211 684> mark @top;
+      pos base uni01F0
+          <anchor 88 -183> mark @bottom
+          <anchor 106 697> mark @top;
+      pos base uni01F4
+          <anchor 354 -145> mark @bottom
+          <anchor 306 980> mark @top;
+      pos base uni01F5
+          <anchor 216 -170> mark @bottom
+          <anchor 210 740> mark @top;
+      pos base uni01F8
+          <anchor 320 33> mark @bottom
+          <anchor 317 954> mark @top;
+      pos base uni01F9
+          <anchor 240 33> mark @bottom
+          <anchor 238 718> mark @top;
+      pos base uni01FA
+          <anchor 243 34> mark @bottom
+          <anchor 237 1120> mark @top;
+      pos base uni01FB
+          <anchor 203 17> mark @bottom
+          <anchor 211 912> mark @top;
+      pos base uni01FC
+          <anchor 482 26> mark @bottom
+          <anchor 451 947> mark @top;
+      pos base uni01FD
+          <anchor 322 22> mark @bottom
+          <anchor 330 706> mark @top;
+      pos base uni01FE
+          <anchor 387 31> mark @bottom
+          <anchor 382 989> mark @top;
+      pos base uni01FF
+          <anchor 256 33> mark @bottom
+          <anchor 238 698> mark @top;
+      pos base uni021E
+          <anchor 312 25> mark @bottom
+          <anchor 288 969> mark @top;
+      pos base uni021F
+          <anchor 232 33> mark @bottom
+          <anchor 230 967> mark @top;
+      pos base uni0226
+          <anchor 256 33> mark @bottom
+          <anchor 291 950> mark @top;
+      pos base uni0227
+          <anchor 216 33> mark @bottom
+          <anchor 216 676> mark @top;
+      pos base uni0228
+          <anchor 288 -207> mark @bottom
+          <anchor 256 746> mark @top;
+      pos base uni0229
+          <anchor 223 -225> mark @bottom
+          <anchor 200 506> mark @top;
+      pos base uni022B
+          <anchor 221 23> mark @bottom
+          <anchor 224 794> mark @top;
+      pos base uni022C
+          <anchor 280 33> mark @bottom
+          <anchor 310 1085> mark @top;
+      pos base uni022D
+          <anchor 221 23> mark @bottom
+          <anchor 224 824> mark @top;
+      pos base uni022E
+          <anchor 280 33> mark @bottom
+          <anchor 310 925> mark @top;
+      pos base uni022F
+          <anchor 221 23> mark @bottom
+          <anchor 224 654> mark @top;
+      pos base uni0230
+          <anchor 280 33> mark @bottom
+          <anchor 310 1055> mark @top;
+      pos base uni0231
+          <anchor 221 23> mark @bottom
+          <anchor 224 794> mark @top;
+      pos base uni0232
+          <anchor 304 3> mark @bottom
+          <anchor 291 873> mark @top;
+      pos base uni0233
+          <anchor 254 -243> mark @bottom
+          <anchor 228 634> mark @top;
+      pos base uni0250
+          <anchor 219 18> mark @bottom
+          <anchor 224 486> mark @top;
+      pos base uni0251
+          <anchor 243 36> mark @bottom
+          <anchor 235 462> mark @top;
+      pos base uni0252
+          <anchor 227 33> mark @bottom
+          <anchor 213 447> mark @top;
+      pos base uni0253
+          <anchor 277 31> mark @bottom
+          <anchor 266 745> mark @top;
+      pos base uni0254
+          <anchor 227 17> mark @bottom
+          <anchor 222 463> mark @top;
+      pos base uni0255
+          <anchor 258 33> mark @bottom
+          <anchor 221 463> mark @top;
+      pos base uni0256
+          <anchor 218 -55> mark @bottom
+          <anchor 250 721> mark @top;
+      pos base uni0257
+          <anchor 258 38> mark @bottom
+          <anchor 272 722> mark @top;
+      pos base uni0258
+          <anchor 211 36> mark @bottom
+          <anchor 210 462> mark @top;
+      pos base uni0259
+          <anchor 234 20> mark @bottom
+          <anchor 227 476> mark @top;
+      pos base uni025A
+          <anchor 222 31> mark @bottom
+          <anchor 206 463> mark @top;
+      pos base uni025B
+          <anchor 208 20> mark @bottom
+          <anchor 197 474> mark @top;
+      pos base uni025C
+          <anchor 208 23> mark @bottom
+          <anchor 197 465> mark @top;
+      pos base uni025D
+          <anchor 206 26> mark @bottom
+          <anchor 194 466> mark @top;
+      pos base uni025E
+          <anchor 216 31> mark @bottom
+          <anchor 208 457> mark @top;
+      pos base uni025F
+          <anchor 96 -225> mark @bottom
+          <anchor 154 452> mark @top;
+      pos base uni0260
+          <anchor 234 -222> mark @bottom
+          <anchor 274 724> mark @top;
+      pos base uni0261
+          <anchor 234 -242> mark @bottom
+          <anchor 235 476> mark @top;
+      pos base uni0262
+          <anchor 227 28> mark @bottom
+          <anchor 218 460> mark @top;
+      pos base uni0263
+          <anchor 227 -231> mark @bottom
+          <anchor 230 441> mark @top;
+      pos base uni0264
+          <anchor 259 20> mark @bottom
+          <anchor 235 462> mark @top;
+      pos base uni0265
+          <anchor 214 -231> mark @bottom
+          <anchor 206 434> mark @top;
+      pos base uni0266
+          <anchor 251 23> mark @bottom
+          <anchor 227 769> mark @top;
+      pos base uni0267
+          <anchor 237 -225> mark @bottom
+          <anchor 230 759> mark @top;
+      pos base uni0268
+          <anchor 203 20> mark @bottom
+          <anchor 178 698> mark @top;
+      pos base uni0269
+          <anchor 173 18> mark @bottom
+          <anchor 101 468> mark @top;
+      pos base uni026A
+          <anchor 224 42> mark @bottom
+          <anchor 211 474> mark @top;
+      pos base uni026B
+          <anchor 216 26> mark @bottom
+          <anchor 186 766> mark @top;
+      pos base uni026C
+          <anchor 253 28> mark @bottom
+          <anchor 251 762> mark @top;
+      pos base uni026D
+          <anchor 189 -234> mark @bottom
+          <anchor 85 758> mark @top;
+      pos base uni026E
+          <anchor 240 -183> mark @bottom
+          <anchor 230 738> mark @top;
+      pos base uni026F
+          <anchor 322 9> mark @bottom
+          <anchor 342 449> mark @top;
+      pos base uni0270
+          <anchor 349 12> mark @bottom
+          <anchor 350 434> mark @top;
+      pos base uni0271
+          <anchor 571 -220> mark @bottom
+          <anchor 373 439> mark @top;
+      pos base uni0272
+          <anchor 374 22> mark @bottom
+          <anchor 226 460> mark @top;
+      pos base uni0273
+          <anchor 80 36> mark @bottom
+          <anchor 187 471> mark @top;
+      pos base uni0274
+          <anchor 226 26> mark @bottom
+          <anchor 218 452> mark @top;
+      pos base uni0275
+          <anchor 223 8> mark @bottom
+          <anchor 227 465> mark @top;
+      pos base uni0276
+          <anchor 288 41> mark @bottom
+          <anchor 277 473> mark @top;
+      pos base uni0277
+          <anchor 285 25> mark @bottom
+          <anchor 266 481> mark @top;
+      pos base uni0278
+          <anchor 307 -214> mark @bottom
+          <anchor 243 740> mark @top;
+      pos base uni0279
+          <anchor 253 12> mark @bottom
+          <anchor 229 438> mark @top;
+      pos base uni027A
+          <anchor 238 17> mark @bottom
+          <anchor 285 783> mark @top;
+      pos base uni027B
+          <anchor 139 54> mark @bottom
+          <anchor 208 447> mark @top;
+      pos base uni027C
+          <anchor 227 22> mark @bottom
+          <anchor 170 441> mark @top;
+      pos base uni027D
+          <anchor 162 -226> mark @bottom
+          <anchor 216 462> mark @top;
+      pos base uni027E
+          <anchor 72 9> mark @bottom
+          <anchor 213 466> mark @top;
+      pos base uni027F
+          <anchor 91 31> mark @bottom
+          <anchor 171 458> mark @top;
+      pos base uni0280
+          <anchor 202 34> mark @bottom
+          <anchor 194 460> mark @top;
+      pos base uni0281
+          <anchor 229 31> mark @bottom
+          <anchor 221 457> mark @top;
+      pos base uni0282
+          <anchor 176 -175> mark @bottom
+          <anchor 216 471> mark @top;
+      pos base uni0283
+          <anchor 120 -228> mark @bottom
+          <anchor 194 767> mark @top;
+      pos base uni0284
+          <anchor 154 -225> mark @bottom
+          <anchor 299 726> mark @top;
+      pos base uni0285
+          <anchor 397 -207> mark @bottom
+          <anchor 200 463> mark @top;
+      pos base uni0286
+          <anchor 406 -226> mark @bottom
+          <anchor 368 772> mark @top;
+      pos base uni0287
+          <anchor 318 -234> mark @bottom
+          <anchor 218 481> mark @top;
+      pos base uni0288
+          <anchor 290 -215> mark @bottom
+          <anchor 226 698> mark @top;
+      pos base uni0289
+          <anchor 253 22> mark @bottom
+          <anchor 246 441> mark @top;
+      pos base uni028A
+          <anchor 272 36> mark @bottom
+          <anchor 264 462> mark @top;
+      pos base uni028B
+          <anchor 229 34> mark @bottom
+          <anchor 221 460> mark @top;
+      pos base uni028C
+          <anchor 230 31> mark @bottom
+          <anchor 222 462> mark @top;
+      pos base uni028D
+          <anchor 349 31> mark @bottom
+          <anchor 341 457> mark @top;
+      pos base uni028E
+          <anchor 226 42> mark @bottom
+          <anchor 245 732> mark @top;
+      pos base uni028F
+          <anchor 240 26> mark @bottom
+          <anchor 224 458> mark @top;
+      pos base uni0290
+          <anchor 216 30> mark @bottom
+          <anchor 224 457> mark @top;
+      pos base uni0291
+          <anchor 267 -65> mark @bottom
+          <anchor 213 444> mark @top;
+      pos base uni0292
+          <anchor 243 -234> mark @bottom
+          <anchor 211 454> mark @top;
+      pos base uni0293
+          <anchor 240 -238> mark @bottom
+          <anchor 218 457> mark @top;
+      pos base uni0294
+          <anchor 261 36> mark @bottom
+          <anchor 232 767> mark @top;
+      pos base uni0295
+          <anchor 262 17> mark @bottom
+          <anchor 234 783> mark @top;
+      pos base uni0296
+          <anchor 213 31> mark @bottom
+          <anchor 152 745> mark @top;
+      pos base uni0297
+          <anchor 227 -228> mark @bottom
+          <anchor 216 466> mark @top;
+      pos base uni0298
+          <anchor 346 36> mark @bottom
+          <anchor 330 766> mark @top;
+      pos base uni0299
+          <anchor 234 36> mark @bottom
+          <anchor 226 462> mark @top;
+      pos base uni029A
+          <anchor 219 31> mark @bottom
+          <anchor 206 463> mark @top;
+      pos base uni029B
+          <anchor 243 14> mark @bottom
+          <anchor 285 746> mark @top;
+      pos base uni029C
+          <anchor 218 33> mark @bottom
+          <anchor 210 458> mark @top;
+      pos base uni029D
+          <anchor 203 -234> mark @bottom
+          <anchor 232 714> mark @top;
+      pos base uni029E
+          <anchor 357 -228> mark @bottom
+          <anchor 235 462> mark @top;
+      pos base uni029F
+          <anchor 222 41> mark @bottom
+          <anchor 214 466> mark @top;
+      pos base uni02A0
+          <anchor 403 -222> mark @bottom
+          <anchor 434 724> mark @top;
+      pos base uni02A1
+          <anchor 224 22> mark @bottom
+          <anchor 232 762> mark @top;
+      pos base uni02A2
+          <anchor 293 41> mark @bottom
+          <anchor 270 756> mark @top;
+      pos base uni02A3
+          <anchor 402 20> mark @bottom
+          <anchor 347 750> mark @top;
+      pos base uni02A4
+          <anchor 573 -231> mark @bottom
+          <anchor 338 748> mark @top;
+      pos base uni02A5
+          <anchor 402 -2> mark @bottom
+          <anchor 346 750> mark @top;
+      pos base uni02A6
+          <anchor 317 17> mark @bottom
+          <anchor 339 705> mark @top;
+      pos base uni02A7
+          <anchor 371 -238> mark @bottom
+          <anchor 314 719> mark @top;
+      pos base uni02A8
+          <anchor 384 -66> mark @bottom
+          <anchor 378 705> mark @top;
+      pos base uni02A9
+          <anchor 590 -249> mark @bottom
+          <anchor 350 820> mark @top;
+      pos base uni02AA
+          <anchor 243 36> mark @bottom
+          <anchor 238 762> mark @top;
+      pos base uni02AB
+          <anchor 298 14> mark @bottom
+          <anchor 275 750> mark @top;
+      pos base uni02AC
+          <anchor 259 23> mark @bottom
+          <anchor 272 718> mark @top;
+      pos base uni02AD
+          <anchor 243 36> mark @bottom
+          <anchor 242 742> mark @top;
+      pos base uni02AE
+          <anchor 509 -254> mark @bottom
+          <anchor 318 737> mark @top;
+      pos base uni02AF
+          <anchor 608 -239> mark @bottom
+          <anchor 379 711> mark @top;
+      pos base uni0311
+          <anchor -224 720> mark @top;
+      pos base uni0312
+          <anchor -227 1054> mark @top;
+      pos base uni0313
+          <anchor -224 720> mark @top;
+      pos base uni0372
+          <anchor 365 31> mark @bottom
+          <anchor 323 735> mark @top;
+      pos base uni0373
+          <anchor 272 -185> mark @bottom
+          <anchor 248 436> mark @top;
+      pos base uni037B
+          <anchor 227 20> mark @bottom
+          <anchor 216 479> mark @top;
+      pos base uni037F
+          <anchor 266 33> mark @bottom
+          <anchor 291 719> mark @top;
+      pos base uni0391
+          <anchor 256 33> mark @bottom
+          <anchor 291 750> mark @top;
+      pos base uni0392
+          <anchor 256 33> mark @bottom
+          <anchor 234 758> mark @top;
+      pos base uni0393
+          <anchor 132 33> mark @bottom
+          <anchor 266 758> mark @top;
+      pos base uni0394
+          <anchor 330 54> mark @bottom
+          <anchor 356 780> mark @top;
+      pos base uni0395
+          <anchor 288 23> mark @bottom
+          <anchor 256 746> mark @top;
+      pos base uni0396
+          <anchor 336 33> mark @bottom
+          <anchor 309 748> mark @top;
+      pos base uni0397
+          <anchor 312 25> mark @bottom
+          <anchor 288 737> mark @top;
+      pos base uni0398
+          <anchor 342 25> mark @bottom
+          <anchor 328 747> mark @top;
+      pos base uni0399
+          <anchor 240 34> mark @bottom
+          <anchor 229 737> mark @top;
+      pos base uni039A
+          <anchor 272 33> mark @bottom
+          <anchor 264 742> mark @top;
+      pos base uni039B
+          <anchor 272 33> mark @bottom
+          <anchor 264 762> mark @top;
+      pos base uni03A6
+          <anchor 294 33> mark @bottom
+          <anchor 285 767> mark @top;
+      pos base uni03B1
+          <anchor 253 33> mark @bottom
+          <anchor 245 458> mark @top;
+      pos base uni03B2
+          <anchor 267 38> mark @bottom
+          <anchor 222 754> mark @top;
+      pos base uni03B3
+          <anchor 296 -239> mark @bottom
+          <anchor 246 447> mark @top;
+      pos base uni03B4
+          <anchor 251 23> mark @bottom
+          <anchor 210 750> mark @top;
+      pos base uni03B5
+          <anchor 202 20> mark @bottom
+          <anchor 181 476> mark @top;
+      pos base uni03B6
+          <anchor 224 41> mark @bottom
+          <anchor 240 730> mark @top;
+      pos base uni03B7
+          <anchor 96 38> mark @bottom
+          <anchor 206 462> mark @top;
+      pos base uni03B8
+          <anchor 245 42> mark @bottom
+          <anchor 261 719> mark @top;
+      pos base uni03BA
+          <anchor 198 17> mark @bottom
+          <anchor 190 460> mark @top;
+      pos base uni0402
+          <anchor 312 25> mark @bottom
+          <anchor 288 737> mark @top;
+      pos base uni0403
+          <anchor 132 33> mark @bottom
+          <anchor 264 977> mark @top;
+      pos base uni0404
+          <anchor 266 25> mark @bottom
+          <anchor 266 801> mark @top;
+      pos base uni0405
+          <anchor 248 34> mark @bottom
+          <anchor 267 751> mark @top;
+      pos base uni0406
+          <anchor 240 34> mark @bottom
+          <anchor 229 737> mark @top;
+      pos base uni0408
+          <anchor 266 33> mark @bottom
+          <anchor 291 719> mark @top;
+      pos base uni0409
+          <anchor 474 33> mark @bottom
+          <anchor 467 775> mark @top;
+      pos base uni040A
+          <anchor 442 81> mark @bottom
+          <anchor 419 767> mark @top;
+      pos base uni040B
+          <anchor 338 33> mark @bottom
+          <anchor 307 751> mark @top;
+      pos base uni040C
+          <anchor 272 33> mark @bottom
+          <anchor 264 958> mark @top;
+      pos base uni040D
+          <anchor 312 33> mark @bottom
+          <anchor 293 967> mark @top;
+      pos base uni040E
+          <anchor 248 33> mark @bottom
+          <anchor 256 950> mark @top;
+      pos base uni040F
+          <anchor 362 -217> mark @bottom
+          <anchor 328 742> mark @top;
+      pos base uni0410
+          <anchor 256 33> mark @bottom
+          <anchor 291 750> mark @top;
+      pos base uni0411
+          <anchor 280 17> mark @bottom
+          <anchor 291 750> mark @top;
+      pos base uni0412
+          <anchor 256 33> mark @bottom
+          <anchor 234 758> mark @top;
+      pos base uni0413
+          <anchor 132 33> mark @bottom
+          <anchor 266 758> mark @top;
+      pos base uni0414
+          <anchor 340 33> mark @bottom
+          <anchor 338 758> mark @top;
+      pos base uni0415
+          <anchor 288 33> mark @bottom
+          <anchor 256 746> mark @top;
+      pos base uni0416
+          <anchor 536 33> mark @bottom
+          <anchor 544 770> mark @top;
+      pos base uni0417
+          <anchor 232 41> mark @bottom
+          <anchor 232 786> mark @top;
+      pos base uni0418
+          <anchor 312 33> mark @bottom
+          <anchor 280 746> mark @top;
+      pos base uni0419
+          <anchor 328 33> mark @bottom
+          <anchor 259 940> mark @top;
+      pos base uni041A
+          <anchor 272 33> mark @bottom
+          <anchor 264 742> mark @top;
+      pos base uni041B
+          <anchor 272 33> mark @bottom
+          <anchor 264 742> mark @top;
+      pos base uni041C
+          <anchor 376 33> mark @bottom
+          <anchor 349 727> mark @top;
+      pos base uni041D
+          <anchor 312 25> mark @bottom
+          <anchor 288 737> mark @top;
+      pos base uni041E
+          <anchor 280 33> mark @bottom
+          <anchor 310 745> mark @top;
+      pos base uni041F
+          <anchor 304 33> mark @bottom
+          <anchor 286 745> mark @top;
+      pos base uni0420
+          <anchor 143 33> mark @bottom
+          <anchor 235 742> mark @top;
+      pos base uni0421
+          <anchor 294 33> mark @bottom
+          <anchor 314 743> mark @top;
+      pos base uni0422
+          <anchor 320 33> mark @bottom
+          <anchor 288 742> mark @top;
+      pos base uni0423
+          <anchor 248 33> mark @bottom
+          <anchor 256 742> mark @top;
+      pos base uni0424
+          <anchor 294 33> mark @bottom
+          <anchor 285 767> mark @top;
+      pos base uni0425
+          <anchor 344 33> mark @bottom
+          <anchor 314 746> mark @top;
+      pos base uni0426
+          <anchor 344 33> mark @bottom
+          <anchor 314 746> mark @top;
+      pos base uni0427
+          <anchor 512 33> mark @bottom
+          <anchor 306 746> mark @top;
+      pos base uni0428
+          <anchor 416 33> mark @bottom
+          <anchor 418 746> mark @top;
+      pos base uni0429
+          <anchor 448 33> mark @bottom
+          <anchor 418 746> mark @top;
+      pos base uni042A
+          <anchor 416 33> mark @bottom
+          <anchor 338 746> mark @top;
+      pos base uni042B
+          <anchor 400 33> mark @bottom
+          <anchor 370 746> mark @top;
+      pos base uni042C
+          <anchor 288 33> mark @bottom
+          <anchor 258 746> mark @top;
+      pos base uni042D
+          <anchor 304 33> mark @bottom
+          <anchor 274 746> mark @top;
+      pos base uni042E
+          <anchor 456 33> mark @bottom
+          <anchor 426 746> mark @top;
+      pos base uni042F
+          <anchor 344 33> mark @bottom
+          <anchor 314 746> mark @top;
+      pos base uni0430
+          <anchor 216 33> mark @bottom
+          <anchor 218 484> mark @top;
+      pos base uni0431
+          <anchor 216 33> mark @bottom
+          <anchor 277 762> mark @top;
+      pos base uni0432
+          <anchor 216 33> mark @bottom
+          <anchor 218 484> mark @top;
+      pos base uni0433
+          <anchor 104 17> mark @bottom
+          <anchor 206 481> mark @top;
+      pos base uni0434
+          <anchor 230 34> mark @bottom
+          <anchor 246 482> mark @top;
+      pos base uni0435
+          <anchor 224 19> mark @bottom
+          <anchor 200 506> mark @top;
+      pos base uni0436
+          <anchor 379 38> mark @bottom
+          <anchor 378 482> mark @top;
+      pos base uni0437
+          <anchor 206 13> mark @bottom
+          <anchor 184 482> mark @top;
+      pos base uni0438
+          <anchor 224 41> mark @bottom
+          <anchor 214 478> mark @top;
+      pos base uni0439
+          <anchor 256 41> mark @bottom
+          <anchor 245 615> mark @top;
+      pos base uni043A
+          <anchor 198 17> mark @bottom
+          <anchor 190 460> mark @top;
+      pos base uni043B
+          <anchor 226 17> mark @bottom
+          <anchor 238 460> mark @top;
+      pos base uni043C
+          <anchor 293 22> mark @bottom
+          <anchor 294 460> mark @top;
+      pos base uni043D
+          <anchor 224 17> mark @bottom
+          <anchor 216 460> mark @top;
+      pos base uni043E
+          <anchor 221 23> mark @bottom
+          <anchor 224 474> mark @top;
+      pos base uni043F
+          <anchor 237 23> mark @bottom
+          <anchor 240 474> mark @top;
+      pos base uni0440
+          <anchor 104 -225> mark @bottom
+          <anchor 227 490> mark @top;
+      pos base uni0441
+          <anchor 216 33> mark @bottom
+          <anchor 203 495> mark @top;
+      pos base uni0442
+          <anchor 216 33> mark @bottom
+          <anchor 210 466> mark @top;
+      pos base uni0443
+          <anchor 256 -223> mark @bottom
+          <anchor 240 484> mark @top;
+      pos base uni0444
+          <anchor 333 -242> mark @bottom
+          <anchor 341 745> mark @top;
+      pos base uni0445
+          <anchor 232 33> mark @bottom
+          <anchor 226 476> mark @top;
+      pos base uni0446
+          <anchor 251 23> mark @bottom
+          <anchor 234 468> mark @top;
+      pos base uni0447
+          <anchor 339 23> mark @bottom
+          <anchor 202 455> mark @top;
+      pos base uni0448
+          <anchor 360 18> mark @bottom
+          <anchor 344 463> mark @top;
+      pos base uni0449
+          <anchor 376 36> mark @bottom
+          <anchor 310 492> mark @top;
+      pos base uni044A
+          <anchor 245 22> mark @bottom
+          <anchor 234 479> mark @top;
+      pos base uni044B
+          <anchor 291 15> mark @bottom
+          <anchor 278 474> mark @top;
+      pos base uni044C
+          <anchor 198 18> mark @bottom
+          <anchor 187 458> mark @top;
+      pos base uni044D
+          <anchor 208 26> mark @bottom
+          <anchor 202 471> mark @top;
+      pos base uni044E
+          <anchor 291 25> mark @bottom
+          <anchor 283 474> mark @top;
+      pos base uni044F
+          <anchor 229 15> mark @bottom
+          <anchor 226 476> mark @top;
+      pos base uni0452
+          <anchor 330 -231> mark @bottom
+          <anchor 224 759> mark @top;
+      pos base uni0453
+          <anchor 104 17> mark @bottom
+          <anchor 224 708> mark @top;
+      pos base uni0454
+          <anchor 205 20> mark @bottom
+          <anchor 206 481> mark @top;
+      pos base uni0455
+          <anchor 176 33> mark @bottom
+          <anchor 173 478> mark @top;
+      pos base uni0456
+          <anchor 114 33> mark @bottom
+          <anchor 94 687> mark @top;
+      pos base uni0458
+          <anchor 88 -183> mark @bottom
+          <anchor 106 697> mark @top;
+      pos base uni0459
+          <anchor 349 26> mark @bottom
+          <anchor 344 478> mark @top;
+      pos base uni045A
+          <anchor 325 30> mark @bottom
+          <anchor 307 468> mark @top;
+      pos base uni045B
+          <anchor 269 -1> mark @bottom
+          <anchor 136 745> mark @top;
+      pos base uni045C
+          <anchor 198 17> mark @bottom
+          <anchor 206 678> mark @top;
+      pos base uni045F
+          <anchor 240 -178> mark @bottom
+          <anchor 224 487> mark @top;
+      pos base uni0462
+          <anchor 357 39> mark @bottom
+          <anchor 328 732> mark @top;
+      pos base uni0463
+          <anchor 267 33> mark @bottom
+          <anchor 278 735> mark @top;
+      pos base uni048C
+          <anchor 357 39> mark @bottom
+          <anchor 328 732> mark @top;
+      pos base uni048D
+          <anchor 267 33> mark @bottom
+          <anchor 278 735> mark @top;
+      pos base uni0490
+          <anchor 106 34> mark @bottom
+          <anchor 274 767> mark @top;
+      pos base uni0491
+          <anchor 91 31> mark @bottom
+          <anchor 205 583> mark @top;
+      pos base uni1EF5
+          <anchor 224 481> mark @top;
+      pos base uniA78E
+          <anchor 294 -90> mark @bottom
+          <anchor 207 733> mark @top;
+      pos base uniE037
+          <anchor 232 33> mark @bottom
+          <anchor 234 484> mark @top;
+      pos base uogonek
+          <anchor 253 -230> mark @bottom
+          <anchor 266 460> mark @top;
+      pos base uring
+          <anchor 224 41> mark @bottom
+          <anchor 214 758> mark @top;
+      pos base v
+          <anchor 208 33> mark @bottom
+          <anchor 195 490> mark @top;
+      pos base w
+          <anchor 256 33> mark @bottom
+          <anchor 274 486> mark @top;
+      pos base wcircumflex
+          <anchor 256 33> mark @bottom
+          <anchor 274 726> mark @top;
+      pos base x
+          <anchor 232 33> mark @bottom
+          <anchor 226 476> mark @top;
+      pos base y
+          <anchor 256 -223> mark @bottom
+          <anchor 240 484> mark @top;
+      pos base yacute
+          <anchor 256 -223> mark @bottom
+          <anchor 240 708> mark @top;
+      pos base ycircumflex
+          <anchor 256 -223> mark @bottom
+          <anchor 240 708> mark @top;
+      pos base ydieresis
+          <anchor 256 -223> mark @bottom
+          <anchor 240 692> mark @top;
+      pos base z
+          <anchor 224 17> mark @bottom
+          <anchor 205 470> mark @top;
+      pos base zacute
+          <anchor 224 17> mark @bottom
+          <anchor 205 686> mark @top;
+      pos base zcaron
+          <anchor 224 17> mark @bottom
+          <anchor 205 686> mark @top;
+      pos base zdotaccent
+          <anchor 224 17> mark @bottom
+          <anchor 205 686> mark @top;
+  } markLTR;
+
+  lookup markLTR;
+} mark;
+feature mkmk {
+# GPOS feature : Mark to Mark Positioning
+#    markClass acutecomb <anchor -240 704> @top;
+#    markClass brevecomb <anchor -216 704> @top;
+#    markClass caroncomb <anchor -249 704> @top;
+#    markClass cedillacomb <anchor -278 0> @bottom;
+#    markClass circumflexcomb <anchor -240 704> @top;
+#    markClass commaaccentcomb <anchor -214 93> @bottom;
+#    markClass dieresiscomb <anchor -210 704> @top;
+#    markClass dotaccentcomb <anchor -178 704> @top;
+#    markClass gravecomb <anchor -240 704> @top;
+#    markClass hungarumlautcomb <anchor -288 712> @top;
+#    markClass macroncomb <anchor -240 704> @top;
+#    markClass ringcomb <anchor -304 648> @top;
+#    markClass tildecomb <anchor -240 704> @top;
+#    markClass uni0309 <anchor -203 704> @top;
+#    markClass uni030D <anchor -249 704> @top;
+#    markClass uni030F <anchor -288 712> @top;
+#    markClass uni0316 <anchor -213 -16> @bottom;
+#    markClass uni0317 <anchor -213 -16> @bottom;
+#    markClass uni0318 <anchor -214 93> @bottom;
+#    markClass uni0319 <anchor -214 93> @bottom;
+#    markClass uni031A <anchor -240 704> @top;
+#    markClass uni031C <anchor -213 -16> @bottom;
+#    markClass uni031D <anchor -214 93> @bottom;
+#    markClass uni031E <anchor -214 93> @bottom;
+#    markClass uni031F <anchor -214 93> @bottom;
+#    markClass uni0320 <anchor -214 93> @bottom;
+#    markClass uni0323 <anchor -213 -16> @bottom;
+#    markClass uni0324 <anchor -214 93> @bottom;
+#    markClass uni0325 <anchor -214 93> @bottom;
+#    markClass uni0329 <anchor -214 93> @bottom;
+#    markClass uni032A <anchor -214 93> @bottom;
+#    markClass uni032B <anchor -214 93> @bottom;
+#    markClass uni032C <anchor -214 93> @bottom;
+#    markClass uni032D <anchor -214 93> @bottom;
+#    markClass uni032E <anchor -214 93> @bottom;
+#    markClass uni032F <anchor -214 93> @bottom;
+#    markClass uni0330 <anchor -214 93> @bottom;
+#    markClass uni0331 <anchor -214 93> @bottom;
+#    markClass uni0332 <anchor -214 93> @bottom;
+#    markClass uni033A <anchor -214 93> @bottom;
+#    markClass uni033D <anchor -240 704> @top;
+#    markClass uni034D <anchor -334 93> @bottom;
+#    markClass uni037A <anchor 73 22> @bottom;
+#    markClass uni0384 <anchor 65 467> @top;
+#    markClass uni0385 <anchor 164 438> @top;
+
+  lookup mkmkLTR {
+      pos mark acutecomb
+          <anchor -243 902> mark @top;
+      pos mark brevecomb
+          <anchor -219 926> mark @top;
+      pos mark caroncomb
+          <anchor -251 950> mark @top;
+      pos mark cedillacomb
+          <anchor -326 -300> mark @bottom;
+      pos mark circumflexcomb
+          <anchor -243 950> mark @top;
+      pos mark commaaccentcomb
+          <anchor -214 -300> mark @bottom;
+      pos mark dieresiscomb
+          <anchor -219 882> mark @top;
+      pos mark dotaccentcomb
+          <anchor -178 882> mark @top;
+      pos mark gravecomb
+          <anchor -243 902> mark @top;
+      pos mark hungarumlautcomb
+          <anchor -243 974> mark @top;
+      pos mark macroncomb
+          <anchor -243 834> mark @top;
+      pos mark ringcomb
+          <anchor -299 918> mark @top;
+      pos mark tildecomb
+          <anchor -243 902> mark @top;
+      pos mark uni0309
+          <anchor -203 1054> mark @top;
+      pos mark uni030D
+          <anchor -251 990> mark @top;
+      pos mark uni030F
+          <anchor -243 974> mark @top;
+      pos mark uni0316
+          <anchor -214 -300> mark @bottom;
+      pos mark uni0317
+          <anchor -214 -300> mark @bottom;
+      pos mark uni0318
+          <anchor -214 -300> mark @bottom;
+      pos mark uni0319
+          <anchor -214 -300> mark @bottom;
+      pos mark uni031A
+          <anchor -243 926> mark @top;
+      pos mark uni031C
+          <anchor -214 -388> mark @bottom;
+      pos mark uni031D
+          <anchor -214 -300> mark @bottom;
+      pos mark uni031E
+          <anchor -214 -300> mark @bottom;
+      pos mark uni031F
+          <anchor -214 -300> mark @bottom;
+      pos mark uni0320
+          <anchor -214 -76> mark @bottom;
+      pos mark uni0323
+          <anchor -214 -300> mark @bottom;
+      pos mark uni0324
+          <anchor -214 -300> mark @bottom;
+      pos mark uni0325
+          <anchor -214 -300> mark @bottom;
+      pos mark uni0329
+          <anchor -214 -300> mark @bottom;
+      pos mark uni032A
+          <anchor -214 -300> mark @bottom;
+      pos mark uni032B
+          <anchor -214 -300> mark @bottom;
+      pos mark uni032C
+          <anchor -214 -300> mark @bottom;
+      pos mark uni032D
+          <anchor -214 -300> mark @bottom;
+      pos mark uni032E
+          <anchor -214 -300> mark @bottom;
+      pos mark uni032F
+          <anchor -214 -300> mark @bottom;
+      pos mark uni0330
+          <anchor -214 -300> mark @bottom;
+      pos mark uni0331
+          <anchor -214 -140> mark @bottom;
+      pos mark uni0332
+          <anchor -214 -100> mark @bottom;
+      pos mark uni033A
+          <anchor -214 -300> mark @bottom;
+      pos mark uni033D
+          <anchor -243 1078> mark @top;
+      pos mark uni034D
+          <anchor -334 -300> mark @bottom;
+      pos mark uni037A
+          <anchor 76 -242> mark @bottom;
+      pos mark uni0384
+          <anchor 110 746> mark @top;
+      pos mark uni0385
+          <anchor 174 808> mark @top;
+  } mkmkLTR;
+
+  lookup mkmkLTR;
+} mkmk;
