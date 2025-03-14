@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>loclBGR</key>
+  <array>
+    <string>uni0424.loclBGR</string>
+    <string>uni0432.loclBGR</string>
+    <string>uni0433.loclBGR</string>
+    <string>uni0434.loclBGR</string>
+    <string>uni0436.loclBGR</string>
+    <string>uni0437.loclBGR</string>
+    <string>uni043A.loclBGR</string>
+    <string>uni043F.loclBGR</string>
+    <string>uni0442.loclBGR</string>
+    <string>uni0447.loclBGR</string>
+    <string>uni044E.loclBGR</string>
+  </array>
+  <key>loclCYR</key>
+  <array>
+    <string>uni0424</string>
+    <string>uni0432</string>
+    <string>uni0433</string>
+    <string>uni0434</string>
+    <string>uni0436</string>
+    <string>uni0437</string>
+    <string>uni043A</string>
+    <string>uni043F</string>
+    <string>uni0442</string>
+    <string>uni0447</string>
+    <string>uni044E</string>
+  </array>
+</dict>
+</plist>

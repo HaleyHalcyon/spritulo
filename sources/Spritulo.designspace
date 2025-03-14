@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="4.0">
+ <axes>
+  <axis name="weight" maximum="1000" default="400" tag="wght" minimum="1">
+   <labelname xml:lang="en">Weight</labelname>
+   <map output="1" input="1"/>
+   <map output="400" input="400"/>
+   <map output="1000" input="1000"/>
+  </axis>
+ </axes>
+ <sources>
+  <source name="Regular" stylename="Regular" familyname="Spritulo" filename="masters/Spritulo-Regular.ufo">
+   <lib copy="1"/>
+   <groups copy="1"/>
+   <info copy="1"/>
+   <features copy="1"/>
+   <location>
+    <dimension name="weight" xvalue="400"/>
+   </location>
+  </source>
+ </sources>
+</designspace>
