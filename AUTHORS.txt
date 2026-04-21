@@ -6,3 +6,4 @@
 # Name or Organization <email address>
 
 Haley Wakamatsu (UkiyoMoji Fonts) <haleyhalcyon@gmail.com>
+Stefan Peev <localfonts.eu@gmail.com>
