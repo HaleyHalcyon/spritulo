@@ -6,6 +6,8 @@
 
 The Cyrillic letterforms blend block-script versions with some cursive features.
 
+Stylistic alternates exist for more casual handwriting forms in Cyrillic and Greek.
+
 ## Name
 
 *Spritulo* is Esperanto for “witticist” or “clever guy”, from *sprit(a)* “witty” and *-ulo* “[person characterized by said feature]”.
@@ -15,13 +17,13 @@ Its Esperanto name continues the theme from my previous Google Fonts project, [O
 ## Known issues
 
 * (The version of) FontForge (that runs fine on my PC) can only export a broken features.fea file. Loading it on FontForge removes all OpenType features except kerning. Thanks for nothing, FontForge.
-  * Therefore, features.fea must be written by hand, and any new glyphs must be manually added to the glyphs folder. Thanks again, FontForge.
+  * Therefore, features.fea must be written by hand and any new glyphs manually added to the glyphs folder, or features must be added manually to the FontForge project. Thanks again, FontForge.
 
 ## Features
 
 ### Writing system support
 
-Latin (Vietnamese), IPA, Greek (Polytonic), Cyrillic, Shavian
+Latin (Vietnamese), IPA, Greek (Polytonic), Cyrillic (Old Church Slavonic), Shavian
 
 ### Language support
 
@@ -31,17 +33,32 @@ Latin (Vietnamese), IPA, Greek (Polytonic), Cyrillic, Shavian
 
 ### Odds & ends
 
-* **Currency symbols**: $, ¢, £, ¥, €, ₯, ₴, ₽
+* **Arrows:** ← → ↑ ↓ ↔ ↕ ↵ ⇧ ⇪
+* **Math symbols:** × ÷ ¬ ∀ ∅ ∇ ∈ ∌ ∛ ∝ ∞ ∧ ∪ ≈ ≟ ≠ ≡ ≥ ⊂ ⊅ ⊇ ⊈ etc.
+* **Currency symbols**: $ ¢ £ ¥ € ₯ ₴ ₽
 * **Card suits**: ♠ ♥ ♦ ♣ ♤ ♡ ♢ ♧ 
+* **Symbols and dingbats**: ★ ☆ ✓ ✔ ✕ ✖ ✗ ✘
 * **Musical symbols**: ♩ ♪ ♫ ♬ ♭ ♮ ♯, and 24-tone accidentals demiflat, sesquiflat, demisharp, and sesquisharp, both in the PUA according to SMuFL encoding, and the provisional Unicode encoding
 * **Obscure punctuation**: ⸘ ‽ ⸨ ⸩
 * **Volapük umlauts**: Ꞛ ꞛ Ꞝ ꞝ Ꞟ ꞟ
 
 ### OpenType summary
 
-**List of features:** Case-sensitive forms, 18 character variants, Discretionary ligatures, Ligatures, Lining numerals, Localized forms (Romanian and Bulgarian), 2 stylistic sets, and kerning
+* `case` Case-sensitive forms
+* `dlig` Discretionary ligatures
+* `liga` Ligatures
+* `lnum` Lining numerals (Defaults are old-style)
+* `locl` Localized forms (Romanian/Moldovan, and Bulgarian)
+* `locl` Localized ligatures (Dutch/Flemish)
+* `ss01`-`ss02` 2 stylistic sets
+* `kern` Kerning
+* `ordn` Ordinals (º and ª only)
+* `sups` Superscript
+* `cv01`-`cv18` 18 character variants
 
 For details on OpenType features, such as cursive-style Cyrillic and Greek, and alternate numerals, please read [opentype.md](documentation/opentype.md).
+
+**\[TODO\] `ss02` and `cv07`-`cv18` must be reimplemented.**
 
 ### Ligatures
 
