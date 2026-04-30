@@ -8,6 +8,33 @@ The Cyrillic letterforms blend block-script versions with some cursive features.
 
 Stylistic alternates exist for more casual handwriting forms in Cyrillic and Greek.
 
+## Examples
+
+### Specimens
+
+![](./examples/spritulo-desk.png)
+> Desk – multiple languages
+
+### Mockups
+
+![](./examples/spritulo-book-mockup.png)
+> Book – Dutch
+
+![](./examples/spritulo-chopsticks.png)
+> Chopsticks – Vietnamese
+
+![](./examples/spritulo-colored-pens.png)
+> Markers – Interslavic (Latin and Cyrillic)
+
+![](./examples/spritulo-detective.png)
+> Detective game – Bulgarian
+
+![](./examples/spritulo-ereader.png)
+> E-Reader – Ancient Greek (Polytonic Greek)
+
+![](./examples/spritulo-itunes.png)
+> iTunes – English
+
 ## Name
 
 *Spritulo* is Esperanto for “witticist” or “clever guy”, from *sprit(a)* “witty” and *-ulo* “[person characterized by said feature]”.
