@@ -18,22 +18,26 @@ Stylistic alternates exist for more casual handwriting forms in Cyrillic and Gre
 ### Mockups
 
 ![](./examples/spritulo-book-mockup.png)
-> Book – Dutch
+> ▲ Book – Dutch
 
 ![](./examples/spritulo-chopsticks.png)
-> Chopsticks – Vietnamese
+> ▲ Chopsticks – Vietnamese
+
+![](./examples/spritulo-comic.png)
+> ▲ Comic – English (Shavian Alphabet)  
+> [*xkcd* #1248](https://www.explainxkcd.com/wiki/index.php/1248:_Sphere) by Randall Munroe is licensed under Creative Commons
 
 ![](./examples/spritulo-colored-pens.png)
-> Markers – Interslavic (Latin and Cyrillic)
+> ▲ Markers – Interslavic (Latin and Cyrillic)
 
 ![](./examples/spritulo-detective.png)
-> Detective game – Bulgarian
+> ▲ Detective game – Bulgarian
 
 ![](./examples/spritulo-ereader.png)
-> E-Reader – Ancient Greek (Polytonic Greek)
+> ▲ E-Reader – Ancient Greek (Polytonic Greek)
 
 ![](./examples/spritulo-itunes.png)
-> iTunes – English
+> ▲ iTunes – English
 
 ## Name
 
@@ -43,8 +47,7 @@ Its Esperanto name continues the theme from my previous Google Fonts project, [O
 
 ## Known issues
 
-* (The version of) FontForge (that runs fine on my PC) can only export a broken features.fea file. Loading it on FontForge removes all OpenType features except kerning. Thanks for nothing, FontForge.
-  * Therefore, features.fea must be written by hand and any new glyphs manually added to the glyphs folder, or features must be added manually to the FontForge project. Thanks again, FontForge.
+* (The version of) FontForge (that runs fine on my PC) can only export a broken features.fea file. Loading it on FontForge removes all OpenType features except kerning. Thanks for nothing, FontForge. The latest project file is still the FontForge project (Spritulo-Regular.sfd).
 
 ## Features
 
@@ -85,8 +88,6 @@ Latin (Vietnamese), IPA, Greek (Polytonic), Cyrillic (Old Church Slavonic), Shav
 
 For details on OpenType features, such as cursive-style Cyrillic and Greek, and alternate numerals, please read [opentype.md](documentation/opentype.md).
 
-**\[TODO\] `ss02` and `cv07`-`cv18` must be reimplemented.**
-
 ### Ligatures
 
 **Unicode:** Ĳ, ĳ, ﬀ, ﬁ, ﬂ, ﬃ, ﬄ
@@ -113,9 +114,13 @@ Since this repository template does not support FontForge, fonts are built manua
 - MAJOR Renamed from Stampatello Faceto to Spritulo to prepare for potentially breaking changes.
 - MAJOR Added Greek handwritten forms.
 - MAJOR Added the IPA tricolon and half-tricolon (crucial for vowel length marking).
+- MAJOR Re-implemented OpenType substitutions.
 - MINOR Added the alternate Volapük umlauts (ꞚꞛꞜꞝꞞꞟ U+A79A~A79F).
 - MINOR Added more combining diacritics for IPA transcriptions.
 - MINOR Added diacritic anchors to more letters for IPA transcription.
+- MINOR Added characters for Old Church Slavonic.
+- MINOR Added arrows and more math symbols.
+- MINOR Added musical symbols and card suits.
 - MINOR Added more kerning.
 
 **05 Dec 2023. Stampatello Faceto Version 0.02**
