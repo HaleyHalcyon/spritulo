@@ -17,8 +17,8 @@ Stylistic alternates exist for more casual handwriting forms in Cyrillic and Gre
 
 ### Mockups
 
-![](./examples/spritulo-book-mockup.png)
-> ▲ Book – Dutch
+![](./examples/spritulo-kitchen.png)
+> ▲ Kitchen – Spanish and German
 
 ![](./examples/spritulo-chopsticks.png)
 > ▲ Chopsticks – Vietnamese
@@ -32,6 +32,9 @@ Stylistic alternates exist for more casual handwriting forms in Cyrillic and Gre
 
 ![](./examples/spritulo-detective.png)
 > ▲ Detective game – Bulgarian
+
+![](./examples/spritulo-book-mockup.png)
+> ▲ Book – Dutch
 
 ![](./examples/spritulo-ereader.png)
 > ▲ E-Reader – Ancient Greek (Polytonic Greek)
