@@ -2,7 +2,7 @@
 
 ## About
 
-**Spritulo** ([IPA](https://en.wikipedia.org/wiki/Help:IPA/English): /sprɪtˈuː.loʊ/; [Respelled](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key) *sprit-OO-loh*) is a block-script handwriting font with massive multilingual support spanning Latin, Greek, and Cyrillic. It started as a project to create a modern handwriting font for Ancient Greek, but has since expanded to include a diverse character set including Vietnamese and Bulgarian Cyrillic. It is based on the handwriting of the designer using a felt-tip pen, with some creative liberties and beautification added in.
+**Spritulo** ([English pronunciation](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key) *sprit-OO-loh*; [Esperanto pronunciation](https://en.wikipedia.org/wiki/Help:IPA/Esperanto) \[spritˈulo\]) is a block-script handwriting font with massive multilingual support spanning Latin, Greek, and Cyrillic. It started as a project to create a modern handwriting font for Ancient Greek, but has since expanded to include a diverse character set including Vietnamese and Bulgarian Cyrillic. It is based on the handwriting of the designer using a felt-tip pen, with some creative liberties and beautification added in.
 
 The Cyrillic letterforms blend block-script versions with some cursive features.
 
@@ -21,7 +21,8 @@ Stylistic alternates exist for more casual handwriting forms in Cyrillic and Gre
 > ▲ Kitchen – Spanish and German
 
 ![](./examples/spritulo-chopsticks.png)
-> ▲ Chopsticks – Vietnamese
+> ▲ Chopsticks – Vietnamese  
+> \* Note that faux bold will look bad on letters with diacritics.
 
 ![](./examples/spritulo-comic.png)
 > ▲ Comic – English (Shavian Alphabet)  
@@ -67,13 +68,14 @@ Latin (Vietnamese), IPA, Greek (Polytonic), Cyrillic (Old Church Slavonic), Shav
 ### Odds & ends
 
 * **Arrows:** ← → ↑ ↓ ↔ ↕ ↵ ⇧ ⇪
-* **Math symbols:** × ÷ ¬ ∀ ∅ ∇ ∈ ∌ ∛ ∝ ∞ ∧ ∪ ≈ ≟ ≠ ≡ ≥ ⊂ ⊅ ⊇ ⊈ etc.
+* **Math symbols:** × ÷ ¬ ∀ ∃ ∅ ∇ ∈ ∌ ∛ ∝ ∞ ∧ ∪ ≈ ≟ ≠ ≡ ≥ ⊂ ⊅ ⊇ ⊈ etc.
 * **Currency symbols**: $ ¢ £ ¥ € ₯ ₴ ₽
 * **Card suits**: ♠ ♥ ♦ ♣ ♤ ♡ ♢ ♧ 
-* **Symbols and dingbats**: ★ ☆ ✓ ✔ ✕ ✖ ✗ ✘
+* **Symbols and dingbats**: № ★ ☆ ✓ ✔ ✕ ✖ ✗ ✘
 * **Musical symbols**: ♩ ♪ ♫ ♬ ♭ ♮ ♯, and 24-tone accidentals demiflat, sesquiflat, demisharp, and sesquisharp, both in the PUA according to SMuFL encoding, and the provisional Unicode encoding
 * **Obscure punctuation**: ⸘ ‽ ⸨ ⸩
 * **Volapük umlauts**: Ꞛ ꞛ Ꞝ ꞝ Ꞟ ꞟ
+* **Precomposed Roman numerals:** Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅹ Ⅺ Ⅻ Ⅼ Ⅽ Ⅾ Ⅿ ↀ ↁ ↂ ↇ ↈ
 
 ### OpenType summary
 
@@ -118,7 +120,10 @@ Since this repository template does not support FontForge, fonts are built manua
 - MAJOR Added Greek handwritten forms.
 - MAJOR Added the IPA tricolon and half-tricolon (crucial for vowel length marking).
 - MAJOR Re-implemented OpenType substitutions.
+- MAJOR Added more Cyrillic letters, like for Kazakh.
+- MAJOR Added unique “seriffed” glyphs for uppercase Roman numerals.
 - MINOR Added the alternate Volapük umlauts (ꞚꞛꞜꞝꞞꞟ U+A79A~A79F).
+- MINOR Tweaked Vietnamese letterforms.
 - MINOR Added more combining diacritics for IPA transcriptions.
 - MINOR Added diacritic anchors to more letters for IPA transcription.
 - MINOR Added characters for Old Church Slavonic.
