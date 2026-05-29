@@ -1,4 +1,4 @@
-*note:* For some reason, the current SFDIR file won't build. `cv04` through `cv18`, `ss01`, `ss02`, and `liga NLD` are not available yet, and `liga` vs. `dlig` have not been separated.
+![back](../README.md)
 
 # OpenType features
 
@@ -66,7 +66,7 @@ Stampatello Faceto’s default Greek portion is intended for use as phonetic and
 * `ss02` — Greek cursive (applies the Greek portion of `cv01`, `cv04` ~ `cv10`, `cv12` ~ `cv18`)
 ![](ot_ss02.png)
 
-* `lnum` — lining numerals (old-style by default)
+* `lnum` — lining numerals (Old-style by default. Will also reposition some mathematical symbols such as +, −, ×, ÷, ±, ∓)
 ![](ot_lnum.png)
 
 * `locl` (`ROM`, `MOL`) — replace ⟨ş, ţ⟩ (with cedilla) with ⟨ș, ț⟩ (with comma accent)
@@ -81,8 +81,10 @@ Stampatello Faceto’s default Greek portion is intended for use as phonetic and
 * `liga` — default ligatures for ⟨fi⟩, ⟨fj⟩, and ⟨ft⟩
 ![](ot_liga.png)
 
-* `dlig` — optional ligatures for ⟨ff⟩, ⟨ffi⟩, ⟨ffl⟩, and ⟨fl⟩ (They exist as Unicode compatibility codepoints, but they aren’t enabled by default because they don't flow well in my handwriting.)
+* `dlig` — optional ligatures for ⟨ff⟩, ⟨ffi⟩, ⟨ffl⟩, and ⟨fl⟩ (They exist as Unicode codepoints, but they aren’t enabled by default because they don't flow well in my handwriting.)
 ![](ot_dlig.png)
 
 * `case` — all-caps positioning for parentheses/brackets, hyphens, dashes, and middle dot
 ![](ot_case.png)
+
+> ![back](../README.md)
