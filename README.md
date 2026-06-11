@@ -89,7 +89,7 @@ Latin (Vietnamese), IPA, Greek (Polytonic), Cyrillic (Old Church Slavonic), Shav
 * `kern` Kerning
 * `ordn` Ordinals (º and ª only)
 * `sups` Superscript
-* `cv01`-`cv18` 18 character variants
+* `cv01`-`cv19` 19 character variants
 
 For details on OpenType features, such as cursive-style Cyrillic and Greek, and alternate numerals, please read [opentype.md](documentation/opentype.md).
 

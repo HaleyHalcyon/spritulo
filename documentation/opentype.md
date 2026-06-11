@@ -60,6 +60,9 @@ Stampatello Faceto’s default Greek portion is intended for use as phonetic and
 * `cv18` — two-pronged ⟨Ψ⟩ (looks like ⟨Ч⟩) and ⟨ψ⟩ (looks like ⟨ɥ⟩)
 ![](ot_cv18.png)
 
+* `cv19` — serif ⟨7⟩ (default ⟨7⟩ has a crossbar)
+![](ot_cv19.png)
+
 * `ss01` — Cyrillic cursive (automatically applied in Bulgarian locale)
 ![](ot_ss01.png)
 
