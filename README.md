@@ -18,7 +18,8 @@ Stylistic alternates exist for more casual handwriting forms in Cyrillic and Gre
 ### Mockups
 
 ![](./examples/spritulo-kitchen.png)
-> ▲ Kitchen – Spanish and German
+> ▲ Kitchen – Spanish and German  
+> \* The font supports [the “e” mark](https://youtu.be/5tD2bEzihY8).
 
 ![](./examples/spritulo-chopsticks.png)
 > ▲ Chopsticks – Vietnamese  
@@ -47,11 +48,11 @@ Stylistic alternates exist for more casual handwriting forms in Cyrillic and Gre
 
 *Spritulo* is Esperanto for “witticist” or “clever guy”, from *sprit(a)* “witty” and *-ulo* “[person characterized by said feature]”.
 
-Its Esperanto name continues the theme from my previous Google Fonts project, [Orelega One](https://fonts.google.com/specimen/Orelega+One); *Orelega* is Esperanto for “big-eared”.
+Its Esperanto name continues the theme from my previous Google Fonts project, [Orelega](https://fonts.google.com/specimen/Orelega+One); *Orelega* is Esperanto for “big-eared”.
 
 ## Known issues
 
-* (The version of) FontForge (that runs fine on my PC) can only export a broken features.fea file. Loading it on FontForge removes all OpenType features except kerning. Thanks for nothing, FontForge. The latest project file is still the FontForge project (Spritulo-Regular.sfd).
+* (The version of) FontForge (that runs fine on my PC) can only export a broken features.fea file. Loading it on FontForge removes all OpenType features except kerning. So FontForge exports for .ufo files are broken on my end. The latest project file is still the FontForge project (Spritulo-Regular.sfd).
 
 ## Features
 
@@ -76,6 +77,7 @@ Latin (Vietnamese), IPA, Greek (Polytonic), Cyrillic (Old Church Slavonic), Shav
 * **Obscure punctuation**: ⸘ ‽ ⸨ ⸩
 * **Volapük umlauts**: Ꞛ ꞛ Ꞝ ꞝ Ꞟ ꞟ
 * **Precomposed Roman numerals:** Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅹ Ⅺ Ⅻ Ⅼ Ⅽ Ⅾ Ⅿ ↀ ↁ ↂ ↇ ↈ
+* **European Union “estimated” mark:** ℮
 
 ### OpenType summary
 
