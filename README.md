@@ -48,6 +48,8 @@ Stylistic alternates exist for more casual handwriting forms in Cyrillic and Gre
 
 *Spritulo* is Esperanto for “witticist” or “clever guy”, from *sprit(a)* “witty” and *-ulo* “[person characterized by said feature]”.
 
+According to a paper called *The Word Formation in Esperanto as Seen in Two Translations of _Hamlet_* by Toshifumi Noro from the National Institute of Informatics (Japan), the word *spritulo* is used in both L. L. Zamenhof’s and L. N. M. Newell’s translations of Shakespeare’s *Hamlet*.
+
 Its Esperanto name continues the theme from my previous Google Fonts project, [Orelega](https://fonts.google.com/specimen/Orelega+One); *Orelega* is Esperanto for “big-eared”.
 
 ## Known issues
