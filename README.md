@@ -2,7 +2,7 @@
 
 ## About
 
-**Spritulo** ([English pronunciation](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key) *sprit-OO-loh*; [Esperanto pronunciation](https://en.wikipedia.org/wiki/Help:IPA/Esperanto) \[spritˈulo\]) is a block-script handwriting font with massive multilingual support spanning Latin, Greek, and Cyrillic. It started as a project to create a modern handwriting font for Ancient Greek, but has since expanded to include a diverse character set including Vietnamese and Bulgarian Cyrillic. It is based on the handwriting of the designer using a felt-tip pen, with some creative liberties and beautification added in.
+**Spritulo** ([English pronunciation](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key) *sprit-OO-loh*; [Esperanto pronunciation](https://en.wikipedia.org/wiki/Help:IPA/Esperanto) \[spritˈulo\]) is a block-script handwriting font with massive multilingual support spanning Latin, Greek, and Cyrillic. It started as a project to create a modern handwriting font for Ancient Greek, but has since expanded to include a diverse character set supporting Vietnamese, Bulgarian Cyrillic, and the Shavian alphabet for English. It is based on the handwriting of the designer using a felt-tip pen, with some creative liberties and beautification added in.
 
 The Cyrillic letterforms blend block-script versions with some cursive features.
 
@@ -45,7 +45,18 @@ Stylistic alternates exist for more casual handwriting forms in Cyrillic and Gre
 
 ## Name
 
-*Spritulo* is Esperanto for “witticist” or “clever guy”, from *sprit(a)* “witty” and *-ulo* “[person characterized by said feature]”.
+*Spritulo* is Esperanto for “witticist” or “clever guy”. It is a compound word made of:
+
+1. *sprit(a)* “witty”
+2. *-ulo* [person characterized by said feature]
+
+Kazimierz Bein a.k.a. _Dro. Kabe_, an early adopter of Esperanto, used this word in learning material. The translation below is my work:
+
+> _— Bone — respondis la **spritulo** — ŝutu al ĝi avenon, kaj la ostrojn donu al mi, se ili ne plaĉas al mia ĉevalo._
+> 
+> “Well then,” responded the **cunning man**, “pour out some oats for it. And the oysters, give them to me if my horse doesn’t like them.”
+> 
+> — Extract from _Aveno kaj Ostroj_ (Oats and Oysters), from _Unua Legolibro_ (First Reading Book) 
 
 Its Esperanto name continues the theme from my previous Google Fonts project, [Orelega One](https://fonts.google.com/specimen/Orelega+One); *Orelega* is Esperanto for “big-eared”.
 
@@ -57,7 +68,11 @@ Its Esperanto name continues the theme from my previous Google Fonts project, [O
 
 ### Writing system support
 
-Latin (Vietnamese), IPA, Greek (Polytonic), Cyrillic (Old Church Slavonic), Shavian
+- Latin (incl. Vietnamese)
+- IPA
+- Greek (incl. Polytonic)
+- Cyrillic (incl. Old Church Slavonic—though I’m not definitely sure, because I can’t find an exhaustive list of glyphs used in OCS)
+- Shavian
 
 ### Language support
 
