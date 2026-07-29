@@ -51,15 +51,15 @@ Stylistic alternates exist for more casual handwriting forms in Cyrillic and Gre
 1. *sprit(a)* “witty”
 2. *-ulo* [person characterized by said feature]
 
+According to a paper called *The Word Formation in Esperanto as Seen in Two Translations of _Hamlet_* by Toshifumi Noro from the National Institute of Informatics (Japan), the word *spritulo* is used in both L. L. Zamenhof’s own translation and L. N. M. Newell’s later translation of Shakespeare’s *Hamlet*.
+
 Kazimierz Bein a.k.a. _Dro. Kabe_, an early adopter of Esperanto, used this word in learning material. The translation below is my work:
 
 > _— Bone — respondis la **spritulo** — ŝutu al ĝi avenon, kaj la ostrojn donu al mi, se ili ne plaĉas al mia ĉevalo._
 > 
 > “Well then,” responded the **cunning man**, “pour out some oats for it. And the oysters, give them to me if my horse doesn’t like them.”
 > 
-> — Extract from _Aveno kaj Ostroj_ (Oats and Oysters), from _Unua Legolibro_ (First Reading Book) 
-
-According to a paper called *The Word Formation in Esperanto as Seen in Two Translations of _Hamlet_* by Toshifumi Noro from the National Institute of Informatics (Japan), the word *spritulo* is used in both L. L. Zamenhof’s and L. N. M. Newell’s translations of Shakespeare’s *Hamlet*.
+> — Extract from _Aveno kaj Ostroj_ (Oats and Oysters), from _Unua Legolibro_ (First Reading Book)
 
 Its Esperanto name continues the theme from my previous Google Fonts project, [Orelega](https://fonts.google.com/specimen/Orelega+One); *Orelega* is Esperanto for “big-eared”.
 
