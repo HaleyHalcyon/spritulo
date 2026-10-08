@@ -2,7 +2,9 @@
 
 ## About
 
-**Spritulo** ([English pronunciation](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key) *sprit-OO-loh*; [Esperanto pronunciation](https://en.wikipedia.org/wiki/Help:IPA/Esperanto) \[spritˈulo\]) is a block-script handwriting font with massive multilingual support spanning Latin, Greek, and Cyrillic. It started as a project to create a modern handwriting font for Ancient Greek, but has since expanded to include a diverse character set supporting Vietnamese, Bulgarian Cyrillic, and the Shavian alphabet for English. It is based on the handwriting of the designer using a felt-tip pen, with some creative liberties and beautification added in.
+**Spritulo** ([English pronunciation](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key) *sprit-OO-loh*; [Esperanto pronunciation](https://en.wikipedia.org/wiki/Help:IPA/Esperanto) \[spritˈulo\]) is a block-script handwriting font with massive multilingual support spanning Latin, Greek, and Cyrillic. It started as a project to create a modern handwriting font for Ancient Greek, but has since expanded to include a diverse character set supporting Vietnamese, Bulgarian Cyrillic, and the Shavian alphabet for English.
+
+It is based on the handwriting of the designer using a felt-tip pen, with some creative liberties and beautification added in. Initial samples were written specifically with the Stabilo® *point 88® Fineliner* (0.4mm tip) on 8mm lined paper, though later glyphs have been written with ballpoint pen or pencil and edited to resemble the previous letterforms.
 
 The Cyrillic letterforms blend block-script versions with some cursive features.
 
